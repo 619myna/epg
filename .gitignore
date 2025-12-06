@@ -1,0 +1,34 @@
+# .gitignore
+# 依赖
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 生成的文件
+output/
+*.xml
+*.json
+temp-*.xml
+
+# 环境变量
+.env
+.env.local
+.env.*.local
+
+# 编辑器文件
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# 测试文件
+coverage/
+.nyc_output
+
+# 本地缓存
+.cache/
+.temp/
