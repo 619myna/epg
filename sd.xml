@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
   <!-- 山东电视频道 (sd.xml) -->
-  <!-- 包含：山东本地频道 + 全国通用频道 -->
-  <!-- 生成时间：2025-12-06T17:46:30.798Z -->
+  <!-- 包含：山东本地频道 + 全国通用频道（含未分类频道） -->
+  <!-- 生成时间：2025-12-06T18:19:49.421Z -->
   <!-- 共 796 个频道 -->
 
   <!-- 山东本地频道 (19个) -->
@@ -64,7 +64,7 @@
     <display-name lang="CN">山东体育休闲</display-name>
   </channel>
 
-  <!-- 全国通用频道 (777个) -->
+  <!-- 全国通用频道 (248个) -->
   <!-- 付费 (71个) -->
   <channel id="13974">
     <display-name lang="CN">梨园</display-name>
@@ -280,7 +280,549 @@
     <display-name lang="CN">睛彩羽毛球</display-name>
   </channel>
 
-  <!-- 其他 (529个) -->
+  <!-- 央视 (45个) -->
+  <channel id="378819">
+    <display-name lang="CN">CCTV1</display-name>
+  </channel>
+  <channel id="378820">
+    <display-name lang="CN">CCTV2</display-name>
+  </channel>
+  <channel id="378821">
+    <display-name lang="CN">CCTV3</display-name>
+  </channel>
+  <channel id="378822">
+    <display-name lang="CN">CCTV4</display-name>
+  </channel>
+  <channel id="378823">
+    <display-name lang="CN">CCTV5</display-name>
+  </channel>
+  <channel id="378824">
+    <display-name lang="CN">CCTV5+</display-name>
+  </channel>
+  <channel id="378825">
+    <display-name lang="CN">CCTV6</display-name>
+  </channel>
+  <channel id="378826">
+    <display-name lang="CN">CCTV7</display-name>
+  </channel>
+  <channel id="378827">
+    <display-name lang="CN">CCTV8</display-name>
+  </channel>
+  <channel id="378828">
+    <display-name lang="CN">CCTV9</display-name>
+  </channel>
+  <channel id="378829">
+    <display-name lang="CN">CCTV10</display-name>
+  </channel>
+  <channel id="378830">
+    <display-name lang="CN">CCTV11</display-name>
+  </channel>
+  <channel id="378831">
+    <display-name lang="CN">CCTV12</display-name>
+  </channel>
+  <channel id="378832">
+    <display-name lang="CN">CCTV13</display-name>
+  </channel>
+  <channel id="378833">
+    <display-name lang="CN">CCTV14</display-name>
+  </channel>
+  <channel id="378834">
+    <display-name lang="CN">CCTV15</display-name>
+  </channel>
+  <channel id="378835">
+    <display-name lang="CN">CCTV17</display-name>
+  </channel>
+  <channel id="378838">
+    <display-name lang="CN">CGTN</display-name>
+  </channel>
+  <channel id="378840">
+    <display-name lang="CN">CCTV4EUO</display-name>
+  </channel>
+  <channel id="378841">
+    <display-name lang="CN">CCTV4AME</display-name>
+  </channel>
+  <channel id="378879">
+    <display-name lang="CN">中国教育1台</display-name>
+  </channel>
+  <channel id="378880">
+    <display-name lang="CN">中国教育2台</display-name>
+  </channel>
+  <channel id="378895">
+    <display-name lang="CN">CCTV4K</display-name>
+  </channel>
+  <channel id="379031">
+    <display-name lang="CN">CCTV16</display-name>
+  </channel>
+  <channel id="419909">
+    <display-name lang="CN">中国教育3台</display-name>
+  </channel>
+  <channel id="457582">
+    <display-name lang="CN">中国教育4台</display-name>
+  </channel>
+  <channel id="457729">
+    <display-name lang="CN">CCTV怀旧剧场</display-name>
+  </channel>
+  <channel id="457734">
+    <display-name lang="CN">CGTN俄语</display-name>
+  </channel>
+  <channel id="457907">
+    <display-name lang="CN">CCTV第一剧场</display-name>
+  </channel>
+  <channel id="457944">
+    <display-name lang="CN">CGTN西语</display-name>
+  </channel>
+  <channel id="458001">
+    <display-name lang="CN">CCTV风云剧场</display-name>
+  </channel>
+  <channel id="458040">
+    <display-name lang="CN">CGTN纪录</display-name>
+  </channel>
+  <channel id="458096">
+    <display-name lang="CN">CGTN阿语</display-name>
+  </channel>
+  <channel id="458106">
+    <display-name lang="CN">中国教育一套</display-name>
+  </channel>
+  <channel id="458110">
+    <display-name lang="CN">CGTN法语</display-name>
+  </channel>
+  <channel id="458263">
+    <display-name lang="CN">CETV4</display-name>
+  </channel>
+  <channel id="458264">
+    <display-name lang="CN">CETV3</display-name>
+  </channel>
+  <channel id="458265">
+    <display-name lang="CN">CETV2</display-name>
+  </channel>
+  <channel id="458266">
+    <display-name lang="CN">CETV1</display-name>
+  </channel>
+  <channel id="464605">
+    <display-name lang="CN">CCTV-8K</display-name>
+  </channel>
+  <channel id="483771">
+    <display-name lang="CN">中国教育电视台</display-name>
+  </channel>
+  <channel id="484417">
+    <display-name lang="CN">CCTV-娱乐</display-name>
+  </channel>
+  <channel id="484418">
+    <display-name lang="CN">CCTV-戏曲</display-name>
+  </channel>
+  <channel id="479312">
+    <display-name lang="CN">CNC中文</display-name>
+  </channel>
+  <channel id="479318">
+    <display-name lang="CN">CNC英文</display-name>
+  </channel>
+
+  <!-- 卫视 (26个) -->
+  <channel id="378851">
+    <display-name lang="CN">深圳卫视</display-name>
+  </channel>
+  <channel id="378854">
+    <display-name lang="CN">旅游卫视</display-name>
+  </channel>
+  <channel id="378858">
+    <display-name lang="CN">东南卫视</display-name>
+  </channel>
+  <channel id="378869">
+    <display-name lang="CN">兵团卫视</display-name>
+  </channel>
+  <channel id="378876">
+    <display-name lang="CN">康巴卫视</display-name>
+  </channel>
+  <channel id="418445">
+    <display-name lang="CN">三沙卫视</display-name>
+  </channel>
+  <channel id="419906">
+    <display-name lang="CN">延边卫视</display-name>
+  </channel>
+  <channel id="419907">
+    <display-name lang="CN">黄河卫视</display-name>
+  </channel>
+  <channel id="419908">
+    <display-name lang="CN">厦门卫视</display-name>
+  </channel>
+  <channel id="457585">
+    <display-name lang="CN">大湾区卫视</display-name>
+  </channel>
+  <channel id="457600">
+    <display-name lang="CN">南方卫视</display-name>
+  </channel>
+  <channel id="457694">
+    <display-name lang="CN">海峡卫视</display-name>
+  </channel>
+  <channel id="483728">
+    <display-name lang="CN">内蒙卫视</display-name>
+  </channel>
+  <channel id="483774">
+    <display-name lang="CN">东风卫视</display-name>
+  </channel>
+  <channel id="483791">
+    <display-name lang="CN">国兴卫视</display-name>
+  </channel>
+  <channel id="483793">
+    <display-name lang="CN">华藏卫视</display-name>
+  </channel>
+  <channel id="484005">
+    <display-name lang="CN">澳亚卫视</display-name>
+  </channel>
+  <channel id="479244">
+    <display-name lang="CN">星空卫视</display-name>
+  </channel>
+  <channel id="479249">
+    <display-name lang="CN">蒙语卫视</display-name>
+  </channel>
+  <channel id="479388">
+    <display-name lang="CN">安多卫视</display-name>
+  </channel>
+  <channel id="479407">
+    <display-name lang="CN">藏语卫视</display-name>
+  </channel>
+  <channel id="481068">
+    <display-name lang="CN">农林卫视</display-name>
+  </channel>
+  <channel id="484059">
+    <display-name lang="CN">阳光卫视</display-name>
+  </channel>
+  <channel id="484061">
+    <display-name lang="CN">潮商卫视</display-name>
+  </channel>
+  <channel id="484063">
+    <display-name lang="CN">中华卫视</display-name>
+  </channel>
+  <channel id="484067">
+    <display-name lang="CN">健康卫视</display-name>
+  </channel>
+
+  <!-- 通用 (30个) -->
+  <channel id="378873">
+    <display-name lang="CN">卡酷动画</display-name>
+  </channel>
+  <channel id="378875">
+    <display-name lang="CN">金鹰卡通</display-name>
+  </channel>
+  <channel id="378936">
+    <display-name lang="CN">先锋乒羽</display-name>
+  </channel>
+  <channel id="419980">
+    <display-name lang="CN">少儿动漫</display-name>
+  </channel>
+  <channel id="448043">
+    <display-name lang="CN">现代女性</display-name>
+  </channel>
+  <channel id="448049">
+    <display-name lang="CN">时代家居</display-name>
+  </channel>
+  <channel id="448050">
+    <display-name lang="CN">时代出行</display-name>
+  </channel>
+  <channel id="448051">
+    <display-name lang="CN">时代风尚</display-name>
+  </channel>
+  <channel id="449216">
+    <display-name lang="CN">IPTV5+</display-name>
+  </channel>
+  <channel id="449217">
+    <display-name lang="CN">IPTV6+</display-name>
+  </channel>
+  <channel id="449221">
+    <display-name lang="CN">IPTV热播剧场</display-name>
+  </channel>
+  <channel id="449222">
+    <display-name lang="CN">IPTV少儿动画</display-name>
+  </channel>
+  <channel id="449223">
+    <display-name lang="CN">IPTV魅力时尚</display-name>
+  </channel>
+  <channel id="457696">
+    <display-name lang="CN">卡酷少儿</display-name>
+  </channel>
+  <channel id="457730">
+    <display-name lang="CN">咪咕足球</display-name>
+  </channel>
+  <channel id="457803">
+    <display-name lang="CN">冬奥纪实</display-name>
+  </channel>
+  <channel id="457868">
+    <display-name lang="CN">现代教育</display-name>
+  </channel>
+  <channel id="458012">
+    <display-name lang="CN">黑莓电影</display-name>
+  </channel>
+  <channel id="458015">
+    <display-name lang="CN">纪实科教</display-name>
+  </channel>
+  <channel id="458031">
+    <display-name lang="CN">动漫秀场</display-name>
+  </channel>
+  <channel id="458039">
+    <display-name lang="CN">黑莓动画</display-name>
+  </channel>
+  <channel id="458114">
+    <display-name lang="CN">咪咕综合体育</display-name>
+  </channel>
+  <channel id="483750">
+    <display-name lang="CN">炫动卡通</display-name>
+  </channel>
+  <channel id="484416">
+    <display-name lang="CN">IPTV经典电影</display-name>
+  </channel>
+  <channel id="484421">
+    <display-name lang="CN">新科动漫</display-name>
+  </channel>
+  <channel id="479262">
+    <display-name lang="CN">金鹰纪实</display-name>
+  </channel>
+  <channel id="479271">
+    <display-name lang="CN">嘉佳卡通</display-name>
+  </channel>
+  <channel id="479327">
+    <display-name lang="CN">哒啵赛事</display-name>
+  </channel>
+  <channel id="479338">
+    <display-name lang="CN">哒啵电竞</display-name>
+  </channel>
+  <channel id="479430">
+    <display-name lang="CN">优漫卡通</display-name>
+  </channel>
+
+  <!-- NewTV (21个) -->
+  <channel id="419979">
+    <display-name lang="CN">精品剧场</display-name>
+  </channel>
+  <channel id="479382">
+    <display-name lang="CN">超级电影</display-name>
+  </channel>
+  <channel id="479418">
+    <display-name lang="CN">明星大片</display-name>
+  </channel>
+  <channel id="479253">
+    <display-name lang="CN">精品萌宠</display-name>
+  </channel>
+  <channel id="479283">
+    <display-name lang="CN">欢乐剧场</display-name>
+  </channel>
+  <channel id="479284">
+    <display-name lang="CN">超级电视剧</display-name>
+  </channel>
+  <channel id="479285">
+    <display-name lang="CN">炫舞未来</display-name>
+  </channel>
+  <channel id="479290">
+    <display-name lang="CN">中国功夫</display-name>
+  </channel>
+  <channel id="479317">
+    <display-name lang="CN">农业致富</display-name>
+  </channel>
+  <channel id="479320">
+    <display-name lang="CN">家庭剧场</display-name>
+  </channel>
+  <channel id="479335">
+    <display-name lang="CN">怡伴健康</display-name>
+  </channel>
+  <channel id="479340">
+    <display-name lang="CN">精品大剧</display-name>
+  </channel>
+  <channel id="479344">
+    <display-name lang="CN">精品体育</display-name>
+  </channel>
+  <channel id="479346">
+    <display-name lang="CN">超级综艺</display-name>
+  </channel>
+  <channel id="479354">
+    <display-name lang="CN">军事评论</display-name>
+  </channel>
+  <channel id="479373">
+    <display-name lang="CN">东北热剧</display-name>
+  </channel>
+  <channel id="479378">
+    <display-name lang="CN">古装剧场</display-name>
+  </channel>
+  <channel id="479397">
+    <display-name lang="CN">军旅剧场</display-name>
+  </channel>
+  <channel id="479403">
+    <display-name lang="CN">超级体育</display-name>
+  </channel>
+  <channel id="479410">
+    <display-name lang="CN">潮妈辣婆</display-name>
+  </channel>
+  <channel id="479414">
+    <display-name lang="CN">金牌综艺</display-name>
+  </channel>
+
+  <!-- 港澳台 (55个) -->
+  <channel id="457578">
+    <display-name lang="CN">防城港新闻综合</display-name>
+  </channel>
+  <channel id="457601">
+    <display-name lang="CN">澳视资讯</display-name>
+  </channel>
+  <channel id="457644">
+    <display-name lang="CN">澳视卫星</display-name>
+  </channel>
+  <channel id="457757">
+    <display-name lang="CN">澳视葡文</display-name>
+  </channel>
+  <channel id="457778">
+    <display-name lang="CN">防城港公共</display-name>
+  </channel>
+  <channel id="457918">
+    <display-name lang="CN">澳视体育</display-name>
+  </channel>
+  <channel id="458007">
+    <display-name lang="CN">翡翠台</display-name>
+  </channel>
+  <channel id="458073">
+    <display-name lang="CN">澳视综艺</display-name>
+  </channel>
+  <channel id="458090">
+    <display-name lang="CN">澳视澳门</display-name>
+  </channel>
+  <channel id="458103">
+    <display-name lang="CN">杭州西湖明珠</display-name>
+  </channel>
+  <channel id="483775">
+    <display-name lang="CN">华视电视台</display-name>
+  </channel>
+  <channel id="483777">
+    <display-name lang="CN">中视电视台</display-name>
+  </channel>
+  <channel id="483778">
+    <display-name lang="CN">东森电视台</display-name>
+  </channel>
+  <channel id="483779">
+    <display-name lang="CN">台湾公视</display-name>
+  </channel>
+  <channel id="483780">
+    <display-name lang="CN">TVBS</display-name>
+  </channel>
+  <channel id="483781">
+    <display-name lang="CN">民视电视台</display-name>
+  </channel>
+  <channel id="483782">
+    <display-name lang="CN">三立电视台</display-name>
+  </channel>
+  <channel id="483783">
+    <display-name lang="CN">中天电视台</display-name>
+  </channel>
+  <channel id="483784">
+    <display-name lang="CN">八大电视台</display-name>
+  </channel>
+  <channel id="483785">
+    <display-name lang="CN">靖天电视台</display-name>
+  </channel>
+  <channel id="483786">
+    <display-name lang="CN">原住民族电视台</display-name>
+  </channel>
+  <channel id="483787">
+    <display-name lang="CN">纬来电视台</display-name>
+  </channel>
+  <channel id="483788">
+    <display-name lang="CN">NHK世界台</display-name>
+  </channel>
+  <channel id="483789">
+    <display-name lang="CN">SBN全球财经台</display-name>
+  </channel>
+  <channel id="483792">
+    <display-name lang="CN">壹电视</display-name>
+  </channel>
+  <channel id="483794">
+    <display-name lang="CN">ELTA电视台</display-name>
+  </channel>
+  <channel id="483889">
+    <display-name lang="CN">贵港电视台</display-name>
+  </channel>
+  <channel id="483891">
+    <display-name lang="CN">防城港电视台</display-name>
+  </channel>
+  <channel id="483908">
+    <display-name lang="CN">连云港电视台</display-name>
+  </channel>
+  <channel id="484006">
+    <display-name lang="CN">澳门电视台</display-name>
+  </channel>
+  <channel id="484007">
+    <display-name lang="CN">澳门莲花电视台</display-name>
+  </channel>
+  <channel id="484258">
+    <display-name lang="CN">台湾电视台</display-name>
+  </channel>
+  <channel id="479241">
+    <display-name lang="CN">POPC</display-name>
+  </channel>
+  <channel id="479247">
+    <display-name lang="CN">凤凰资讯</display-name>
+  </channel>
+  <channel id="479269">
+    <display-name lang="CN">美亚电影</display-name>
+  </channel>
+  <channel id="479296">
+    <display-name lang="CN">亚洲新闻</display-name>
+  </channel>
+  <channel id="479301">
+    <display-name lang="CN">凤凰中文</display-name>
+  </channel>
+  <channel id="479305">
+    <display-name lang="CN">西湖明珠</display-name>
+  </channel>
+  <channel id="479311">
+    <display-name lang="CN">凤凰香港</display-name>
+  </channel>
+  <channel id="479313">
+    <display-name lang="CN">中视新闻台</display-name>
+  </channel>
+  <channel id="479333">
+    <display-name lang="CN">亚洲电影</display-name>
+  </channel>
+  <channel id="479336">
+    <display-name lang="CN">香港卫视</display-name>
+  </channel>
+  <channel id="479343">
+    <display-name lang="CN">CMC香港</display-name>
+  </channel>
+  <channel id="479350">
+    <display-name lang="CN">CMC北美</display-name>
+  </channel>
+  <channel id="479365">
+    <display-name lang="CN">亚洲剧台</display-name>
+  </channel>
+  <channel id="479372">
+    <display-name lang="CN">CINEMAX热门影院</display-name>
+  </channel>
+  <channel id="479392">
+    <display-name lang="CN">明珠台</display-name>
+  </channel>
+  <channel id="479393">
+    <display-name lang="CN">台视</display-name>
+  </channel>
+  <channel id="479395">
+    <display-name lang="CN">东森新闻</display-name>
+  </channel>
+  <channel id="479406">
+    <display-name lang="CN">民视新闻台</display-name>
+  </channel>
+  <channel id="479420">
+    <display-name lang="CN">民视</display-name>
+  </channel>
+  <channel id="479429">
+    <display-name lang="CN">中视</display-name>
+  </channel>
+  <channel id="484054">
+    <display-name lang="CN">TVB无线电视</display-name>
+  </channel>
+  <channel id="484056">
+    <display-name lang="CN">凤凰卫视</display-name>
+  </channel>
+  <channel id="484064">
+    <display-name lang="CN">NOW宽频</display-name>
+  </channel>
+
+  <!-- 其他频道 (529个) -->
+  <!-- 注：以下频道未能自动分类到具体类别 -->
   <channel id="14205">
     <display-name lang="CN">noepg</display-name>
   </channel>
@@ -1867,547 +2409,6 @@
   </channel>
   <channel id="484068">
     <display-name lang="CN">牡丹江电视台</display-name>
-  </channel>
-
-  <!-- 央视 (45个) -->
-  <channel id="378819">
-    <display-name lang="CN">CCTV1</display-name>
-  </channel>
-  <channel id="378820">
-    <display-name lang="CN">CCTV2</display-name>
-  </channel>
-  <channel id="378821">
-    <display-name lang="CN">CCTV3</display-name>
-  </channel>
-  <channel id="378822">
-    <display-name lang="CN">CCTV4</display-name>
-  </channel>
-  <channel id="378823">
-    <display-name lang="CN">CCTV5</display-name>
-  </channel>
-  <channel id="378824">
-    <display-name lang="CN">CCTV5+</display-name>
-  </channel>
-  <channel id="378825">
-    <display-name lang="CN">CCTV6</display-name>
-  </channel>
-  <channel id="378826">
-    <display-name lang="CN">CCTV7</display-name>
-  </channel>
-  <channel id="378827">
-    <display-name lang="CN">CCTV8</display-name>
-  </channel>
-  <channel id="378828">
-    <display-name lang="CN">CCTV9</display-name>
-  </channel>
-  <channel id="378829">
-    <display-name lang="CN">CCTV10</display-name>
-  </channel>
-  <channel id="378830">
-    <display-name lang="CN">CCTV11</display-name>
-  </channel>
-  <channel id="378831">
-    <display-name lang="CN">CCTV12</display-name>
-  </channel>
-  <channel id="378832">
-    <display-name lang="CN">CCTV13</display-name>
-  </channel>
-  <channel id="378833">
-    <display-name lang="CN">CCTV14</display-name>
-  </channel>
-  <channel id="378834">
-    <display-name lang="CN">CCTV15</display-name>
-  </channel>
-  <channel id="378835">
-    <display-name lang="CN">CCTV17</display-name>
-  </channel>
-  <channel id="378838">
-    <display-name lang="CN">CGTN</display-name>
-  </channel>
-  <channel id="378840">
-    <display-name lang="CN">CCTV4EUO</display-name>
-  </channel>
-  <channel id="378841">
-    <display-name lang="CN">CCTV4AME</display-name>
-  </channel>
-  <channel id="378879">
-    <display-name lang="CN">中国教育1台</display-name>
-  </channel>
-  <channel id="378880">
-    <display-name lang="CN">中国教育2台</display-name>
-  </channel>
-  <channel id="378895">
-    <display-name lang="CN">CCTV4K</display-name>
-  </channel>
-  <channel id="379031">
-    <display-name lang="CN">CCTV16</display-name>
-  </channel>
-  <channel id="419909">
-    <display-name lang="CN">中国教育3台</display-name>
-  </channel>
-  <channel id="457582">
-    <display-name lang="CN">中国教育4台</display-name>
-  </channel>
-  <channel id="457729">
-    <display-name lang="CN">CCTV怀旧剧场</display-name>
-  </channel>
-  <channel id="457734">
-    <display-name lang="CN">CGTN俄语</display-name>
-  </channel>
-  <channel id="457907">
-    <display-name lang="CN">CCTV第一剧场</display-name>
-  </channel>
-  <channel id="457944">
-    <display-name lang="CN">CGTN西语</display-name>
-  </channel>
-  <channel id="458001">
-    <display-name lang="CN">CCTV风云剧场</display-name>
-  </channel>
-  <channel id="458040">
-    <display-name lang="CN">CGTN纪录</display-name>
-  </channel>
-  <channel id="458096">
-    <display-name lang="CN">CGTN阿语</display-name>
-  </channel>
-  <channel id="458106">
-    <display-name lang="CN">中国教育一套</display-name>
-  </channel>
-  <channel id="458110">
-    <display-name lang="CN">CGTN法语</display-name>
-  </channel>
-  <channel id="458263">
-    <display-name lang="CN">CETV4</display-name>
-  </channel>
-  <channel id="458264">
-    <display-name lang="CN">CETV3</display-name>
-  </channel>
-  <channel id="458265">
-    <display-name lang="CN">CETV2</display-name>
-  </channel>
-  <channel id="458266">
-    <display-name lang="CN">CETV1</display-name>
-  </channel>
-  <channel id="464605">
-    <display-name lang="CN">CCTV-8K</display-name>
-  </channel>
-  <channel id="483771">
-    <display-name lang="CN">中国教育电视台</display-name>
-  </channel>
-  <channel id="484417">
-    <display-name lang="CN">CCTV-娱乐</display-name>
-  </channel>
-  <channel id="484418">
-    <display-name lang="CN">CCTV-戏曲</display-name>
-  </channel>
-  <channel id="479312">
-    <display-name lang="CN">CNC中文</display-name>
-  </channel>
-  <channel id="479318">
-    <display-name lang="CN">CNC英文</display-name>
-  </channel>
-
-  <!-- 卫视 (26个) -->
-  <channel id="378851">
-    <display-name lang="CN">深圳卫视</display-name>
-  </channel>
-  <channel id="378854">
-    <display-name lang="CN">旅游卫视</display-name>
-  </channel>
-  <channel id="378858">
-    <display-name lang="CN">东南卫视</display-name>
-  </channel>
-  <channel id="378869">
-    <display-name lang="CN">兵团卫视</display-name>
-  </channel>
-  <channel id="378876">
-    <display-name lang="CN">康巴卫视</display-name>
-  </channel>
-  <channel id="418445">
-    <display-name lang="CN">三沙卫视</display-name>
-  </channel>
-  <channel id="419906">
-    <display-name lang="CN">延边卫视</display-name>
-  </channel>
-  <channel id="419907">
-    <display-name lang="CN">黄河卫视</display-name>
-  </channel>
-  <channel id="419908">
-    <display-name lang="CN">厦门卫视</display-name>
-  </channel>
-  <channel id="457585">
-    <display-name lang="CN">大湾区卫视</display-name>
-  </channel>
-  <channel id="457600">
-    <display-name lang="CN">南方卫视</display-name>
-  </channel>
-  <channel id="457694">
-    <display-name lang="CN">海峡卫视</display-name>
-  </channel>
-  <channel id="483728">
-    <display-name lang="CN">内蒙卫视</display-name>
-  </channel>
-  <channel id="483774">
-    <display-name lang="CN">东风卫视</display-name>
-  </channel>
-  <channel id="483791">
-    <display-name lang="CN">国兴卫视</display-name>
-  </channel>
-  <channel id="483793">
-    <display-name lang="CN">华藏卫视</display-name>
-  </channel>
-  <channel id="484005">
-    <display-name lang="CN">澳亚卫视</display-name>
-  </channel>
-  <channel id="479244">
-    <display-name lang="CN">星空卫视</display-name>
-  </channel>
-  <channel id="479249">
-    <display-name lang="CN">蒙语卫视</display-name>
-  </channel>
-  <channel id="479388">
-    <display-name lang="CN">安多卫视</display-name>
-  </channel>
-  <channel id="479407">
-    <display-name lang="CN">藏语卫视</display-name>
-  </channel>
-  <channel id="481068">
-    <display-name lang="CN">农林卫视</display-name>
-  </channel>
-  <channel id="484059">
-    <display-name lang="CN">阳光卫视</display-name>
-  </channel>
-  <channel id="484061">
-    <display-name lang="CN">潮商卫视</display-name>
-  </channel>
-  <channel id="484063">
-    <display-name lang="CN">中华卫视</display-name>
-  </channel>
-  <channel id="484067">
-    <display-name lang="CN">健康卫视</display-name>
-  </channel>
-
-  <!-- 通用 (30个) -->
-  <channel id="378873">
-    <display-name lang="CN">卡酷动画</display-name>
-  </channel>
-  <channel id="378875">
-    <display-name lang="CN">金鹰卡通</display-name>
-  </channel>
-  <channel id="378936">
-    <display-name lang="CN">先锋乒羽</display-name>
-  </channel>
-  <channel id="419980">
-    <display-name lang="CN">少儿动漫</display-name>
-  </channel>
-  <channel id="448043">
-    <display-name lang="CN">现代女性</display-name>
-  </channel>
-  <channel id="448049">
-    <display-name lang="CN">时代家居</display-name>
-  </channel>
-  <channel id="448050">
-    <display-name lang="CN">时代出行</display-name>
-  </channel>
-  <channel id="448051">
-    <display-name lang="CN">时代风尚</display-name>
-  </channel>
-  <channel id="449216">
-    <display-name lang="CN">IPTV5+</display-name>
-  </channel>
-  <channel id="449217">
-    <display-name lang="CN">IPTV6+</display-name>
-  </channel>
-  <channel id="449221">
-    <display-name lang="CN">IPTV热播剧场</display-name>
-  </channel>
-  <channel id="449222">
-    <display-name lang="CN">IPTV少儿动画</display-name>
-  </channel>
-  <channel id="449223">
-    <display-name lang="CN">IPTV魅力时尚</display-name>
-  </channel>
-  <channel id="457696">
-    <display-name lang="CN">卡酷少儿</display-name>
-  </channel>
-  <channel id="457730">
-    <display-name lang="CN">咪咕足球</display-name>
-  </channel>
-  <channel id="457803">
-    <display-name lang="CN">冬奥纪实</display-name>
-  </channel>
-  <channel id="457868">
-    <display-name lang="CN">现代教育</display-name>
-  </channel>
-  <channel id="458012">
-    <display-name lang="CN">黑莓电影</display-name>
-  </channel>
-  <channel id="458015">
-    <display-name lang="CN">纪实科教</display-name>
-  </channel>
-  <channel id="458031">
-    <display-name lang="CN">动漫秀场</display-name>
-  </channel>
-  <channel id="458039">
-    <display-name lang="CN">黑莓动画</display-name>
-  </channel>
-  <channel id="458114">
-    <display-name lang="CN">咪咕综合体育</display-name>
-  </channel>
-  <channel id="483750">
-    <display-name lang="CN">炫动卡通</display-name>
-  </channel>
-  <channel id="484416">
-    <display-name lang="CN">IPTV经典电影</display-name>
-  </channel>
-  <channel id="484421">
-    <display-name lang="CN">新科动漫</display-name>
-  </channel>
-  <channel id="479262">
-    <display-name lang="CN">金鹰纪实</display-name>
-  </channel>
-  <channel id="479271">
-    <display-name lang="CN">嘉佳卡通</display-name>
-  </channel>
-  <channel id="479327">
-    <display-name lang="CN">哒啵赛事</display-name>
-  </channel>
-  <channel id="479338">
-    <display-name lang="CN">哒啵电竞</display-name>
-  </channel>
-  <channel id="479430">
-    <display-name lang="CN">优漫卡通</display-name>
-  </channel>
-
-  <!-- NewTV (21个) -->
-  <channel id="419979">
-    <display-name lang="CN">精品剧场</display-name>
-  </channel>
-  <channel id="479382">
-    <display-name lang="CN">超级电影</display-name>
-  </channel>
-  <channel id="479418">
-    <display-name lang="CN">明星大片</display-name>
-  </channel>
-  <channel id="479253">
-    <display-name lang="CN">精品萌宠</display-name>
-  </channel>
-  <channel id="479283">
-    <display-name lang="CN">欢乐剧场</display-name>
-  </channel>
-  <channel id="479284">
-    <display-name lang="CN">超级电视剧</display-name>
-  </channel>
-  <channel id="479285">
-    <display-name lang="CN">炫舞未来</display-name>
-  </channel>
-  <channel id="479290">
-    <display-name lang="CN">中国功夫</display-name>
-  </channel>
-  <channel id="479317">
-    <display-name lang="CN">农业致富</display-name>
-  </channel>
-  <channel id="479320">
-    <display-name lang="CN">家庭剧场</display-name>
-  </channel>
-  <channel id="479335">
-    <display-name lang="CN">怡伴健康</display-name>
-  </channel>
-  <channel id="479340">
-    <display-name lang="CN">精品大剧</display-name>
-  </channel>
-  <channel id="479344">
-    <display-name lang="CN">精品体育</display-name>
-  </channel>
-  <channel id="479346">
-    <display-name lang="CN">超级综艺</display-name>
-  </channel>
-  <channel id="479354">
-    <display-name lang="CN">军事评论</display-name>
-  </channel>
-  <channel id="479373">
-    <display-name lang="CN">东北热剧</display-name>
-  </channel>
-  <channel id="479378">
-    <display-name lang="CN">古装剧场</display-name>
-  </channel>
-  <channel id="479397">
-    <display-name lang="CN">军旅剧场</display-name>
-  </channel>
-  <channel id="479403">
-    <display-name lang="CN">超级体育</display-name>
-  </channel>
-  <channel id="479410">
-    <display-name lang="CN">潮妈辣婆</display-name>
-  </channel>
-  <channel id="479414">
-    <display-name lang="CN">金牌综艺</display-name>
-  </channel>
-
-  <!-- 港澳台 (55个) -->
-  <channel id="457578">
-    <display-name lang="CN">防城港新闻综合</display-name>
-  </channel>
-  <channel id="457601">
-    <display-name lang="CN">澳视资讯</display-name>
-  </channel>
-  <channel id="457644">
-    <display-name lang="CN">澳视卫星</display-name>
-  </channel>
-  <channel id="457757">
-    <display-name lang="CN">澳视葡文</display-name>
-  </channel>
-  <channel id="457778">
-    <display-name lang="CN">防城港公共</display-name>
-  </channel>
-  <channel id="457918">
-    <display-name lang="CN">澳视体育</display-name>
-  </channel>
-  <channel id="458007">
-    <display-name lang="CN">翡翠台</display-name>
-  </channel>
-  <channel id="458073">
-    <display-name lang="CN">澳视综艺</display-name>
-  </channel>
-  <channel id="458090">
-    <display-name lang="CN">澳视澳门</display-name>
-  </channel>
-  <channel id="458103">
-    <display-name lang="CN">杭州西湖明珠</display-name>
-  </channel>
-  <channel id="483775">
-    <display-name lang="CN">华视电视台</display-name>
-  </channel>
-  <channel id="483777">
-    <display-name lang="CN">中视电视台</display-name>
-  </channel>
-  <channel id="483778">
-    <display-name lang="CN">东森电视台</display-name>
-  </channel>
-  <channel id="483779">
-    <display-name lang="CN">台湾公视</display-name>
-  </channel>
-  <channel id="483780">
-    <display-name lang="CN">TVBS</display-name>
-  </channel>
-  <channel id="483781">
-    <display-name lang="CN">民视电视台</display-name>
-  </channel>
-  <channel id="483782">
-    <display-name lang="CN">三立电视台</display-name>
-  </channel>
-  <channel id="483783">
-    <display-name lang="CN">中天电视台</display-name>
-  </channel>
-  <channel id="483784">
-    <display-name lang="CN">八大电视台</display-name>
-  </channel>
-  <channel id="483785">
-    <display-name lang="CN">靖天电视台</display-name>
-  </channel>
-  <channel id="483786">
-    <display-name lang="CN">原住民族电视台</display-name>
-  </channel>
-  <channel id="483787">
-    <display-name lang="CN">纬来电视台</display-name>
-  </channel>
-  <channel id="483788">
-    <display-name lang="CN">NHK世界台</display-name>
-  </channel>
-  <channel id="483789">
-    <display-name lang="CN">SBN全球财经台</display-name>
-  </channel>
-  <channel id="483792">
-    <display-name lang="CN">壹电视</display-name>
-  </channel>
-  <channel id="483794">
-    <display-name lang="CN">ELTA电视台</display-name>
-  </channel>
-  <channel id="483889">
-    <display-name lang="CN">贵港电视台</display-name>
-  </channel>
-  <channel id="483891">
-    <display-name lang="CN">防城港电视台</display-name>
-  </channel>
-  <channel id="483908">
-    <display-name lang="CN">连云港电视台</display-name>
-  </channel>
-  <channel id="484006">
-    <display-name lang="CN">澳门电视台</display-name>
-  </channel>
-  <channel id="484007">
-    <display-name lang="CN">澳门莲花电视台</display-name>
-  </channel>
-  <channel id="484258">
-    <display-name lang="CN">台湾电视台</display-name>
-  </channel>
-  <channel id="479241">
-    <display-name lang="CN">POPC</display-name>
-  </channel>
-  <channel id="479247">
-    <display-name lang="CN">凤凰资讯</display-name>
-  </channel>
-  <channel id="479269">
-    <display-name lang="CN">美亚电影</display-name>
-  </channel>
-  <channel id="479296">
-    <display-name lang="CN">亚洲新闻</display-name>
-  </channel>
-  <channel id="479301">
-    <display-name lang="CN">凤凰中文</display-name>
-  </channel>
-  <channel id="479305">
-    <display-name lang="CN">西湖明珠</display-name>
-  </channel>
-  <channel id="479311">
-    <display-name lang="CN">凤凰香港</display-name>
-  </channel>
-  <channel id="479313">
-    <display-name lang="CN">中视新闻台</display-name>
-  </channel>
-  <channel id="479333">
-    <display-name lang="CN">亚洲电影</display-name>
-  </channel>
-  <channel id="479336">
-    <display-name lang="CN">香港卫视</display-name>
-  </channel>
-  <channel id="479343">
-    <display-name lang="CN">CMC香港</display-name>
-  </channel>
-  <channel id="479350">
-    <display-name lang="CN">CMC北美</display-name>
-  </channel>
-  <channel id="479365">
-    <display-name lang="CN">亚洲剧台</display-name>
-  </channel>
-  <channel id="479372">
-    <display-name lang="CN">CINEMAX热门影院</display-name>
-  </channel>
-  <channel id="479392">
-    <display-name lang="CN">明珠台</display-name>
-  </channel>
-  <channel id="479393">
-    <display-name lang="CN">台视</display-name>
-  </channel>
-  <channel id="479395">
-    <display-name lang="CN">东森新闻</display-name>
-  </channel>
-  <channel id="479406">
-    <display-name lang="CN">民视新闻台</display-name>
-  </channel>
-  <channel id="479420">
-    <display-name lang="CN">民视</display-name>
-  </channel>
-  <channel id="479429">
-    <display-name lang="CN">中视</display-name>
-  </channel>
-  <channel id="484054">
-    <display-name lang="CN">TVB无线电视</display-name>
-  </channel>
-  <channel id="484056">
-    <display-name lang="CN">凤凰卫视</display-name>
-  </channel>
-  <channel id="484064">
-    <display-name lang="CN">NOW宽频</display-name>
   </channel>
 
 </tv>
