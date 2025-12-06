@@ -1,121 +1,205 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
-  <!-- 北京电视频道 (bj.xml) -->
-  <!-- 包含：北京本地频道 + 全国通用频道 -->
-  <!-- 生成时间：2025-12-06T17:46:30.792Z -->
-  <!-- 共 814 个频道 -->
+  <!-- 新疆电视频道 (xj.xml) -->
+  <!-- 包含：新疆本地频道 + 全国通用频道 -->
+  <!-- 生成时间：2025-12-06T17:46:30.809Z -->
+  <!-- 共 842 个频道 -->
 
-  <!-- 北京本地频道 (37个) -->
-  <channel id="378847">
-    <display-name lang="CN">北京卫视</display-name>
+  <!-- 新疆本地频道 (65个) -->
+  <channel id="378867">
+    <display-name lang="CN">新疆卫视</display-name>
   </channel>
-  <channel id="401475">
-    <display-name lang="CN">北京纪实</display-name>
+  <channel id="419927">
+    <display-name lang="CN">武汉新闻综合频道</display-name>
   </channel>
-  <channel id="417050">
-    <display-name lang="CN">BTV文艺</display-name>
+  <channel id="419946">
+    <display-name lang="CN">沈阳新闻</display-name>
   </channel>
-  <channel id="417051">
-    <display-name lang="CN">BTV科教</display-name>
+  <channel id="457579">
+    <display-name lang="CN">太原新闻综合</display-name>
   </channel>
-  <channel id="417052">
-    <display-name lang="CN">BTV影视</display-name>
+  <channel id="457587">
+    <display-name lang="CN">新乡3影视</display-name>
   </channel>
-  <channel id="417053">
-    <display-name lang="CN">BTV财经</display-name>
+  <channel id="457618">
+    <display-name lang="CN">南通新闻综合</display-name>
   </channel>
-  <channel id="417055">
-    <display-name lang="CN">BTV生活</display-name>
+  <channel id="457620">
+    <display-name lang="CN">郑州新闻</display-name>
   </channel>
-  <channel id="417056">
-    <display-name lang="CN">BTV新闻</display-name>
+  <channel id="457645">
+    <display-name lang="CN">新乡2公共</display-name>
   </channel>
-  <channel id="417531">
-    <display-name lang="CN">BTV体育</display-name>
+  <channel id="457654">
+    <display-name lang="CN">乐山新闻综合</display-name>
   </channel>
-  <channel id="419971">
-    <display-name lang="CN">京视剧场</display-name>
+  <channel id="457659">
+    <display-name lang="CN">许昌1新闻综合</display-name>
   </channel>
-  <channel id="457693">
-    <display-name lang="CN">HRBTV1</display-name>
+  <channel id="457667">
+    <display-name lang="CN">台州新闻综合</display-name>
   </channel>
-  <channel id="457709">
-    <display-name lang="CN">南京教科</display-name>
+  <channel id="457676">
+    <display-name lang="CN">新乡4生活</display-name>
   </channel>
-  <channel id="457732">
-    <display-name lang="CN">北京影视</display-name>
+  <channel id="457680">
+    <display-name lang="CN">徐州新闻综合</display-name>
   </channel>
-  <channel id="457756">
-    <display-name lang="CN">南京电视台</display-name>
+  <channel id="457735">
+    <display-name lang="CN">三门峡1新闻综合</display-name>
   </channel>
-  <channel id="457765">
-    <display-name lang="CN">北京体育休闲</display-name>
+  <channel id="457741">
+    <display-name lang="CN">东莞新闻</display-name>
   </channel>
-  <channel id="457784">
-    <display-name lang="CN">北京文艺</display-name>
+  <channel id="457748">
+    <display-name lang="CN">新余公共</display-name>
   </channel>
-  <channel id="457903">
-    <display-name lang="CN">北京新闻</display-name>
+  <channel id="457752">
+    <display-name lang="CN">周口1新闻综合</display-name>
   </channel>
-  <channel id="458009">
-    <display-name lang="CN">北京财经</display-name>
+  <channel id="457768">
+    <display-name lang="CN">黄石新闻综合</display-name>
   </channel>
-  <channel id="458010">
-    <display-name lang="CN">南京十八</display-name>
+  <channel id="457769">
+    <display-name lang="CN">肇庆新闻</display-name>
   </channel>
-  <channel id="458018">
-    <display-name lang="CN">南京影视</display-name>
+  <channel id="457786">
+    <display-name lang="CN">福州1-新闻</display-name>
   </channel>
-  <channel id="458071">
-    <display-name lang="CN">南京信息</display-name>
+  <channel id="457797">
+    <display-name lang="CN">吴江新闻综合</display-name>
   </channel>
-  <channel id="458080">
-    <display-name lang="CN">北京生活</display-name>
+  <channel id="457815">
+    <display-name lang="CN">宜宾新闻综合</display-name>
   </channel>
-  <channel id="458082">
-    <display-name lang="CN">南京新闻综合</display-name>
+  <channel id="457845">
+    <display-name lang="CN">柳州新闻综合</display-name>
   </channel>
-  <channel id="458097">
-    <display-name lang="CN">南京少儿</display-name>
+  <channel id="457847">
+    <display-name lang="CN">孝感新闻综合</display-name>
   </channel>
-  <channel id="464609">
-    <display-name lang="CN">BRTV体育休闲</display-name>
+  <channel id="457856">
+    <display-name lang="CN">大庆新闻综合</display-name>
   </channel>
-  <channel id="464644">
-    <display-name lang="CN">BRTV卡酷少儿</display-name>
+  <channel id="457857">
+    <display-name lang="CN">兰州新闻综合</display-name>
   </channel>
-  <channel id="483772">
-    <display-name lang="CN">北广传媒</display-name>
+  <channel id="457862">
+    <display-name lang="CN">六安新闻综合</display-name>
   </channel>
-  <channel id="479242">
-    <display-name lang="CN">北京国际</display-name>
+  <channel id="457872">
+    <display-name lang="CN">日照新闻综合</display-name>
   </channel>
-  <channel id="479329">
-    <display-name lang="CN">北京纪实科教</display-name>
+  <channel id="457878">
+    <display-name lang="CN">泸州新闻综合</display-name>
   </channel>
-  <channel id="479334">
-    <display-name lang="CN">南京文旅纪录</display-name>
+  <channel id="457884">
+    <display-name lang="CN">攀枝花新闻综合</display-name>
   </channel>
-  <channel id="479339">
-    <display-name lang="CN">南京教育科技</display-name>
+  <channel id="457887">
+    <display-name lang="CN">新疆汉语综艺</display-name>
   </channel>
-  <channel id="479380">
-    <display-name lang="CN">南京十八生活</display-name>
+  <channel id="457888">
+    <display-name lang="CN">南昌新闻综合</display-name>
   </channel>
-  <channel id="479424">
-    <display-name lang="CN">北京IPTV4K超清</display-name>
+  <channel id="457914">
+    <display-name lang="CN">平顶山1新闻综合</display-name>
   </channel>
-  <channel id="480347">
-    <display-name lang="CN">北京淘剧场</display-name>
+  <channel id="457926">
+    <display-name lang="CN">十堰新闻综合</display-name>
   </channel>
-  <channel id="480348">
-    <display-name lang="CN">北京淘娱乐</display-name>
+  <channel id="457931">
+    <display-name lang="CN">常州新闻</display-name>
   </channel>
-  <channel id="480349">
-    <display-name lang="CN">北京淘BABY</display-name>
+  <channel id="457946">
+    <display-name lang="CN">淮南新闻综合</display-name>
   </channel>
-  <channel id="480350">
-    <display-name lang="CN">北京淘电影</display-name>
+  <channel id="457954">
+    <display-name lang="CN">珠海新闻</display-name>
+  </channel>
+  <channel id="457960">
+    <display-name lang="CN">北海新闻综合</display-name>
+  </channel>
+  <channel id="457971">
+    <display-name lang="CN">金华新闻</display-name>
+  </channel>
+  <channel id="457991">
+    <display-name lang="CN">新片放映厅</display-name>
+  </channel>
+  <channel id="458042">
+    <display-name lang="CN">玉林新闻综合</display-name>
+  </channel>
+  <channel id="458049">
+    <display-name lang="CN">锦州新闻</display-name>
+  </channel>
+  <channel id="458092">
+    <display-name lang="CN">韶关新闻</display-name>
+  </channel>
+  <channel id="458093">
+    <display-name lang="CN">新余新闻综合</display-name>
+  </channel>
+  <channel id="458101">
+    <display-name lang="CN">宜春新闻综合</display-name>
+  </channel>
+  <channel id="458104">
+    <display-name lang="CN">清远新闻综合</display-name>
+  </channel>
+  <channel id="458131">
+    <display-name lang="CN">黄冈新闻综合</display-name>
+  </channel>
+  <channel id="458132">
+    <display-name lang="CN">鞍山新闻综合</display-name>
+  </channel>
+  <channel id="458134">
+    <display-name lang="CN">西安新闻综合</display-name>
+  </channel>
+  <channel id="458136">
+    <display-name lang="CN">漳州新闻</display-name>
+  </channel>
+  <channel id="458144">
+    <display-name lang="CN">广州新闻</display-name>
+  </channel>
+  <channel id="458146">
+    <display-name lang="CN">广元新闻综合</display-name>
+  </channel>
+  <channel id="458171">
+    <display-name lang="CN">石家庄新闻综合</display-name>
+  </channel>
+  <channel id="458174">
+    <display-name lang="CN">新疆汉语影视</display-name>
+  </channel>
+  <channel id="458178">
+    <display-name lang="CN">汕尾新闻综合</display-name>
+  </channel>
+  <channel id="472523">
+    <display-name lang="CN">开封1新闻综合</display-name>
+  </channel>
+  <channel id="483916">
+    <display-name lang="CN">新余电视台</display-name>
+  </channel>
+  <channel id="483948">
+    <display-name lang="CN">新乡电视台</display-name>
+  </channel>
+  <channel id="458095">
+    <display-name lang="CN">无锡新闻综合</display-name>
+  </channel>
+  <channel id="479245">
+    <display-name lang="CN">成都新闻综合</display-name>
+  </channel>
+  <channel id="479254">
+    <display-name lang="CN">汕头新闻综合</display-name>
+  </channel>
+  <channel id="479257">
+    <display-name lang="CN">维吾尔语新闻综合</display-name>
+  </channel>
+  <channel id="479293">
+    <display-name lang="CN">哈萨克语新闻综合</display-name>
+  </channel>
+  <channel id="479328">
+    <display-name lang="CN">绍兴新闻综合</display-name>
+  </channel>
+  <channel id="484043">
+    <display-name lang="CN">阜新电视台</display-name>
   </channel>
 
   <!-- 全国通用频道 (777个) -->

@@ -1,121 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
-  <!-- 北京电视频道 (bj.xml) -->
-  <!-- 包含：北京本地频道 + 全国通用频道 -->
-  <!-- 生成时间：2025-12-06T17:46:30.792Z -->
-  <!-- 共 814 个频道 -->
+  <!-- 内蒙古电视频道 (nmg.xml) -->
+  <!-- 包含：内蒙古本地频道 + 全国通用频道 -->
+  <!-- 生成时间：2025-12-06T17:46:30.783Z -->
+  <!-- 共 784 个频道 -->
 
-  <!-- 北京本地频道 (37个) -->
-  <channel id="378847">
-    <display-name lang="CN">北京卫视</display-name>
+  <!-- 内蒙古本地频道 (7个) -->
+  <channel id="13893">
+    <display-name lang="CN">内蒙古卫视</display-name>
   </channel>
-  <channel id="401475">
-    <display-name lang="CN">北京纪实</display-name>
+  <channel id="457796">
+    <display-name lang="CN">内蒙古农牧</display-name>
   </channel>
-  <channel id="417050">
-    <display-name lang="CN">BTV文艺</display-name>
+  <channel id="457882">
+    <display-name lang="CN">内蒙古综合</display-name>
   </channel>
-  <channel id="417051">
-    <display-name lang="CN">BTV科教</display-name>
+  <channel id="458030">
+    <display-name lang="CN">内蒙古少儿</display-name>
   </channel>
-  <channel id="417052">
-    <display-name lang="CN">BTV影视</display-name>
+  <channel id="479275">
+    <display-name lang="CN">内蒙古新闻综合</display-name>
   </channel>
-  <channel id="417053">
-    <display-name lang="CN">BTV财经</display-name>
+  <channel id="479367">
+    <display-name lang="CN">内蒙古经济生活</display-name>
   </channel>
-  <channel id="417055">
-    <display-name lang="CN">BTV生活</display-name>
-  </channel>
-  <channel id="417056">
-    <display-name lang="CN">BTV新闻</display-name>
-  </channel>
-  <channel id="417531">
-    <display-name lang="CN">BTV体育</display-name>
-  </channel>
-  <channel id="419971">
-    <display-name lang="CN">京视剧场</display-name>
-  </channel>
-  <channel id="457693">
-    <display-name lang="CN">HRBTV1</display-name>
-  </channel>
-  <channel id="457709">
-    <display-name lang="CN">南京教科</display-name>
-  </channel>
-  <channel id="457732">
-    <display-name lang="CN">北京影视</display-name>
-  </channel>
-  <channel id="457756">
-    <display-name lang="CN">南京电视台</display-name>
-  </channel>
-  <channel id="457765">
-    <display-name lang="CN">北京体育休闲</display-name>
-  </channel>
-  <channel id="457784">
-    <display-name lang="CN">北京文艺</display-name>
-  </channel>
-  <channel id="457903">
-    <display-name lang="CN">北京新闻</display-name>
-  </channel>
-  <channel id="458009">
-    <display-name lang="CN">北京财经</display-name>
-  </channel>
-  <channel id="458010">
-    <display-name lang="CN">南京十八</display-name>
-  </channel>
-  <channel id="458018">
-    <display-name lang="CN">南京影视</display-name>
-  </channel>
-  <channel id="458071">
-    <display-name lang="CN">南京信息</display-name>
-  </channel>
-  <channel id="458080">
-    <display-name lang="CN">北京生活</display-name>
-  </channel>
-  <channel id="458082">
-    <display-name lang="CN">南京新闻综合</display-name>
-  </channel>
-  <channel id="458097">
-    <display-name lang="CN">南京少儿</display-name>
-  </channel>
-  <channel id="464609">
-    <display-name lang="CN">BRTV体育休闲</display-name>
-  </channel>
-  <channel id="464644">
-    <display-name lang="CN">BRTV卡酷少儿</display-name>
-  </channel>
-  <channel id="483772">
-    <display-name lang="CN">北广传媒</display-name>
-  </channel>
-  <channel id="479242">
-    <display-name lang="CN">北京国际</display-name>
-  </channel>
-  <channel id="479329">
-    <display-name lang="CN">北京纪实科教</display-name>
-  </channel>
-  <channel id="479334">
-    <display-name lang="CN">南京文旅纪录</display-name>
-  </channel>
-  <channel id="479339">
-    <display-name lang="CN">南京教育科技</display-name>
-  </channel>
-  <channel id="479380">
-    <display-name lang="CN">南京十八生活</display-name>
-  </channel>
-  <channel id="479424">
-    <display-name lang="CN">北京IPTV4K超清</display-name>
-  </channel>
-  <channel id="480347">
-    <display-name lang="CN">北京淘剧场</display-name>
-  </channel>
-  <channel id="480348">
-    <display-name lang="CN">北京淘娱乐</display-name>
-  </channel>
-  <channel id="480349">
-    <display-name lang="CN">北京淘BABY</display-name>
-  </channel>
-  <channel id="480350">
-    <display-name lang="CN">北京淘电影</display-name>
+  <channel id="479417">
+    <display-name lang="CN">内蒙古文体娱乐</display-name>
   </channel>
 
   <!-- 全国通用频道 (777个) -->

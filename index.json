@@ -1,40 +1,336 @@
 {
-  "updateTime": "2025-12-06T17:15:57.158Z",
+  "updateTime": "2025-12-06T17:46:30.834Z",
   "files": {
     "provinces": {
+      "heb": {
+        "name": "河北",
+        "file": "heb.xml",
+        "description": "河北本地频道 + 全国通用频道",
+        "localChannelCount": 10,
+        "universalChannelCount": 777,
+        "totalChannelCount": 787,
+        "fileSize": "72.80KB"
+      },
+      "hub": {
+        "name": "湖北",
+        "file": "hub.xml",
+        "description": "湖北本地频道 + 全国通用频道",
+        "localChannelCount": 10,
+        "universalChannelCount": 777,
+        "totalChannelCount": 787,
+        "fileSize": "72.84KB"
+      },
+      "jl": {
+        "name": "吉林",
+        "file": "jl.xml",
+        "description": "吉林本地频道 + 全国通用频道",
+        "localChannelCount": 19,
+        "universalChannelCount": 777,
+        "totalChannelCount": 796,
+        "fileSize": "73.65KB"
+      },
+      "nmg": {
+        "name": "内蒙古",
+        "file": "nmg.xml",
+        "description": "内蒙古本地频道 + 全国通用频道",
+        "localChannelCount": 7,
+        "universalChannelCount": 777,
+        "totalChannelCount": 784,
+        "fileSize": "72.56KB"
+      },
+      "sx": {
+        "name": "山西",
+        "file": "sx.xml",
+        "description": "山西本地频道 + 全国通用频道",
+        "localChannelCount": 10,
+        "universalChannelCount": 777,
+        "totalChannelCount": 787,
+        "fileSize": "72.82KB"
+      },
+      "snx": {
+        "name": "陕西",
+        "file": "snx.xml",
+        "description": "陕西本地频道 + 全国通用频道",
+        "localChannelCount": 16,
+        "universalChannelCount": 777,
+        "totalChannelCount": 793,
+        "fileSize": "73.36KB"
+      },
+      "yn": {
+        "name": "云南",
+        "file": "yn.xml",
+        "description": "云南本地频道 + 全国通用频道",
+        "localChannelCount": 5,
+        "universalChannelCount": 777,
+        "totalChannelCount": 782,
+        "fileSize": "72.33KB"
+      },
+      "hun": {
+        "name": "湖南",
+        "file": "hun.xml",
+        "description": "湖南本地频道 + 全国通用频道",
+        "localChannelCount": 12,
+        "universalChannelCount": 777,
+        "totalChannelCount": 789,
+        "fileSize": "72.99KB"
+      },
+      "zj": {
+        "name": "浙江",
+        "file": "zj.xml",
+        "description": "浙江本地频道 + 全国通用频道",
+        "localChannelCount": 15,
+        "universalChannelCount": 777,
+        "totalChannelCount": 792,
+        "fileSize": "73.28KB"
+      },
+      "js": {
+        "name": "江苏",
+        "file": "js.xml",
+        "description": "江苏本地频道 + 全国通用频道",
+        "localChannelCount": 16,
+        "universalChannelCount": 777,
+        "totalChannelCount": 793,
+        "fileSize": "73.44KB"
+      },
       "bj": {
         "name": "北京",
         "file": "bj.xml",
         "description": "北京本地频道 + 全国通用频道",
-        "localChannelCount": 23,
-        "universalChannelCount": 1159,
-        "totalChannelCount": 1182,
-        "fileSize": "109.62KB"
+        "localChannelCount": 37,
+        "universalChannelCount": 777,
+        "totalChannelCount": 814,
+        "fileSize": "75.28KB"
       },
-      "guangdong": {
+      "sh": {
+        "name": "上海",
+        "file": "sh.xml",
+        "description": "上海本地频道 + 全国通用频道",
+        "localChannelCount": 16,
+        "universalChannelCount": 777,
+        "totalChannelCount": 793,
+        "fileSize": "73.38KB"
+      },
+      "ah": {
+        "name": "安徽",
+        "file": "ah.xml",
+        "description": "安徽本地频道 + 全国通用频道",
+        "localChannelCount": 9,
+        "universalChannelCount": 777,
+        "totalChannelCount": 786,
+        "fileSize": "72.72KB"
+      },
+      "gd": {
         "name": "广东",
-        "file": "guangdong.xml",
+        "file": "gd.xml",
         "description": "广东本地频道 + 全国通用频道",
-        "localChannelCount": 28,
-        "universalChannelCount": 1159,
-        "totalChannelCount": 1187,
-        "fileSize": "110.11KB"
+        "localChannelCount": 13,
+        "universalChannelCount": 777,
+        "totalChannelCount": 790,
+        "fileSize": "73.07KB"
+      },
+      "ln": {
+        "name": "辽宁",
+        "file": "ln.xml",
+        "description": "辽宁本地频道 + 全国通用频道",
+        "localChannelCount": 13,
+        "universalChannelCount": 777,
+        "totalChannelCount": 790,
+        "fileSize": "73.08KB"
+      },
+      "sd": {
+        "name": "山东",
+        "file": "sd.xml",
+        "description": "山东本地频道 + 全国通用频道",
+        "localChannelCount": 19,
+        "universalChannelCount": 777,
+        "totalChannelCount": 796,
+        "fileSize": "73.65KB"
+      },
+      "tj": {
+        "name": "天津",
+        "file": "tj.xml",
+        "description": "天津本地频道 + 全国通用频道",
+        "localChannelCount": 10,
+        "universalChannelCount": 777,
+        "totalChannelCount": 787,
+        "fileSize": "72.81KB"
+      },
+      "cq": {
+        "name": "重庆",
+        "file": "cq.xml",
+        "description": "重庆本地频道 + 全国通用频道",
+        "localChannelCount": 17,
+        "universalChannelCount": 777,
+        "totalChannelCount": 794,
+        "fileSize": "73.47KB"
+      },
+      "gs": {
+        "name": "甘肃",
+        "file": "gs.xml",
+        "description": "甘肃本地频道 + 全国通用频道",
+        "localChannelCount": 6,
+        "universalChannelCount": 777,
+        "totalChannelCount": 783,
+        "fileSize": "72.44KB"
+      },
+      "gx": {
+        "name": "广西",
+        "file": "gx.xml",
+        "description": "广西本地频道 + 全国通用频道",
+        "localChannelCount": 8,
+        "universalChannelCount": 777,
+        "totalChannelCount": 785,
+        "fileSize": "72.62KB"
+      },
+      "gz": {
+        "name": "贵州",
+        "file": "gz.xml",
+        "description": "贵州本地频道 + 全国通用频道",
+        "localChannelCount": 7,
+        "universalChannelCount": 777,
+        "totalChannelCount": 784,
+        "fileSize": "72.53KB"
+      },
+      "hlj": {
+        "name": "黑龙江",
+        "file": "hlj.xml",
+        "description": "黑龙江本地频道 + 全国通用频道",
+        "localChannelCount": 9,
+        "universalChannelCount": 777,
+        "totalChannelCount": 786,
+        "fileSize": "72.75KB"
+      },
+      "hen": {
+        "name": "河南",
+        "file": "hen.xml",
+        "description": "河南本地频道 + 全国通用频道",
+        "localChannelCount": 10,
+        "universalChannelCount": 777,
+        "totalChannelCount": 787,
+        "fileSize": "72.80KB"
+      },
+      "jx": {
+        "name": "江西",
+        "file": "jx.xml",
+        "description": "江西本地频道 + 全国通用频道",
+        "localChannelCount": 12,
+        "universalChannelCount": 777,
+        "totalChannelCount": 789,
+        "fileSize": "73.00KB"
+      },
+      "sc": {
+        "name": "四川",
+        "file": "sc.xml",
+        "description": "四川本地频道 + 全国通用频道",
+        "localChannelCount": 12,
+        "universalChannelCount": 777,
+        "totalChannelCount": 789,
+        "fileSize": "72.99KB"
+      },
+      "xj": {
+        "name": "新疆",
+        "file": "xj.xml",
+        "description": "新疆本地频道 + 全国通用频道",
+        "localChannelCount": 65,
+        "universalChannelCount": 777,
+        "totalChannelCount": 842,
+        "fileSize": "78.09KB"
+      },
+      "qh": {
+        "name": "青海",
+        "file": "qh.xml",
+        "description": "青海本地频道 + 全国通用频道",
+        "localChannelCount": 13,
+        "universalChannelCount": 777,
+        "totalChannelCount": 790,
+        "fileSize": "73.09KB"
+      },
+      "xz": {
+        "name": "西藏",
+        "file": "xz.xml",
+        "description": "西藏本地频道 + 全国通用频道",
+        "localChannelCount": 4,
+        "universalChannelCount": 777,
+        "totalChannelCount": 781,
+        "fileSize": "72.26KB"
+      },
+      "nx": {
+        "name": "宁夏",
+        "file": "nx.xml",
+        "description": "宁夏本地频道 + 全国通用频道",
+        "localChannelCount": 16,
+        "universalChannelCount": 777,
+        "totalChannelCount": 793,
+        "fileSize": "73.35KB"
+      },
+      "han": {
+        "name": "海南",
+        "file": "han.xml",
+        "description": "海南本地频道 + 全国通用频道",
+        "localChannelCount": 6,
+        "universalChannelCount": 777,
+        "totalChannelCount": 783,
+        "fileSize": "72.43KB"
+      },
+      "fj": {
+        "name": "福建",
+        "file": "fj.xml",
+        "description": "福建本地频道 + 全国通用频道",
+        "localChannelCount": 11,
+        "universalChannelCount": 777,
+        "totalChannelCount": 788,
+        "fileSize": "72.89KB"
       }
     },
     "universal": {
-      "ws": {
-        "name": "卫视",
-        "file": "ws.xml",
-        "description": "纯卫视频道",
-        "channelCount": 59,
-        "fileSize": "5.54KB"
+      "ff": {
+        "name": "付费",
+        "file": "ff.xml",
+        "description": "纯付费频道",
+        "channelCount": 71,
+        "fileSize": "6.57KB"
+      },
+      "other": {
+        "name": "其他",
+        "file": "other.xml",
+        "description": "纯其他频道",
+        "channelCount": 529,
+        "fileSize": "49.14KB"
       },
       "cctv": {
         "name": "央视",
         "file": "cctv.xml",
         "description": "纯央视频道",
-        "channelCount": 17,
-        "fileSize": "1.60KB"
+        "channelCount": 45,
+        "fileSize": "4.10KB"
+      },
+      "ws": {
+        "name": "卫视",
+        "file": "ws.xml",
+        "description": "纯卫视频道",
+        "channelCount": 26,
+        "fileSize": "2.52KB"
+      },
+      "ty": {
+        "name": "通用",
+        "file": "ty.xml",
+        "description": "纯通用频道",
+        "channelCount": 30,
+        "fileSize": "2.89KB"
+      },
+      "ntv": {
+        "name": "NewTV",
+        "file": "ntv.xml",
+        "description": "纯NewTV频道",
+        "channelCount": 21,
+        "fileSize": "2.07KB"
+      },
+      "gat": {
+        "name": "港澳台",
+        "file": "gat.xml",
+        "description": "纯港澳台频道",
+        "channelCount": 55,
+        "fileSize": "5.21KB"
       }
     },
     "complete": {
@@ -52,33 +348,56 @@
     }
   },
   "summary": {
-    "totalProvinces": 2,
-    "totalUniversalCategories": 3,
-    "provinceChannelCount": 51,
-    "universalChannelCount": 1159,
+    "totalProvinces": 31,
+    "totalUniversalCategories": 7,
+    "provinceChannelCount": 433,
+    "universalChannelCount": 777,
     "totalChannels": 1210,
     "totalProgrammes": 0,
-    "generatedFiles": 6
+    "generatedFiles": 40
   },
   "mappings": {
     "provinces": {
       "北京": "bj",
       "上海": "sh",
-      "广东": "guangdong",
-      "浙江": "zhejiang",
-      "江苏": "jiangsu",
-      "湖南": "hunan",
-      "四川": "sichuan",
-      "天津": "tianjin",
-      "重庆": "chongqing"
+      "天津": "tj",
+      "重庆": "cq",
+      "河北": "heb",
+      "山西": "sx",
+      "内蒙古": "nmg",
+      "辽宁": "ln",
+      "吉林": "jl",
+      "黑龙江": "hlj",
+      "江苏": "js",
+      "浙江": "zj",
+      "安徽": "ah",
+      "福建": "fj",
+      "江西": "jx",
+      "山东": "sd",
+      "河南": "hen",
+      "湖北": "hub",
+      "湖南": "hun",
+      "广东": "gd",
+      "广西": "gx",
+      "海南": "han",
+      "四川": "sc",
+      "贵州": "gz",
+      "云南": "yn",
+      "西藏": "xz",
+      "陕西": "snx",
+      "甘肃": "gs",
+      "青海": "qh",
+      "宁夏": "nx",
+      "新疆": "xj"
     },
     "universal": {
       "央视": "cctv",
       "卫视": "ws",
-      "数字付费": "sz",
-      "高清": "hq",
-      "购物": "gw",
-      "教育": "jy"
+      "付费": "ff",
+      "NewTV": "ntv",
+      "港澳台": "gat",
+      "通用": "ty",
+      "其他": "other"
     }
   },
   "usage": {

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
   <!-- 央视频道 (cctv.xml) -->
-  <!-- 共 17 个频道 -->
-  <!-- 生成时间：2025-12-06T17:15:57.144Z -->
+  <!-- 共 45 个频道 -->
+  <!-- 生成时间：2025-12-06T17:46:30.818Z -->
 
   <channel id="378819">
     <display-name lang="CN">CCTV1</display-name>
@@ -18,6 +18,9 @@
   </channel>
   <channel id="378823">
     <display-name lang="CN">CCTV5</display-name>
+  </channel>
+  <channel id="378824">
+    <display-name lang="CN">CCTV5+</display-name>
   </channel>
   <channel id="378825">
     <display-name lang="CN">CCTV6</display-name>
@@ -52,7 +55,88 @@
   <channel id="378835">
     <display-name lang="CN">CCTV17</display-name>
   </channel>
+  <channel id="378838">
+    <display-name lang="CN">CGTN</display-name>
+  </channel>
+  <channel id="378840">
+    <display-name lang="CN">CCTV4EUO</display-name>
+  </channel>
+  <channel id="378841">
+    <display-name lang="CN">CCTV4AME</display-name>
+  </channel>
+  <channel id="378879">
+    <display-name lang="CN">中国教育1台</display-name>
+  </channel>
+  <channel id="378880">
+    <display-name lang="CN">中国教育2台</display-name>
+  </channel>
+  <channel id="378895">
+    <display-name lang="CN">CCTV4K</display-name>
+  </channel>
   <channel id="379031">
     <display-name lang="CN">CCTV16</display-name>
+  </channel>
+  <channel id="419909">
+    <display-name lang="CN">中国教育3台</display-name>
+  </channel>
+  <channel id="457582">
+    <display-name lang="CN">中国教育4台</display-name>
+  </channel>
+  <channel id="457729">
+    <display-name lang="CN">CCTV怀旧剧场</display-name>
+  </channel>
+  <channel id="457734">
+    <display-name lang="CN">CGTN俄语</display-name>
+  </channel>
+  <channel id="457907">
+    <display-name lang="CN">CCTV第一剧场</display-name>
+  </channel>
+  <channel id="457944">
+    <display-name lang="CN">CGTN西语</display-name>
+  </channel>
+  <channel id="458001">
+    <display-name lang="CN">CCTV风云剧场</display-name>
+  </channel>
+  <channel id="458040">
+    <display-name lang="CN">CGTN纪录</display-name>
+  </channel>
+  <channel id="458096">
+    <display-name lang="CN">CGTN阿语</display-name>
+  </channel>
+  <channel id="458106">
+    <display-name lang="CN">中国教育一套</display-name>
+  </channel>
+  <channel id="458110">
+    <display-name lang="CN">CGTN法语</display-name>
+  </channel>
+  <channel id="458263">
+    <display-name lang="CN">CETV4</display-name>
+  </channel>
+  <channel id="458264">
+    <display-name lang="CN">CETV3</display-name>
+  </channel>
+  <channel id="458265">
+    <display-name lang="CN">CETV2</display-name>
+  </channel>
+  <channel id="458266">
+    <display-name lang="CN">CETV1</display-name>
+  </channel>
+  <channel id="464605">
+    <display-name lang="CN">CCTV-8K</display-name>
+  </channel>
+  <channel id="483771">
+    <display-name lang="CN">中国教育电视台</display-name>
+  </channel>
+  <channel id="484417">
+    <display-name lang="CN">CCTV-娱乐</display-name>
+  </channel>
+  <channel id="484418">
+    <display-name lang="CN">CCTV-戏曲</display-name>
+  </channel>
+  <channel id="479312">
+    <display-name lang="CN">CNC中文</display-name>
+  </channel>
+  <channel id="479318">
+    <display-name lang="CN">CNC英文</display-name>
   </channel>
 </tv>
