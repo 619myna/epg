@@ -1,0 +1,89 @@
+#!/usr/bin/env node
+
+const EPGDownloader = require('./downloader.js');
+const EPGProcessor = require('./processor.js');
+const EPGSplitter = require('./splitter.js');
+
+async function main() {
+  console.log('='.repeat(60));
+  console.log('🚀 EPG处理器 - 启动');
+  console.log('='.repeat(60));
+  
+  const startTime = Date.now();
+  
+  try {
+    // 1. 下载EPG数据
+    const downloader = new EPGDownloader();
+    console.log('📥 下载EPG数据...');
+    const xmlData = await downloader.downloadEPG();
+    
+    // 2. 处理EPG数据
+    const processor = new EPGProcessor();
+    console.log('⚙️ 处理EPG数据...');
+    const epgData = processor.process(xmlData);
+    
+    // 3. 拆分EPG数据
+    const splitter = new EPGSplitter('output');
+    console.log('🗂️ 拆分EPG数据...');
+    const result = splitter.split(epgData);
+    
+    // 4. 输出统计信息
+    const endTime = Date.now();
+    const duration = ((endTime - startTime) / 1000).toFixed(2);
+    
+    console.log('\n' + '='.repeat(60));
+    console.log('🎉 处理完成！');
+    console.log('='.repeat(60));
+    
+    console.log('\n📊 统计信息:');
+    console.log(`   总耗时: ${duration} 秒`);
+    console.log(`   总文件: ${result.provinceFiles.length + result.universalFiles.length + 2} 个`);
+    console.log(`   省份文件: ${result.provinceFiles.length} 个`);
+    console.log(`   通用文件: ${result.universalFiles.length} 个`);
+    console.log(`   完整数据: 1 个 (${result.completeFile.channelCount}频道 ${result.completeFile.programmeCount}节目)`);
+    console.log(`   输出目录: output/`);
+    
+    console.log('\n📁 生成的文件列表:');
+    console.log('   省份文件:');
+    result.provinceFiles.slice(0, 5).forEach(file => {
+      console.log(`     - ${file.fileName}: ${file.province}`);
+    });
+    if (result.provinceFiles.length > 5) {
+      console.log(`     ... 还有 ${result.provinceFiles.length - 5} 个省份文件`);
+    }
+    
+    console.log('\n   通用文件:');
+    result.universalFiles.forEach(file => {
+      console.log(`     - ${file.fileName}: ${file.category}`);
+    });
+    
+    console.log('\n   特殊文件:');
+    console.log(`     - all.xml: ${result.completeFile.channelCount}频道 ${result.completeFile.programmeCount}节目`);
+    console.log('     - index.json: 索引文件');
+    
+    console.log('\n💡 使用说明:');
+    console.log('   1. 每个省份文件已包含本地频道 + 全国通用频道');
+    console.log('   2. 普通用户只需下载对应省份文件即可');
+    console.log('   3. 完整数据在 all.xml 中');
+    console.log('   4. 查看 index.json 获取详细信息');
+    
+    console.log('\n' + '='.repeat(60));
+    
+  } catch (error) {
+    console.error('\n❌ 处理失败:', error.message);
+    if (error.stack) {
+      console.error('错误详情:', error.stack.split('\n')[0]);
+    }
+    process.exit(1);
+  }
+}
+
+// 直接运行
+if (require.main === module) {
+  main().catch(error => {
+    console.error('致命错误:', error);
+    process.exit(1);
+  });
+}
+
+module.exports = { main };

@@ -1,0 +1,25 @@
+{
+  "name": "epg-processor",
+  "version": "1.0.0",
+  "description": "EPG数据处理工具 - 按省份分类生成XML文件",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"运行测试: npm start\" && exit 0"
+  },
+  "keywords": [
+    "epg",
+    "iptv",
+    "xmltv",
+    "tv",
+    "channel"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
