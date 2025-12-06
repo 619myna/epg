@@ -1,0 +1,93 @@
+{
+  "updateTime": "2025-12-06T17:01:16.881Z",
+  "files": {
+    "provinces": {
+      "bj": {
+        "name": "北京",
+        "file": "bj.xml",
+        "description": "北京本地频道 + 全国通用频道",
+        "localChannelCount": 23,
+        "universalChannelCount": 1159,
+        "totalChannelCount": 1182,
+        "fileSize": "109.62KB"
+      },
+      "guangdong": {
+        "name": "广东",
+        "file": "guangdong.xml",
+        "description": "广东本地频道 + 全国通用频道",
+        "localChannelCount": 28,
+        "universalChannelCount": 1159,
+        "totalChannelCount": 1187,
+        "fileSize": "110.11KB"
+      }
+    },
+    "universal": {
+      "ws": {
+        "name": "卫视",
+        "file": "ws.xml",
+        "description": "纯卫视频道",
+        "channelCount": 59,
+        "fileSize": "5.54KB"
+      },
+      "cctv": {
+        "name": "央视",
+        "file": "cctv.xml",
+        "description": "纯央视频道",
+        "channelCount": 17,
+        "fileSize": "1.60KB"
+      }
+    },
+    "complete": {
+      "all": {
+        "file": "all.xml",
+        "description": "完整EPG数据（包含所有频道和节目）",
+        "channelCount": 1210,
+        "programmeCount": 0,
+        "fileSize": "0.11MB"
+      },
+      "index": {
+        "file": "index.json",
+        "description": "索引文件"
+      }
+    }
+  },
+  "summary": {
+    "totalProvinces": 2,
+    "totalUniversalCategories": 3,
+    "provinceChannelCount": 51,
+    "universalChannelCount": 1159,
+    "totalChannels": 1210,
+    "totalProgrammes": 0,
+    "generatedFiles": 6
+  },
+  "mappings": {
+    "provinces": {
+      "北京": "bj",
+      "上海": "sh",
+      "广东": "guangdong",
+      "浙江": "zhejiang",
+      "江苏": "jiangsu",
+      "湖南": "hunan",
+      "四川": "sichuan",
+      "天津": "tianjin",
+      "重庆": "chongqing"
+    },
+    "universal": {
+      "央视": "cctv",
+      "卫视": "ws",
+      "数字付费": "sz",
+      "高清": "hq",
+      "购物": "gw",
+      "教育": "jy"
+    }
+  },
+  "usage": {
+    "examples": [
+      "北京用户: bj.xml (包含本地+通用频道)",
+      "广东用户: guangdong.xml (包含本地+通用频道)",
+      "纯央视频道: cctv.xml",
+      "纯卫视频道: ws.xml",
+      "完整数据: all.xml"
+    ]
+  }
+}
