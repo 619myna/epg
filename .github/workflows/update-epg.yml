@@ -29,11 +29,18 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: '18'
+        # 不要使用缓存，避免缓存损坏的文件
         cache: ''
         
     - name: 安装依赖
-      run: npm install
-      
+      run: |
+        # 清理可能损坏的文件
+        rm -f package-lock.json
+        rm -rf node_modules
+        
+        # 安装依赖
+        npm install --no-audit --no-fund
+        
     - name: 运行EPG处理器
       run: npm start
       
