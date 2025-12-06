@@ -29,16 +29,24 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: '18'
-        # 不要使用缓存，避免缓存损坏的文件
         cache: ''
+        
+    - name: 检查文件
+      run: |
+        echo "📁 项目文件列表:"
+        ls -la
+        echo ""
+        echo "📄 检查必要文件是否存在:"
+        [ -f categories.js ] && echo "✅ categories.js 存在" || echo "❌ categories.js 不存在"
+        [ -f downloader.js ] && echo "✅ downloader.js 存在" || echo "❌ downloader.js 不存在"
+        [ -f processor.js ] && echo "✅ processor.js 存在" || echo "❌ processor.js 不存在"
+        [ -f splitter.js ] && echo "✅ splitter.js 存在" || echo "❌ splitter.js 不存在"
+        [ -f index.js ] && echo "✅ index.js 存在" || echo "❌ index.js 不存在"
         
     - name: 安装依赖
       run: |
-        # 清理可能损坏的文件
         rm -f package-lock.json
         rm -rf node_modules
-        
-        # 安装依赖
         npm install --no-audit --no-fund
         
     - name: 运行EPG处理器
@@ -61,29 +69,3 @@ jobs:
         publish_dir: ./output
         keep_files: false
         commit_message: "自动更新EPG数据 - ${{ github.run_number }}"
-        
-    - name: 创建发布版本（手动触发时）
-      if: github.event_name == 'workflow_dispatch'
-      uses: softprops/action-gh-release@v1
-      with:
-        files: output/*
-        tag_name: epg-${{ github.run_number }}
-        name: EPG数据 v${{ github.run_number }}
-        body: |
-          EPG数据自动更新
-          
-          更新时间: ${{ github.run_number }}
-          
-          包含:
-          - 34个省份XML文件
-          - 7个通用分类XML文件
-          - 完整数据文件
-          - 索引文件
-          
-          使用方法:
-          - 北京: bj.xml
-          - 广东: guangdong.xml
-          - 央视: cctv.xml
-          - 完整: all.xml
-        draft: false
-        prerelease: false
