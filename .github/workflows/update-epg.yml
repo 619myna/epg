@@ -1,0 +1,82 @@
+name: Update EPG Daily
+
+on:
+  schedule:
+    - cron: '0 3 * * *'  # 每天凌晨3点运行
+  workflow_dispatch:      # 支持手动触发
+  push:
+    branches: [ main ]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    
+    steps:
+    - name: 检出代码
+      uses: actions/checkout@v4
+      
+    - name: 设置Node.js环境
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+        
+    - name: 安装依赖
+      run: npm install
+      
+    - name: 运行EPG处理器
+      run: npm start
+      
+    - name: 显示生成文件
+      run: |
+        echo "📁 生成的文件列表:"
+        ls -la output/
+        echo ""
+        echo "📊 文件统计:"
+        echo "XML文件: $(find output -name "*.xml" | wc -l) 个"
+        echo "JSON文件: $(find output -name "*.json" | wc -l) 个"
+        echo "总文件: $(find output -type f | wc -l) 个"
+        
+    - name: 部署到GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./output
+        keep_files: false
+        commit_message: "自动更新EPG数据 - ${{ github.run_number }}"
+        
+    - name: 创建发布版本（手动触发时）
+      if: github.event_name == 'workflow_dispatch'
+      uses: softprops/action-gh-release@v1
+      with:
+        files: output/*
+        tag_name: epg-${{ github.run_number }}
+        name: EPG数据 v${{ github.run_number }}
+        body: |
+          EPG数据自动更新
+          
+          更新时间: ${{ github.run_number }}
+          
+          包含:
+          - 34个省份XML文件
+          - 7个通用分类XML文件
+          - 完整数据文件
+          - 索引文件
+          
+          使用方法:
+          - 北京: bj.xml
+          - 广东: guangdong.xml
+          - 央视: cctv.xml
+          - 完整: all.xml
+        draft: false
+        prerelease: false
