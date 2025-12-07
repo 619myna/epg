@@ -53,11 +53,11 @@ class EPGDownloader {
           // 2. 统一时区为 +0800
           xmlData = xmlData.replace(/(start|stop)="([^"]*?)\s*[+-]\d{4}"/g, '$1="$2 +0800"');
           
-          // 3. 删除icon标签
-          xmlData = xmlData.replace(/<icon src="" \/>/g, '');
+          // 3. 直接删除icon标签
+          xmlData = xmlData.replace(/<icon src="" \/>\n/g, '');
           
-          // 4. 统一audio标签
-          xmlData = xmlData.replace(/<audio>\s*<stereo>stereo<\/stereo>\s*<\/audio>/g, '<audio><stereo>stereo</stereo></audio>');
+          // 4. 直接删除audio标签块（紧凑写法）
+          xmlData = xmlData.replace(/<audio>[\s\S]*?<\/audio>\n/g, '');
           
           const sizeMB = (Buffer.byteLength(xmlData, 'utf-8') / 1024 / 1024).toFixed(2);
           console.log(`  📊 数据大小: ${sizeMB} MB`);
