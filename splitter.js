@@ -7,26 +7,8 @@ class EPGSplitter {
     this.outputDir = outputDir;
     this.ensureOutputDir();
     
-    // ========== 移植的频道清洗代码 ==========
     // 频道名称缓存
     this.nameCache = new Map();
-    
-    // 移植的频道正则表达式
-    this.channelRegex = /<channel\b[^>]*?\bid="([^"]+)"[^>]*>[\s\S]*?<display-name[^>]*>([^<]+)<\/display-name>[\s\S]*?<\/channel>/gi;
-    
-    // 移植的频道名称清洗函数
-    this.cleanChannelName = function(name) {
-      if (this.nameCache.has(name)) return this.nameCache.get(name);
-      
-      const cleaned = name  
-        .replace(/\s+|[()（）－_—·•-]|频道|超清|HD|高清(?![^()（）]*[电影])/gi, '')
-        .replace(/(CCTV)(\d+)(\+?)[\u4e00-\u9fa5]+(?!欧洲|美洲)/gi, '$1$2$3')
-        .trim();
-        
-      const result = { original: name, cleaned: cleaned, upper: cleaned.toUpperCase() };
-      this.nameCache.set(name, result);
-      return result;
-    }.bind(this);
   }
   
   ensureOutputDir() {
@@ -42,139 +24,80 @@ class EPGSplitter {
       .substring(0, 19);
   }
   
-  // 新增：格式化文件大小方法（统一使用MB）
   formatFileSizeMB(bytes) {
     return (bytes / 1024 / 1024).toFixed(2) + 'MB';
   }
   
-  // 新增：格式化 XML 片段的方法
   formatXmlFragment(fragment, indent = 2) {
-    // 移除片段两端的空白字符
     let cleanFragment = fragment.trim();
     
-    // 修复可能缺少的闭合标签
     if (cleanFragment.startsWith('<programme') && !cleanFragment.endsWith('</programme>')) {
-      // 尝试修复不完整的 programme 标签
       if (!cleanFragment.endsWith('>')) {
         cleanFragment += '>';
       }
     }
     
-    // 添加缩进
     const indentStr = ' '.repeat(indent);
     const lines = cleanFragment.split('\n');
     
-    // 对每一行进行缩进
     return lines.map(line => {
       const trimmed = line.trim();
       return trimmed ? indentStr + trimmed : '';
     }).filter(line => line !== '').join('\n');
   }
   
-  // 新增：提取频道片段的方法（使用移植的清洗逻辑）
-  extractChannelFragments(data) {
-    console.log('  🔧 提取并清洗频道数据...');
+  // 新增：移植的清洗逻辑
+  cleanChannelName(name) {
+    if (this.nameCache.has(name)) return this.nameCache.get(name);
     
-    const channelFragments = [];
-    const channelMap = new Map(); // 用于去重
-    let match;
-    
-    // 重置正则表达式的lastIndex
-    this.channelRegex.lastIndex = 0;
-    
-    while ((match = this.channelRegex.exec(data)) !== null) {
-      const channelId = match[1];
-      const channelName = match[2].trim();
-      const fullMatch = match[0];
+    const cleaned = name  
+      .replace(/\s+|[()（）－_—·•-]|频道|超清|HD|高清(?![^()（）]*[电影])/gi, '')
+      .replace(/(CCTV)(\d+)(\+?)[\u4e00-\u9fa5]+(?!欧洲|美洲)/gi, '$1$2$3')
+      .trim();
       
-      // 清洗频道名称
-      const nameResult = this.cleanChannelName(channelName);
-      const cleanedName = nameResult.cleaned;
-      
-      // 去重：检查是否已经处理过相同的清洗后名称
-      if (!channelMap.has(cleanedName)) {
-        // 创建清洗后的频道XML片段
-        const cleanedXml = fullMatch.replace(
-          /<display-name[^>]*>([^<]+)<\/display-name>/i,
-          `<display-name lang="CN">${cleanedName}</display-name>`
-        );
-        
-        channelFragments.push(cleanedXml);
-        channelMap.set(cleanedName, {
-          id: channelId,
-          name: cleanedName,
-          originalName: channelName,
-          xml: cleanedXml
-        });
-      }
-    }
-    
-    console.log(`    原始提取: ${channelMap.size} 个唯一频道`);
-    
-    return {
-      fragments: channelFragments,
-      map: channelMap
-    };
+    const result = { original: name, cleaned: cleaned, upper: cleaned.toUpperCase() };
+    this.nameCache.set(name, result);
+    return result;
   }
   
-  // 新增：提取节目片段的方法
-  extractProgrammeFragments(data) {
-    console.log('  📺 提取节目数据...');
-    
-    const programmeFragments = [];
-    const programmeRegex = /<programme[^>]*>[\s\S]*?<\/programme>/gi;
-    let match;
-    
-    programmeRegex.lastIndex = 0;
-    
-    while ((match = programmeRegex.exec(data)) !== null) {
-      programmeFragments.push(match[0]);
-    }
-    
-    console.log(`    提取到: ${programmeFragments.length} 个节目片段`);
-    return programmeFragments;
-  }
-  
-  // 修改：主拆分方法，添加数据处理步骤
+  // 修改：使用现有数据而不是重新提取
   split(data) {
-    console.log('🗂️ 开始处理EPG数据...');
+    const { channelFragments, programmeFragments } = data;
     
-    // 第一步：提取并清洗频道数据
-    const { fragments: channelFragments, map: channelMap } = this.extractChannelFragments(data);
+    console.log('🗂️ 拆分EPG数据...');
     
-    // 第二步：提取节目数据
-    const programmeFragments = this.extractProgrammeFragments(data);
+    // 1. 首先清洗所有频道名称
+    console.log('  🔧 清洗频道名称...');
+    const cleanedChannelFragments = this.cleanChannelFragments(channelFragments);
     
-    console.log('  📊 拆分EPG数据...');
+    // 2. 提取清洗后的频道信息
+    const channels = this.extractChannelInfo(cleanedChannelFragments);
     
-    // 提取频道信息（现在使用清洗后的数据）
-    const channels = this.extractChannelInfo(channelFragments);
-    
-    // 分离频道：通过计算确定其他频道
+    // 3. 分离频道：通过计算确定其他频道
     const { universalChannels, provinceChannels, otherChannels } = this.separateChannels(channels);
     
-    // 获取所有通用频道（包括其他频道）
+    // 4. 获取所有通用频道（包括其他频道）
     const allUniversalChannels = this.getAllUniversalChannels(universalChannels, otherChannels);
     
-    // 生成各省份文件（现在传递节目数据）
+    // 5. 生成各省份文件
     const provinceFiles = this.generateProvinceFiles(
       provinceChannels, 
       allUniversalChannels, 
-      channelFragments,
-      programmeFragments  // 新增：传递节目数据
+      cleanedChannelFragments,  // 使用清洗后的频道片段
+      programmeFragments
     );
     
-    // 生成通用分类文件（现在传递节目数据）
+    // 6. 生成通用分类文件
     const universalFiles = this.generateUniversalFiles(
       universalChannels, 
-      channelFragments,
-      programmeFragments  // 新增：传递节目数据
+      cleanedChannelFragments,  // 使用清洗后的频道片段
+      programmeFragments
     );
     
-    // 生成完整数据文件
-    const completeFile = this.generateCompleteFile(channelFragments, programmeFragments);
+    // 7. 生成完整数据文件
+    const completeFile = this.generateCompleteFile(cleanedChannelFragments, programmeFragments);
     
-    // 生成索引文件
+    // 8. 生成索引文件
     const indexData = this.generateIndexFile(
       provinceChannels, 
       universalChannels, 
@@ -184,19 +107,54 @@ class EPGSplitter {
       completeFile
     );
     
-    console.log('🎉 处理完成！');
+    console.log('🎉 拆分完成！');
     
     return {
       provinceFiles,
       universalFiles,
       completeFile,
       indexData,
-      channelStats: {
-        originalCount: channelMap.size,
-        cleanedCount: channelFragments.length,
-        duplicateRemoved: channelMap.size - channelFragments.length
+      cleaningStats: {
+        originalChannels: channelFragments.length,
+        cleanedChannels: cleanedChannelFragments.length,
+        nameCacheSize: this.nameCache.size
       }
     };
+  }
+  
+  // 新增：清洗频道片段的方法
+  cleanChannelFragments(channelFragments) {
+    const cleanedFragments = [];
+    const cleanedNames = new Set(); // 用于去重
+    
+    console.log(`    原始频道数量: ${channelFragments.length}`);
+    
+    channelFragments.forEach(fragment => {
+      // 提取原始频道名称
+      const nameMatch = fragment.match(/<display-name[^>]*>([^<]+)<\/display-name>/);
+      if (!nameMatch) return;
+      
+      const originalName = nameMatch[1];
+      const nameResult = this.cleanChannelName(originalName);
+      const cleanedName = nameResult.cleaned;
+      
+      // 去重：检查是否已经处理过相同的清洗后名称
+      if (!cleanedNames.has(cleanedName)) {
+        // 创建清洗后的频道XML片段
+        const cleanedFragment = fragment.replace(
+          /<display-name[^>]*>([^<]+)<\/display-name>/i,
+          `<display-name lang="CN">${cleanedName}</display-name>`
+        );
+        
+        cleanedFragments.push(cleanedFragment);
+        cleanedNames.add(cleanedName);
+      }
+    });
+    
+    console.log(`    清洗后唯一频道: ${cleanedFragments.length}`);
+    console.log(`    去重数量: ${channelFragments.length - cleanedFragments.length}`);
+    
+    return cleanedFragments;
   }
   
   extractChannelInfo(channelFragments) {
@@ -303,7 +261,6 @@ class EPGSplitter {
     return allChannels;
   }
   
-  // 新增：过滤节目数据的方法
   filterProgrammesByChannels(programmeFragments, channelIds) {
     if (!programmeFragments || programmeFragments.length === 0) {
       return [];
@@ -348,7 +305,7 @@ class EPGSplitter {
         realUniversalChannels, 
         otherChannels, 
         channelMap,
-        programmeFragments  // 新增：传递节目数据
+        programmeFragments
       );
       
       const fileName = `${pinyin}.xml`;
@@ -363,7 +320,6 @@ class EPGSplitter {
       ];
       const relevantProgrammes = this.filterProgrammesByChannels(programmeFragments, allChannelIds);
       
-      // 统一使用 MB 单位
       const fileSizeMB = this.formatFileSizeMB(Buffer.byteLength(xmlContent, 'utf-8'));
       
       generatedFiles.push({
@@ -375,7 +331,7 @@ class EPGSplitter {
         otherChannelCount: otherChannels.length,
         programmeCount: relevantProgrammes.length,
         totalChannelCount: channels.length + realUniversalChannels.length + otherChannels.length,
-        fileSize: fileSizeMB  // 使用 MB 单位
+        fileSize: fileSizeMB
       });
       
       console.log(`    ✅ ${fileName} - ${provinceName} (${channels.length}本地+${realUniversalChannels.length}通用+${otherChannels.length}其他, ${relevantProgrammes.length}节目, ${fileSizeMB})`);
@@ -390,7 +346,6 @@ class EPGSplitter {
     xml += `  <!-- 生成时间：${this.getChineseTime()} -->\n`;
     xml += `  <!-- 包含：${provinceName}本地频道 + 全国通用频道（含未分类频道） -->\n`;
     
-    // 计算频道总数
     const totalChannelCount = provinceChannels.length + universalChannels.length + otherChannels.length;
     xml += `  <!-- 共 ${totalChannelCount} 个频道 -->\n\n`;
     
@@ -410,7 +365,6 @@ class EPGSplitter {
     if (universalChannels.length > 0) {
       xml += `  <!-- 全国通用频道 (${universalChannels.length}个) -->\n`;
       
-      // 按类别分组
       const grouped = {};
       universalChannels.forEach(channel => {
         const category = channel.category || '其他';
@@ -420,7 +374,6 @@ class EPGSplitter {
         grouped[category].push(channel);
       });
       
-      // 输出分组
       Object.entries(grouped).forEach(([category, channels]) => {
         xml += `  <!-- ${category} (${channels.length}个) -->\n`;
         channels.forEach(channel => {
@@ -446,7 +399,7 @@ class EPGSplitter {
       xml += '\n';
     }
     
-    // 4. 新增：节目信息
+    // 4. 节目信息
     const allChannelIds = [
       ...provinceChannels.map(c => c.id),
       ...universalChannels.map(c => c.id),
@@ -476,7 +429,6 @@ class EPGSplitter {
     const generatedFiles = [];
     const channelMap = new Map();
     
-    // 创建频道映射
     channelFragments.forEach(fragment => {
       const idMatch = fragment.match(/id="([^"]+)"/);
       if (idMatch) {
@@ -493,18 +445,15 @@ class EPGSplitter {
         continue;
       }
       
-      // 筛选相关节目
       const channelIds = channels.map(c => c.id);
       const relevantProgrammes = this.filterProgrammesByChannels(programmeFragments, channelIds);
       
-      // 生成XML内容
       let xml = `<?xml version="1.0" encoding="UTF-8"?>\n<tv>\n`;
       xml += `  <!-- ${category}频道 (${pinyin}.xml) -->\n`;
       xml += `  <!-- 共 ${channels.length} 个频道 -->\n`;
       xml += `  <!-- 共 ${relevantProgrammes.length} 个节目 -->\n`;
       xml += `  <!-- 生成时间：${this.getChineseTime()} -->\n\n`;
       
-      // 添加频道片段（使用格式化方法）
       channels.forEach(channel => {
         const fragment = channelMap.get(channel.id);
         if (fragment) {
@@ -512,7 +461,6 @@ class EPGSplitter {
         }
       });
       
-      // 添加节目片段（使用格式化方法）
       if (relevantProgrammes.length > 0) {
         xml += `\n  <!-- 节目列表 -->\n`;
         relevantProgrammes.forEach(fragment => {
@@ -526,7 +474,6 @@ class EPGSplitter {
       const filePath = path.join(this.outputDir, fileName);
       fs.writeFileSync(filePath, xml, 'utf-8');
       
-      // 统一使用 MB 单位
       const fileSizeMB = this.formatFileSizeMB(Buffer.byteLength(xml, 'utf-8'));
       
       generatedFiles.push({
@@ -535,7 +482,7 @@ class EPGSplitter {
         fileName: fileName,
         channelCount: channels.length,
         programmeCount: relevantProgrammes.length,
-        fileSize: fileSizeMB  // 使用 MB 单位
+        fileSize: fileSizeMB
       });
       
       console.log(`    ✅ ${fileName} - ${category} (${channels.length}频道, ${relevantProgrammes.length}节目, ${fileSizeMB})`);
@@ -552,13 +499,11 @@ class EPGSplitter {
     xml += `  <!-- 生成时间：${this.getChineseTime()} -->\n`;
     xml += `  <!-- 包含 ${channelFragments.length} 个频道，${programmeFragments.length} 个节目 -->\n\n`;
     
-    // 添加频道片段（使用格式化方法）
     xml += `  <!-- 频道列表 -->\n`;
     channelFragments.forEach(fragment => {
       xml += this.formatXmlFragment(fragment) + '\n';
     });
     
-    // 添加节目片段（使用格式化方法）
     if (programmeFragments.length > 0) {
       xml += `\n  <!-- 节目列表 -->\n`;
       programmeFragments.forEach(fragment => {
@@ -571,7 +516,6 @@ class EPGSplitter {
     const filePath = path.join(this.outputDir, 'all.xml');
     fs.writeFileSync(filePath, xml, 'utf-8');
     
-    // 统一使用 MB 单位
     const fileSizeMB = this.formatFileSizeMB(Buffer.byteLength(xml, 'utf-8'));
     
     console.log(`    ✅ all.xml - ${channelFragments.length}频道 ${programmeFragments.length}节目 (${fileSizeMB})`);
@@ -580,7 +524,7 @@ class EPGSplitter {
       fileName: 'all.xml',
       channelCount: channelFragments.length,
       programmeCount: programmeFragments.length,
-      fileSize: fileSizeMB  // 使用 MB 单位
+      fileSize: fileSizeMB
     };
   }
   
@@ -608,7 +552,6 @@ class EPGSplitter {
       }
     };
     
-    // 填充省份文件信息
     provinceFiles.forEach(file => {
       indexData.files.provinces[file.pinyin] = {
         name: file.province,
@@ -618,28 +561,26 @@ class EPGSplitter {
         otherChannelCount: file.otherChannelCount,
         programmeCount: file.programmeCount || 0,
         totalChannelCount: file.totalChannelCount,
-        fileSize: file.fileSize  // 已经是 MB 单位
+        fileSize: file.fileSize
       };
     });
     
-    // 填充通用文件信息
     universalFiles.forEach(file => {
       indexData.files.universal[file.pinyin] = {
         name: file.category,
         file: file.fileName,
         channelCount: file.channelCount,
         programmeCount: file.programmeCount || 0,
-        fileSize: file.fileSize  // 已经是 MB 单位
+        fileSize: file.fileSize
       };
     });
     
-    // 填充完整文件信息
     indexData.files.complete = {
       all: {
         file: 'all.xml',
         channelCount: completeFile.channelCount,
         programmeCount: completeFile.programmeCount,
-        fileSize: completeFile.fileSize  // 已经是 MB 单位
+        fileSize: completeFile.fileSize
       }
     };
     
