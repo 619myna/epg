@@ -26,7 +26,7 @@ const categoryRules = [
   },
   { 
     name: '港澳台', 
-    regex: /香港|港|RTHK|TVB|HOY|HBO|CINEMAX|CMC|POPC|NHK|NOW|ELTA|SBN| Star|有线|无线|凤凰|翡翠|美亚|明珠|澳门|澳|台湾|台视|纬来|民视|东森|天映|中视|中天|华视|三立|八大|靖天|壹电视|原住民族|亚洲/gi, 
+    regex: /香港|港|RTHK|TVB|HOY|HBO|CINEMAX|CMC|POPC|NHK|NOW|ELTA|SBNStar|有线|无线|凤凰|翡翠|美亚|明珠|澳门|澳|台湾|台视|纬来|民视|东森|天映|中视|中天|华视|三立|八大|靖天|壹电视|原住民族|亚洲/gi, 
     isUniversal: true, 
     priority: 5 
   },
