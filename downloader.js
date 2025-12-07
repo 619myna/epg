@@ -59,6 +59,9 @@ class EPGDownloader {
           // 4. 直接删除audio标签块（紧凑写法）
           xmlData = xmlData.replace(/<audio>[\s\S]*?<\/audio>\n/g, '');
           
+          // 5. 删除date标签
+          xmlData = xmlData.replace(/<date>\d{8}<\/date>\n/g, '');
+          
           const sizeMB = (Buffer.byteLength(xmlData, 'utf-8') / 1024 / 1024).toFixed(2);
           console.log(`  📊 数据大小: ${sizeMB} MB`);
           console.log('  ✅ 格式统一完成');
