@@ -13,7 +13,6 @@ const categoryRules = [
   },
   { 
     name: '付费', 
-    // 修复了正则表达式：将 ^4K.*$ 改为 ^4K$，避免语法错误
     regex: /^4K|CHC|央视|睛彩|卫生健康|风云足球|高尔夫网球|央视文化精品|风云音乐|第一剧场|怀旧剧场|风云剧场|世界地理|电视指南|兵器科技|女性时尚|央视台球|老故事|中学生|发现之旅|每日健身|体育赛事|重温经典|早期教育|环球奇观|中国交通|中国天气|书画|百姓健康|优优宝贝|生态环境|中医药|足球|四海钓鱼|快乐垂钓|劲爆体育|天元围棋|武术世界|新动漫|动漫秀场|游戏风云|都市剧场|欢笑剧场|生活时尚|新视觉|求索|精彩影视|家庭理财|东方财经|乐游|法治天地|金色学堂|财富天下|陶瓷|梨园|文物宝库|国学|茶|汽摩|证券服务/gi, 
     isUniversal: true, 
     priority: 3 
@@ -26,7 +25,7 @@ const categoryRules = [
   },
   { 
     name: '港澳台', 
-    regex: /香港|港|RTHK|TVB|HOY|HBO|CINEMAX|CMC|POPC|NHK|NOW|ELTA|SBNStar|有线|无线|凤凰|翡翠|美亚|明珠|澳门|澳|台湾|台视|纬来|民视|东森|天映|中视|中天|华视|三立|八大|靖天|壹电视|原住民族|亚洲/gi, 
+    regex: /香港|港|RTHK|TVB|HOY|HBO|CINEMAX|CMC|POPC|NHK|NOW|ELTA|SBN|Star|有线|无线|凤凰|翡翠|美亚|明珠|澳门|澳|台湾|台视|纬来|民视|东森|天映|中视|中天|华视|三立|八大|靖天|壹电视|原住民族|亚洲/gi, 
     isUniversal: true, 
     priority: 5 
   },
@@ -37,7 +36,7 @@ const categoryRules = [
     priority: 6 
   },
   
-  // 地方频道（按省份分类）- 使用增强版规则
+  // 地方频道（按省份分类）
   { name: '北京', regex: /北京|BTV|BRTV|京视|北广/gi, isUniversal: false, priority: 101 },
   { name: '上海', regex: /上海|东方|上视|东方财经|新闻综合|第一财经|五星体育|东方影视|上海都市|金色学堂|都市剧场|动漫秀场|生活时尚|欢笑剧场|法治天地|游戏风云|哈哈炫动/gi, isUniversal: false, priority: 102 },
   { name: '天津', regex: /天津/gi, isUniversal: false, priority: 103 },
@@ -68,55 +67,53 @@ const categoryRules = [
   { name: '甘肃', regex: /甘肃|兰州|嘉峪关|金昌|白银|天水|武威|张掖|平凉|酒泉|庆阳|定西|陇南|临夏/gi, isUniversal: false, priority: 128 },
   { name: '青海', regex: /青海|西宁|海东/gi, isUniversal: false, priority: 129 },
   { name: '宁夏', regex: /宁夏|银川|石嘴山|吴忠|固原|中卫/gi, isUniversal: false, priority: 130 },
-  { name: '新疆', regex: /新疆|乌鲁木齐|维吾尔|哈萨克|塔城|昌吉/gi, isUniversal: false, priority: 131 },
+  { name: '新疆', regex: /新疆|乌鲁木齐|维吾尔|哈萨克|塔城|昌吉/gi, isUniversal: false, priority: 131 }
+  
+  // 注意：删除了"其他"规则
+];
 
-// 省份拼音简写映射（主要使用拼音首字母或常见简写）
 const provincePinyinMap = {
-  // 直辖市 - 传统简写
   '北京': 'bj',
   '上海': 'sh',
   '天津': 'tj',
   '重庆': 'cq',
-  
-  // 省份 - 拼音首字母或常见简写
-  '河北': 'heb',    // he bei
-  '山西': 'sx',     // shan xi
-  '内蒙古': 'nmg',   // nei meng gu
-  '辽宁': 'ln',     // liao ning
-  '吉林': 'jl',     // ji lin
-  '黑龙江': 'hlj',   // hei long jiang
-  '江苏': 'js',     // jiang su
-  '浙江': 'zj',     // zhe jiang
-  '安徽': 'ah',     // an hui
-  '福建': 'fj',     // fu jian
-  '江西': 'jx',     // jiang xi
-  '山东': 'sd',     // shan dong
-  '河南': 'hen',    // he nan
-  '湖北': 'hub',    // hu bei
-  '湖南': 'hun',    // hu nan
-  '广东': 'gd',     // guang dong
-  '广西': 'gx',     // guang xi
-  '海南': 'han',    // hai nan
-  '四川': 'sc',     // si chuan
-  '贵州': 'gz',     // gui zhou
-  '云南': 'yn',     // yun nan
-  '西藏': 'xz',     // xi zang
-  '陕西': 'snx',    // shan xi（与山西区分）
-  '甘肃': 'gs',     // gan su
-  '青海': 'qh',     // qing hai
-  '宁夏': 'nx',     // ning xia
-  '新疆': 'xj'      // xin jiang
+  '河北': 'heb',
+  '山西': 'sx',
+  '内蒙古': 'nmg',
+  '辽宁': 'ln',
+  '吉林': 'jl',
+  '黑龙江': 'hlj',
+  '江苏': 'js',
+  '浙江': 'zj',
+  '安徽': 'ah',
+  '福建': 'fj',
+  '江西': 'jx',
+  '山东': 'sd',
+  '河南': 'hen',
+  '湖北': 'hub',
+  '湖南': 'hun',
+  '广东': 'gd',
+  '广西': 'gx',
+  '海南': 'han',
+  '四川': 'sc',
+  '贵州': 'gz',
+  '云南': 'yn',
+  '西藏': 'xz',
+  '陕西': 'snx',
+  '甘肃': 'gs',
+  '青海': 'qh',
+  '宁夏': 'nx',
+  '新疆': 'xj'
 };
 
-// 通用分类拼音简写
 const universalPinyinMap = {
-  '央视': 'cctv',     // 传统保持
-  '卫视': 'ws',       // wei shi
-  '付费': 'ff',       // fu fei
-  'NewTV': 'ntv',     // new tv
-  '港澳台': 'gat',     // gang ao tai
-  '通用': 'ty',       // tong yong
-  '其他': 'other'     // 保持英文
+  '央视': 'cctv',
+  '卫视': 'ws',
+  '付费': 'ff',
+  'NewTV': 'ntv',
+  '港澳台': 'gat',
+  '通用': 'ty',
+  '其他': 'other'  // 保留映射，用于显示
 };
 
 module.exports = {
