@@ -100,7 +100,17 @@ class EPGSplitter {
       
       for (const rule of sortedRules) {
         // 创建新的正则对象，避免 g 标志的状态问题
-        const regex = new RegExp(rule.regex.source, rule.regex.flags.replace('g', '') + 'i');
+        let flags = rule.regex.flags;
+        
+        // 1. 移除 g 标志
+        flags = flags.replace('g', '');
+        
+        // 2. 确保有 i 标志（不区分大小写）
+        if (!flags.includes('i')) {
+          flags += 'i';
+        }
+        
+        const regex = new RegExp(rule.regex.source, flags);
         
         if (regex.test(name)) {
           channel.category = rule.name;
