@@ -6,6 +6,9 @@ class EPGSplitter {
   constructor(outputDir = 'output') {
     this.outputDir = outputDir;
     this.ensureOutputDir();
+    
+    // 缓存清洗后的名称
+    this.nameCache = new Map();
   }
   
   ensureOutputDir() {
@@ -26,13 +29,34 @@ class EPGSplitter {
     return (bytes / 1024 / 1024).toFixed(2) + 'MB';
   }
   
+  // 新增：频道名称清洗函数（与附件一致）
+  cleanChannelName(name) {
+    if (this.nameCache.has(name)) return this.nameCache.get(name);
+    
+    const cleaned = name
+      .replace(/\s+|[()（）－_—·•-]|频道|超清|HD|高清(?![^()（）]*[电影])/gi, '')
+      .replace(/(CCTV)(\d+)(\+?)[\u4e00-\u9fa5]+(?!欧洲|美洲)/gi, '$1$2$3')
+      .trim();
+      
+    const result = { 
+      original: name, 
+      cleaned: cleaned, 
+      upper: cleaned.toUpperCase() 
+    };
+    
+    this.nameCache.set(name, result);
+    return result;
+  }
+  
   split(data) {
     const { channelFragments, programmeFragments } = data;
     
     console.log('🗂️ 拆分EPG数据...');
     
-    // 提取频道信息
-    const channels = this.extractChannelInfo(channelFragments);
+    // 提取频道信息（现在包含去重）
+    const { channels, duplicateCount } = this.extractAndDeduplicateChannels(channelFragments);
+    
+    console.log(`  📊 去重结果: ${channels.length}个唯一频道，${duplicateCount}个重复频道`);
     
     // 分离频道：通过计算确定其他频道
     const { universalChannels, provinceChannels, otherChannels } = this.separateChannels(channels);
@@ -65,7 +89,8 @@ class EPGSplitter {
       otherChannels,
       provinceFiles, 
       universalFiles, 
-      completeFile
+      completeFile,
+      duplicateCount  // 新增：传递去重信息
     );
     
     console.log('🎉 拆分完成！');
@@ -78,19 +103,49 @@ class EPGSplitter {
     };
   }
   
-  extractChannelInfo(channelFragments) {
-    return channelFragments.map(fragment => {
+  // 修改：新增去重功能的提取方法
+  extractAndDeduplicateChannels(channelFragments) {
+    const channels = [];
+    const cleanedGroups = new Map(); // 用于去重的Map
+    let duplicateCount = 0;
+    
+    for (const fragment of channelFragments) {
       const idMatch = fragment.match(/id="([^"]+)"/);
       const nameMatch = fragment.match(/<display-name[^>]*>([^<]+)<\/display-name>/);
       
-      return {
+      if (!idMatch || !nameMatch) continue;
+      
+      const id = idMatch[1];
+      const name = nameMatch[1].trim();
+      
+      // 清洗频道名称
+      const nameResult = this.cleanChannelName(name);
+      const cleanedName = nameResult.cleaned;
+      
+      // 去重逻辑：如果已存在相同的cleanedName，跳过
+      if (cleanedGroups.has(cleanedName)) {
+        duplicateCount++;
+        // 可选：记录哪个频道被跳过了
+        // console.log(`跳过重复频道: ${name} (清理后: ${cleanedName})`);
+        continue;
+      }
+      
+      // 记录这个cleanedName已存在
+      cleanedGroups.set(cleanedName, true);
+      
+      channels.push({
         xml: fragment,
-        id: idMatch ? idMatch[1] : '',
-        name: nameMatch ? nameMatch[1] : '未知频道'
-      };
-    });
+        id: id,
+        name: name,
+        cleanedName: cleanedName,
+        originalName: nameResult.original
+      });
+    }
+    
+    return { channels, duplicateCount };
   }
   
+  // 修改：更新separateChannels使用新的频道数据结构
   separateChannels(channels) {
     console.log('  📊 分离频道数据...');
     
@@ -98,7 +153,7 @@ class EPGSplitter {
     const provinceChannels = {};
     const otherChannels = [];
     
-    // 获取分类规则（已删除"其他"规则）
+    // 获取分类规则
     const { categoryRules } = require('./categories.js');
     
     // 已匹配的频道ID集合
@@ -106,7 +161,7 @@ class EPGSplitter {
     
     // 第一轮：用主要规则匹配
     channels.forEach(channel => {
-      const { name, id } = channel;
+      const { cleanedName, id } = channel;
       let matched = false;
       
       // 按优先级排序
@@ -126,7 +181,7 @@ class EPGSplitter {
         
         const regex = new RegExp(rule.regex.source, flags);
         
-        if (regex.test(name)) {
+        if (regex.test(cleanedName)) {
           channel.category = rule.name;
           channel.isUniversal = rule.isUniversal;
           matchedChannelIds.add(id);
@@ -201,7 +256,7 @@ class EPGSplitter {
     const generatedFiles = [];
     const channelMap = new Map();
     
-    // 创建频道ID到片段的映射
+    // 创建频道ID到片段的映射（用于XML生成）
     channelFragments.forEach(fragment => {
       const idMatch = fragment.match(/id="([^"]+)"/);
       if (idMatch) {
@@ -227,7 +282,7 @@ class EPGSplitter {
         realUniversalChannels, 
         otherChannels, 
         channelMap,
-        programmeFragments  // 新增：传递节目数据
+        programmeFragments
       );
       
       const fileName = `${pinyin}.xml`;
@@ -254,7 +309,7 @@ class EPGSplitter {
         otherChannelCount: otherChannels.length,
         programmeCount: relevantProgrammes.length,
         totalChannelCount: channels.length + realUniversalChannels.length + otherChannels.length,
-        fileSize: fileSizeMB  // 使用 MB 单位
+        fileSize: fileSizeMB
       });
       
       console.log(`    ✅ ${fileName} - ${provinceName} (${channels.length}本地+${realUniversalChannels.length}通用+${otherChannels.length}其他, ${relevantProgrammes.length}节目, ${fileSizeMB})`);
@@ -268,6 +323,7 @@ class EPGSplitter {
     xml += `  <!-- ${provinceName}电视频道 (${pinyin}.xml) -->\n`;
     xml += `  <!-- 生成时间：${this.getChineseTime()} -->\n`;
     xml += `  <!-- 包含：${provinceName}本地频道 + 全国通用频道（含未分类频道） -->\n`;
+    xml += `  <!-- 注：频道已去重，重复频道已移除 -->\n`;
     
     // 计算频道总数
     const totalChannelCount = provinceChannels.length + universalChannels.length + otherChannels.length;
@@ -325,7 +381,7 @@ class EPGSplitter {
       xml += '\n';
     }
     
-    // 4. 新增：节目信息
+    // 4. 节目信息
     const allChannelIds = [
       ...provinceChannels.map(c => c.id),
       ...universalChannels.map(c => c.id),
@@ -381,7 +437,8 @@ class EPGSplitter {
       xml += `  <!-- ${category}频道 (${pinyin}.xml) -->\n`;
       xml += `  <!-- 共 ${channels.length} 个频道 -->\n`;
       xml += `  <!-- 共 ${relevantProgrammes.length} 个节目 -->\n`;
-      xml += `  <!-- 生成时间：${this.getChineseTime()} -->\n\n`;
+      xml += `  <!-- 生成时间：${this.getChineseTime()} -->\n`;
+      xml += `  <!-- 注：频道已去重，重复频道已移除 -->\n\n`;
       
       // 添加频道片段
       channels.forEach(channel => {
@@ -414,7 +471,7 @@ class EPGSplitter {
         fileName: fileName,
         channelCount: channels.length,
         programmeCount: relevantProgrammes.length,
-        fileSize: fileSizeMB  // 使用 MB 单位
+        fileSize: fileSizeMB
       });
       
       console.log(`    ✅ ${fileName} - ${category} (${channels.length}频道, ${relevantProgrammes.length}节目, ${fileSizeMB})`);
@@ -426,15 +483,19 @@ class EPGSplitter {
   generateCompleteFile(channelFragments, programmeFragments) {
     console.log('  📦 生成完整EPG文件...');
     
+    // 对完整文件也进行去重
+    const { channels: deduplicatedChannels, duplicateCount } = this.extractAndDeduplicateChannels(channelFragments);
+    
     let xml = `<?xml version="1.0" encoding="UTF-8"?>\n<tv>\n`;
     xml += `  <!-- 完整EPG数据 (all.xml) -->\n`;
     xml += `  <!-- 生成时间：${this.getChineseTime()} -->\n`;
-    xml += `  <!-- 包含 ${channelFragments.length} 个频道，${programmeFragments.length} 个节目 -->\n\n`;
+    xml += `  <!-- 包含 ${deduplicatedChannels.length} 个频道，${programmeFragments.length} 个节目 -->\n`;
+    xml += `  <!-- 注：已移除 ${duplicateCount} 个重复频道 -->\n\n`;
     
     // 添加频道片段
     xml += `  <!-- 频道列表 -->\n`;
-    channelFragments.forEach(fragment => {
-      xml += '  ' + fragment + '\n';
+    deduplicatedChannels.forEach(channel => {
+      xml += '  ' + channel.xml + '\n';
     });
     
     // 添加节目片段
@@ -453,21 +514,31 @@ class EPGSplitter {
     // 统一使用 MB 单位
     const fileSizeMB = this.formatFileSizeMB(Buffer.byteLength(xml, 'utf-8'));
     
-    console.log(`    ✅ all.xml - ${channelFragments.length}频道 ${programmeFragments.length}节目 (${fileSizeMB})`);
+    console.log(`    ✅ all.xml - ${deduplicatedChannels.length}频道 ${programmeFragments.length}节目 (移除${duplicateCount}重复, ${fileSizeMB})`);
     
     return {
       fileName: 'all.xml',
-      channelCount: channelFragments.length,
+      channelCount: deduplicatedChannels.length,
       programmeCount: programmeFragments.length,
-      fileSize: fileSizeMB  // 使用 MB 单位
+      duplicateCount: duplicateCount,
+      fileSize: fileSizeMB
     };
   }
   
-  generateIndexFile(provinceChannels, universalChannels, otherChannels, provinceFiles, universalFiles, completeFile) {
+  // 修改：更新generateIndexFile接收duplicateCount
+  generateIndexFile(provinceChannels, universalChannels, otherChannels, provinceFiles, universalFiles, completeFile, duplicateCount = 0) {
     console.log('  📋 生成索引文件...');
     
     const indexData = {
       updateTime: new Date().toISOString(),
+      deduplication: {
+        totalChannelsBefore: completeFile.channelCount + duplicateCount,
+        totalChannelsAfter: completeFile.channelCount,
+        duplicateCount: duplicateCount,
+        deduplicationRate: duplicateCount > 0 
+          ? ((duplicateCount / (completeFile.channelCount + duplicateCount)) * 100).toFixed(2) + '%'
+          : '0%'
+      },
       files: {
         provinces: {},
         universal: {},
@@ -497,7 +568,7 @@ class EPGSplitter {
         otherChannelCount: file.otherChannelCount,
         programmeCount: file.programmeCount || 0,
         totalChannelCount: file.totalChannelCount,
-        fileSize: file.fileSize  // 已经是 MB 单位
+        fileSize: file.fileSize
       };
     });
     
@@ -508,7 +579,7 @@ class EPGSplitter {
         file: file.fileName,
         channelCount: file.channelCount,
         programmeCount: file.programmeCount || 0,
-        fileSize: file.fileSize  // 已经是 MB 单位
+        fileSize: file.fileSize
       };
     });
     
@@ -518,7 +589,8 @@ class EPGSplitter {
         file: 'all.xml',
         channelCount: completeFile.channelCount,
         programmeCount: completeFile.programmeCount,
-        fileSize: completeFile.fileSize  // 已经是 MB 单位
+        duplicateCount: completeFile.duplicateCount || 0,
+        fileSize: completeFile.fileSize
       }
     };
     
