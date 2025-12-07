@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
   <!-- NewTV频道 (ntv.xml) -->
-  <!-- 共 20 个频道 -->
-  <!-- 生成时间：2025-12-07T08:51:31.488Z -->
+  <!-- 共 22 个频道 -->
+  <!-- 生成时间：2025-12-07 17:24:40 -->
 
   <channel id="419979">
     <display-name lang="zh">精品剧场</display-name>
@@ -26,6 +26,10 @@
   </channel>
   <channel id="479283">
     <display-name lang="zh">欢乐剧场</display-name>
+    <icon src="" />
+  </channel>
+  <channel id="479284">
+    <display-name lang="zh">超级电视剧</display-name>
     <icon src="" />
   </channel>
   <channel id="479285">
@@ -54,6 +58,10 @@
   </channel>
   <channel id="479344">
     <display-name lang="zh">精品体育</display-name>
+    <icon src="" />
+  </channel>
+  <channel id="479346">
+    <display-name lang="zh">超级综艺</display-name>
     <icon src="" />
   </channel>
   <channel id="479354">

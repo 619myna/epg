@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
   <!-- 港澳台频道 (gat.xml) -->
-  <!-- 共 43 个频道 -->
-  <!-- 生成时间：2025-12-07T08:51:31.488Z -->
+  <!-- 共 54 个频道 -->
+  <!-- 生成时间：2025-12-07 17:24:40 -->
 
   <channel id="457578">
     <display-name lang="zh">防城港新闻综合</display-name>
@@ -44,40 +44,72 @@
     <display-name lang="zh">杭州西湖明珠</display-name>
     <icon src="" />
   </channel>
-  <channel id="464590">
-    <display-name lang="zh">CCTV-4 (亚洲)</display-name>
-    <icon src="" />
-  </channel>
   <channel id="483775">
     <display-name lang="zh">华视电视台</display-name>
+    <icon src="" />
+  </channel>
+  <channel id="483776">
+    <display-name lang="zh">Star TV</display-name>
     <icon src="" />
   </channel>
   <channel id="483777">
     <display-name lang="zh">中视电视台</display-name>
     <icon src="" />
   </channel>
+  <channel id="483778">
+    <display-name lang="zh">东森电视台</display-name>
+    <icon src="" />
+  </channel>
   <channel id="483779">
     <display-name lang="zh">台湾公视</display-name>
+    <icon src="" />
+  </channel>
+  <channel id="483780">
+    <display-name lang="zh">TVBS</display-name>
     <icon src="" />
   </channel>
   <channel id="483781">
     <display-name lang="zh">民视电视台</display-name>
     <icon src="" />
   </channel>
+  <channel id="483782">
+    <display-name lang="zh">三立电视台</display-name>
+    <icon src="" />
+  </channel>
   <channel id="483783">
     <display-name lang="zh">中天电视台</display-name>
+    <icon src="" />
+  </channel>
+  <channel id="483784">
+    <display-name lang="zh">八大电视台</display-name>
     <icon src="" />
   </channel>
   <channel id="483785">
     <display-name lang="zh">靖天电视台</display-name>
     <icon src="" />
   </channel>
+  <channel id="483786">
+    <display-name lang="zh">原住民族电视台</display-name>
+    <icon src="" />
+  </channel>
   <channel id="483787">
     <display-name lang="zh">纬来电视台</display-name>
     <icon src="" />
   </channel>
+  <channel id="483788">
+    <display-name lang="zh">NHK世界台</display-name>
+    <icon src="" />
+  </channel>
+  <channel id="483789">
+    <display-name lang="zh">SBN全球财经台</display-name>
+    <icon src="" />
+  </channel>
   <channel id="483792">
     <display-name lang="zh">壹电视</display-name>
+    <icon src="" />
+  </channel>
+  <channel id="483794">
+    <display-name lang="zh">ELTA电视台</display-name>
     <icon src="" />
   </channel>
   <channel id="483889">
@@ -124,6 +156,10 @@
     <display-name lang="zh">凤凰香港</display-name>
     <icon src="" />
   </channel>
+  <channel id="479313">
+    <display-name lang="zh">中视新闻台</display-name>
+    <icon src="" />
+  </channel>
   <channel id="479333">
     <display-name lang="zh">亚洲电影</display-name>
     <icon src="" />
@@ -148,6 +184,10 @@
     <display-name lang="zh">明珠台</display-name>
     <icon src="" />
   </channel>
+  <channel id="479393">
+    <display-name lang="zh">台视</display-name>
+    <icon src="" />
+  </channel>
   <channel id="479395">
     <display-name lang="zh">东森新闻</display-name>
     <icon src="" />
@@ -166,6 +206,10 @@
   </channel>
   <channel id="484006">
     <display-name lang="zh">澳门电视台</display-name>
+    <icon src="" />
+  </channel>
+  <channel id="484007">
+    <display-name lang="zh">澳门莲花电视台</display-name>
     <icon src="" />
   </channel>
   <channel id="484054">

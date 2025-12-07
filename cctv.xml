@@ -1,39 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
   <!-- 央视频道 (cctv.xml) -->
-  <!-- 共 65 个频道 -->
-  <!-- 生成时间：2025-12-07T08:51:31.487Z -->
+  <!-- 共 99 个频道 -->
+  <!-- 生成时间：2025-12-07 17:24:40 -->
 
   <channel id="378819">
     <display-name lang="zh">CCTV1</display-name>
+    <icon src="" />
+  </channel>
+  <channel id="378820">
+    <display-name lang="zh">CCTV2</display-name>
     <icon src="" />
   </channel>
   <channel id="378821">
     <display-name lang="zh">CCTV3</display-name>
     <icon src="" />
   </channel>
+  <channel id="378822">
+    <display-name lang="zh">CCTV4</display-name>
+    <icon src="" />
+  </channel>
   <channel id="378823">
     <display-name lang="zh">CCTV5</display-name>
+    <icon src="" />
+  </channel>
+  <channel id="378824">
+    <display-name lang="zh">CCTV5+</display-name>
     <icon src="" />
   </channel>
   <channel id="378825">
     <display-name lang="zh">CCTV6</display-name>
     <icon src="" />
   </channel>
+  <channel id="378826">
+    <display-name lang="zh">CCTV7</display-name>
+    <icon src="" />
+  </channel>
   <channel id="378827">
     <display-name lang="zh">CCTV8</display-name>
+    <icon src="" />
+  </channel>
+  <channel id="378828">
+    <display-name lang="zh">CCTV9</display-name>
     <icon src="" />
   </channel>
   <channel id="378829">
     <display-name lang="zh">CCTV10</display-name>
     <icon src="" />
   </channel>
+  <channel id="378830">
+    <display-name lang="zh">CCTV11</display-name>
+    <icon src="" />
+  </channel>
   <channel id="378831">
     <display-name lang="zh">CCTV12</display-name>
     <icon src="" />
   </channel>
+  <channel id="378832">
+    <display-name lang="zh">CCTV13</display-name>
+    <icon src="" />
+  </channel>
   <channel id="378833">
     <display-name lang="zh">CCTV14</display-name>
+    <icon src="" />
+  </channel>
+  <channel id="378834">
+    <display-name lang="zh">CCTV15</display-name>
     <icon src="" />
   </channel>
   <channel id="378835">
@@ -48,8 +80,16 @@
     <display-name lang="zh">CCTV4EUO</display-name>
     <icon src="" />
   </channel>
+  <channel id="378841">
+    <display-name lang="zh">CCTV4AME</display-name>
+    <icon src="" />
+  </channel>
   <channel id="378879">
     <display-name lang="zh">中国教育1台</display-name>
+    <icon src="" />
+  </channel>
+  <channel id="378880">
+    <display-name lang="zh">中国教育2台</display-name>
     <icon src="" />
   </channel>
   <channel id="378895">
@@ -136,48 +176,96 @@
     <display-name lang="zh">CETV4</display-name>
     <icon src="" />
   </channel>
+  <channel id="458264">
+    <display-name lang="zh">CETV3</display-name>
+    <icon src="" />
+  </channel>
   <channel id="458265">
     <display-name lang="zh">CETV2</display-name>
+    <icon src="" />
+  </channel>
+  <channel id="458266">
+    <display-name lang="zh">CETV1</display-name>
     <icon src="" />
   </channel>
   <channel id="464587">
     <display-name lang="zh">CCTV-1 综合</display-name>
     <icon src="" />
   </channel>
+  <channel id="464588">
+    <display-name lang="zh">CCTV-2 财经</display-name>
+    <icon src="" />
+  </channel>
   <channel id="464589">
     <display-name lang="zh">CCTV-3 综艺</display-name>
+    <icon src="" />
+  </channel>
+  <channel id="464590">
+    <display-name lang="zh">CCTV-4 (亚洲)</display-name>
     <icon src="" />
   </channel>
   <channel id="464591">
     <display-name lang="zh">CCTV-5 体育</display-name>
     <icon src="" />
   </channel>
+  <channel id="464592">
+    <display-name lang="zh">CCTV-5+ 体育赛事</display-name>
+    <icon src="" />
+  </channel>
   <channel id="464593">
     <display-name lang="zh">CCTV-6 电影</display-name>
+    <icon src="" />
+  </channel>
+  <channel id="464594">
+    <display-name lang="zh">CCTV-7 国防军事</display-name>
     <icon src="" />
   </channel>
   <channel id="464595">
     <display-name lang="zh">CCTV-8 电视剧</display-name>
     <icon src="" />
   </channel>
+  <channel id="464596">
+    <display-name lang="zh">CCTV-9 纪录</display-name>
+    <icon src="" />
+  </channel>
   <channel id="464597">
     <display-name lang="zh">CCTV-10 科教</display-name>
+    <icon src="" />
+  </channel>
+  <channel id="464598">
+    <display-name lang="zh">CCTV-11 戏曲</display-name>
     <icon src="" />
   </channel>
   <channel id="464599">
     <display-name lang="zh">CCTV-12 社会与法</display-name>
     <icon src="" />
   </channel>
+  <channel id="464600">
+    <display-name lang="zh">CCTV-13 新闻</display-name>
+    <icon src="" />
+  </channel>
   <channel id="464601">
     <display-name lang="zh">CCTV-14 少儿</display-name>
+    <icon src="" />
+  </channel>
+  <channel id="464602">
+    <display-name lang="zh">CCTV-15 音乐</display-name>
     <icon src="" />
   </channel>
   <channel id="464603">
     <display-name lang="zh">CCTV-16奥林匹克</display-name>
     <icon src="" />
   </channel>
+  <channel id="464604">
+    <display-name lang="zh">CCTV-17农业农村</display-name>
+    <icon src="" />
+  </channel>
   <channel id="464605">
     <display-name lang="zh">CCTV-8K</display-name>
+    <icon src="" />
+  </channel>
+  <channel id="464606">
+    <display-name lang="zh">CCTV-4 (欧洲)</display-name>
     <icon src="" />
   </channel>
   <channel id="464607">
@@ -188,40 +276,80 @@
     <display-name lang="zh">CCTV-2财经</display-name>
     <icon src="" />
   </channel>
+  <channel id="483680">
+    <display-name lang="zh">CCTV-4国际</display-name>
+    <icon src="" />
+  </channel>
   <channel id="483682">
     <display-name lang="zh">CCTV-3综艺</display-name>
+    <icon src="" />
+  </channel>
+  <channel id="483683">
+    <display-name lang="zh">CCTV-7国防军事</display-name>
     <icon src="" />
   </channel>
   <channel id="483684">
     <display-name lang="zh">CCTV-1综合</display-name>
     <icon src="" />
   </channel>
+  <channel id="483685">
+    <display-name lang="zh">CCTV-11戏曲</display-name>
+    <icon src="" />
+  </channel>
   <channel id="483686">
     <display-name lang="zh">CCTV-6电影</display-name>
+    <icon src="" />
+  </channel>
+  <channel id="483687">
+    <display-name lang="zh">CCTV-9纪录</display-name>
     <icon src="" />
   </channel>
   <channel id="483688">
     <display-name lang="zh">CCTV-10科教</display-name>
     <icon src="" />
   </channel>
+  <channel id="483689">
+    <display-name lang="zh">CCTV-8电视剧</display-name>
+    <icon src="" />
+  </channel>
   <channel id="483690">
     <display-name lang="zh">CCTV-13新闻</display-name>
+    <icon src="" />
+  </channel>
+  <channel id="483691">
+    <display-name lang="zh">CCTV-14少儿</display-name>
     <icon src="" />
   </channel>
   <channel id="483692">
     <display-name lang="zh">CCTV-12法制</display-name>
     <icon src="" />
   </channel>
+  <channel id="483693">
+    <display-name lang="zh">CCTV-15音乐</display-name>
+    <icon src="" />
+  </channel>
   <channel id="483695">
     <display-name lang="zh">CCTV-8（高清）</display-name>
+    <icon src="" />
+  </channel>
+  <channel id="483696">
+    <display-name lang="zh">CCTV-1（高清）</display-name>
     <icon src="" />
   </channel>
   <channel id="483697">
     <display-name lang="zh">CCTV-5（高清）</display-name>
     <icon src="" />
   </channel>
+  <channel id="483698">
+    <display-name lang="zh">CCTV-3（高清）</display-name>
+    <icon src="" />
+  </channel>
   <channel id="483699">
     <display-name lang="zh">CCTV-6（高清）</display-name>
+    <icon src="" />
+  </channel>
+  <channel id="483700">
+    <display-name lang="zh">CCTV-4中文国际（美）</display-name>
     <icon src="" />
   </channel>
   <channel id="483701">
@@ -238,6 +366,10 @@
   </channel>
   <channel id="484562">
     <display-name lang="zh">CCTV-娱乐</display-name>
+    <icon src="" />
+  </channel>
+  <channel id="484563">
+    <display-name lang="zh">CCTV-戏曲</display-name>
     <icon src="" />
   </channel>
   <channel id="484567">
@@ -258,6 +390,10 @@
   </channel>
   <channel id="483681">
     <display-name lang="zh">CCTV-5体育</display-name>
+    <icon src="" />
+  </channel>
+  <channel id="483694">
+    <display-name lang="zh">CCTV-4中文国际（欧）</display-name>
     <icon src="" />
   </channel>
   <channel id="483705">

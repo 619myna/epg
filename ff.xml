@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
   <!-- 付费频道 (ff.xml) -->
-  <!-- 共 90 个频道 -->
-  <!-- 生成时间：2025-12-07T08:51:31.487Z -->
+  <!-- 共 110 个频道 -->
+  <!-- 生成时间：2025-12-07 17:24:40 -->
 
   <channel id="13974">
     <display-name lang="zh">梨园</display-name>
@@ -16,8 +16,16 @@
     <display-name lang="zh">天元围棋</display-name>
     <icon src="" />
   </channel>
+  <channel id="378931">
+    <display-name lang="zh">发现之旅</display-name>
+    <icon src="" />
+  </channel>
   <channel id="378932">
     <display-name lang="zh">文物宝库</display-name>
+    <icon src="" />
+  </channel>
+  <channel id="378933">
+    <display-name lang="zh">老故事</display-name>
     <icon src="" />
   </channel>
   <channel id="378934">
@@ -36,6 +44,10 @@
     <display-name lang="zh">CHC高清电影</display-name>
     <icon src="" />
   </channel>
+  <channel id="378961">
+    <display-name lang="zh">CHC动作电影</display-name>
+    <icon src="" />
+  </channel>
   <channel id="378964">
     <display-name lang="zh">CHC家庭电影</display-name>
     <icon src="" />
@@ -52,6 +64,10 @@
     <display-name lang="zh">茶频道</display-name>
     <icon src="" />
   </channel>
+  <channel id="421046">
+    <display-name lang="zh">书画频道</display-name>
+    <icon src="" />
+  </channel>
   <channel id="448038">
     <display-name lang="zh">风云足球</display-name>
     <icon src="" />
@@ -64,20 +80,40 @@
     <display-name lang="zh">求索科学</display-name>
     <icon src="" />
   </channel>
+  <channel id="449219">
+    <display-name lang="zh">求索动物</display-name>
+    <icon src="" />
+  </channel>
   <channel id="449230">
     <display-name lang="zh">风云音乐</display-name>
+    <icon src="" />
+  </channel>
+  <channel id="449231">
+    <display-name lang="zh">第一剧场</display-name>
     <icon src="" />
   </channel>
   <channel id="449232">
     <display-name lang="zh">风云剧场</display-name>
     <icon src="" />
   </channel>
+  <channel id="449233">
+    <display-name lang="zh">世界地理</display-name>
+    <icon src="" />
+  </channel>
   <channel id="449234">
     <display-name lang="zh">怀旧剧场</display-name>
     <icon src="" />
   </channel>
+  <channel id="449235">
+    <display-name lang="zh">女性时尚</display-name>
+    <icon src="" />
+  </channel>
   <channel id="449238">
     <display-name lang="zh">高尔夫网球</display-name>
+    <icon src="" />
+  </channel>
+  <channel id="449239">
+    <display-name lang="zh">央视精品</display-name>
     <icon src="" />
   </channel>
   <channel id="449241">
@@ -88,8 +124,16 @@
     <display-name lang="zh">早期教育</display-name>
     <icon src="" />
   </channel>
+  <channel id="449246">
+    <display-name lang="zh">央视台球</display-name>
+    <icon src="" />
+  </channel>
   <channel id="449247">
     <display-name lang="zh">国学</display-name>
+    <icon src="" />
+  </channel>
+  <channel id="449250">
+    <display-name lang="zh">兵器科技</display-name>
     <icon src="" />
   </channel>
   <channel id="456475">
@@ -128,6 +172,10 @@
     <display-name lang="zh">游戏风云</display-name>
     <icon src="" />
   </channel>
+  <channel id="457705">
+    <display-name lang="zh">求索科学</display-name>
+    <icon src="" />
+  </channel>
   <channel id="457711">
     <display-name lang="zh">财富天下</display-name>
     <icon src="" />
@@ -136,12 +184,20 @@
     <display-name lang="zh">央视精品</display-name>
     <icon src="" />
   </channel>
+  <channel id="457716">
+    <display-name lang="zh">欢笑剧场</display-name>
+    <icon src="" />
+  </channel>
   <channel id="457727">
     <display-name lang="zh">新动漫</display-name>
     <icon src="" />
   </channel>
   <channel id="457730">
     <display-name lang="zh">咪咕足球</display-name>
+    <icon src="" />
+  </channel>
+  <channel id="457731">
+    <display-name lang="zh">天元围棋</display-name>
     <icon src="" />
   </channel>
   <channel id="457742">
@@ -208,6 +264,10 @@
     <display-name lang="zh">求索纪录</display-name>
     <icon src="" />
   </channel>
+  <channel id="457977">
+    <display-name lang="zh">发现之旅</display-name>
+    <icon src="" />
+  </channel>
   <channel id="457984">
     <display-name lang="zh">汽摩</display-name>
     <icon src="" />
@@ -238,6 +298,10 @@
   </channel>
   <channel id="458062">
     <display-name lang="zh">怀旧剧场</display-name>
+    <icon src="" />
+  </channel>
+  <channel id="458063">
+    <display-name lang="zh">书画</display-name>
     <icon src="" />
   </channel>
   <channel id="458068">
@@ -272,12 +336,12 @@
     <display-name lang="zh">央视台球</display-name>
     <icon src="" />
   </channel>
-  <channel id="458167">
-    <display-name lang="zh">CHC家庭影院</display-name>
+  <channel id="458149">
+    <display-name lang="zh">风云剧场</display-name>
     <icon src="" />
   </channel>
-  <channel id="464592">
-    <display-name lang="zh">CCTV-5+ 体育赛事</display-name>
+  <channel id="458167">
+    <display-name lang="zh">CHC家庭影院</display-name>
     <icon src="" />
   </channel>
   <channel id="458224">
@@ -312,12 +376,20 @@
     <display-name lang="zh">睛彩青少</display-name>
     <icon src="" />
   </channel>
+  <channel id="479280">
+    <display-name lang="zh">4K演唱会</display-name>
+    <icon src="" />
+  </channel>
   <channel id="479286">
     <display-name lang="zh">新视觉</display-name>
     <icon src="" />
   </channel>
   <channel id="479309">
     <display-name lang="zh">4K健身</display-name>
+    <icon src="" />
+  </channel>
+  <channel id="479310">
+    <display-name lang="zh">4K时尚</display-name>
     <icon src="" />
   </channel>
   <channel id="479322">
@@ -328,8 +400,16 @@
     <display-name lang="zh">中国交通</display-name>
     <icon src="" />
   </channel>
+  <channel id="479353">
+    <display-name lang="zh">央视文化精品</display-name>
+    <icon src="" />
+  </channel>
   <channel id="479357">
     <display-name lang="zh">CHC影迷电影</display-name>
+    <icon src="" />
+  </channel>
+  <channel id="479358">
+    <display-name lang="zh">中学生</display-name>
     <icon src="" />
   </channel>
   <channel id="479381">

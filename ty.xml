@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
   <!-- 通用频道 (ty.xml) -->
-  <!-- 共 45 个频道 -->
-  <!-- 生成时间：2025-12-07T08:51:31.488Z -->
+  <!-- 共 49 个频道 -->
+  <!-- 生成时间：2025-12-07 17:24:40 -->
 
   <channel id="378873">
     <display-name lang="zh">卡酷动画</display-name>
@@ -32,6 +32,10 @@
     <display-name lang="zh">时代家居</display-name>
     <icon src="" />
   </channel>
+  <channel id="448050">
+    <display-name lang="zh">时代出行</display-name>
+    <icon src="" />
+  </channel>
   <channel id="448051">
     <display-name lang="zh">时代风尚</display-name>
     <icon src="" />
@@ -40,8 +44,16 @@
     <display-name lang="zh">IPTV5+</display-name>
     <icon src="" />
   </channel>
+  <channel id="449217">
+    <display-name lang="zh">IPTV6+</display-name>
+    <icon src="" />
+  </channel>
   <channel id="449221">
     <display-name lang="zh">IPTV热播剧场</display-name>
+    <icon src="" />
+  </channel>
+  <channel id="449222">
+    <display-name lang="zh">IPTV少儿动画</display-name>
     <icon src="" />
   </channel>
   <channel id="449223">
@@ -98,6 +110,10 @@
   </channel>
   <channel id="458011">
     <display-name lang="zh">少儿动漫</display-name>
+    <icon src="" />
+  </channel>
+  <channel id="458012">
+    <display-name lang="zh">黑莓电影</display-name>
     <icon src="" />
   </channel>
   <channel id="458015">
