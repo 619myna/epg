@@ -144,15 +144,10 @@ class EPGSplitter {
     console.log('  🌏 生成省份文件...');
     
     const generatedFiles = [];
-    const channelMap = new Map();
     
-    // 创建频道映射以便快速查找
-    channelFragments.forEach(fragment => {
-      const idMatch = fragment.match(/id="([^"]+)"/);
-      if (idMatch) {
-        channelMap.set(idMatch[1], fragment);
-      }
-    });
+    // 分离通用频道中的"其他"频道
+    const realUniversalChannels = allUniversalChannels.filter(c => c.category !== '其他');
+    const otherChannels = allUniversalChannels.filter(c => c.category === '其他');
     
     for (const [provinceName, channels] of Object.entries(provinceChannels)) {
       const pinyin = provincePinyinMap[provinceName];
@@ -161,49 +156,116 @@ class EPGSplitter {
         continue;
       }
       
-      // 收集所有需要包含的频道ID
-      const allChannelIds = [
-        ...channels.map(c => c.id),
-        ...allUniversalChannels.map(c => c.id)
-      ];
-      
-      // 去重
-      const uniqueChannelIds = [...new Set(allChannelIds)];
-      
-      // 生成XML内容
-      let xml = `<?xml version="1.0" encoding="UTF-8"?>\n<tv>\n`;
-      xml += `  <!-- ${provinceName}电视频道 (${pinyin}.xml) -->\n`;
-      xml += `  <!-- 生成时间：${new Date().toISOString()} -->\n`;
-      xml += `  <!-- 共 ${uniqueChannelIds.length} 个频道 -->\n\n`;
-      
-      // 添加频道片段
-      uniqueChannelIds.forEach(channelId => {
-        const fragment = channelMap.get(channelId);
-        if (fragment) {
-          xml += '  ' + fragment + '\n';
-        }
-      });
-      
-      xml += '</tv>';
+      const xmlContent = this.generateProvinceXml(
+        provinceName, 
+        pinyin, 
+        channels, 
+        realUniversalChannels, 
+        otherChannels, 
+        channelFragments
+      );
       
       const fileName = `${pinyin}.xml`;
       const filePath = path.join(this.outputDir, fileName);
-      fs.writeFileSync(filePath, xml, 'utf-8');
+      fs.writeFileSync(filePath, xmlContent, 'utf-8');
+      
+      // 统计信息
+      const otherCountInUniversal = otherChannels.length;
+      const realUniversalCount = realUniversalChannels.length;
       
       generatedFiles.push({
         province: provinceName,
         pinyin: pinyin,
         fileName: fileName,
         localChannelCount: channels.length,
-        universalChannelCount: allUniversalChannels.length,
-        totalChannelCount: uniqueChannelIds.length,
-        fileSize: (Buffer.byteLength(xml, 'utf-8') / 1024).toFixed(2) + 'KB'
+        universalChannelCount: realUniversalCount,
+        otherChannelCount: otherCountInUniversal,
+        totalChannelCount: channels.length + realUniversalCount + otherCountInUniversal,
+        fileSize: (Buffer.byteLength(xmlContent, 'utf-8') / 1024).toFixed(2) + 'KB'
       });
       
-      console.log(`    ✅ ${fileName} - ${provinceName} (${channels.length}本地+${allUniversalChannels.length}通用)`);
+      console.log(`    ✅ ${fileName} - ${provinceName} (${channels.length}本地+${realUniversalCount}通用+${otherCountInUniversal}其他)`);
     }
     
     return generatedFiles;
+  }
+  
+  // 恢复的 generateProvinceXml 方法
+  generateProvinceXml(provinceName, pinyin, provinceChannels, universalChannels, otherChannels, channelFragments) {
+    console.log(`  📄 生成 ${provinceName} 省份文件...`);
+    
+    // 创建频道ID到片段的映射
+    const channelMap = new Map();
+    channelFragments.forEach(fragment => {
+      const idMatch = fragment.match(/id="([^"]+)"/);
+      if (idMatch) {
+        channelMap.set(idMatch[1], fragment);
+      }
+    });
+    
+    let xml = `<?xml version="1.0" encoding="UTF-8"?>\n<tv>\n`;
+    xml += `  <!-- ${provinceName}电视频道 (${pinyin}.xml) -->\n`;
+    xml += `  <!-- 生成时间：${new Date().toISOString()} -->\n`;
+    xml += `  <!-- 包含：${provinceName}本地频道 + 全国通用频道（含未分类频道） -->\n`;
+    
+    // 计算总数
+    const totalCount = provinceChannels.length + universalChannels.length + otherChannels.length;
+    xml += `  <!-- 共 ${totalCount} 个频道 -->\n\n`;
+    
+    // 1. 本省频道
+    if (provinceChannels.length > 0) {
+      xml += `  <!-- ${provinceName}本地频道 (${provinceChannels.length}个) -->\n`;
+      provinceChannels.forEach(channel => {
+        const fragment = channelMap.get(channel.id);
+        if (fragment) {
+          xml += '  ' + fragment + '\n';
+        }
+      });
+      xml += '\n';
+    }
+    
+    // 2. 通用频道
+    if (universalChannels.length > 0) {
+      xml += `  <!-- 全国通用频道 (${universalChannels.length}个) -->\n`;
+      
+      // 按类别分组
+      const grouped = {};
+      universalChannels.forEach(channel => {
+        const category = channel.category || '其他';
+        if (!grouped[category]) {
+          grouped[category] = [];
+        }
+        grouped[category].push(channel);
+      });
+      
+      // 输出分组
+      Object.entries(grouped).forEach(([category, channels]) => {
+        xml += `  <!-- ${category} (${channels.length}个) -->\n`;
+        channels.forEach(channel => {
+          const fragment = channelMap.get(channel.id);
+          if (fragment) {
+            xml += '  ' + fragment + '\n';
+          }
+        });
+        xml += '\n';
+      });
+    }
+    
+    // 3. 其他频道
+    if (otherChannels.length > 0) {
+      xml += `  <!-- 其他频道 (${otherChannels.length}个) -->\n`;
+      xml += `  <!-- 注：以下频道未能自动分类到具体类别 -->\n`;
+      otherChannels.forEach(channel => {
+        const fragment = channelMap.get(channel.id);
+        if (fragment) {
+          xml += '  ' + fragment + '\n';
+        }
+      });
+      xml += '\n';
+    }
+    
+    xml += '</tv>';
+    return xml;
   }
   
   generateUniversalFiles(universalChannels, channelFragments) {
@@ -332,6 +394,7 @@ class EPGSplitter {
         file: file.fileName,
         localChannelCount: file.localChannelCount,
         universalChannelCount: file.universalChannelCount,
+        otherChannelCount: file.otherChannelCount,
         totalChannelCount: file.totalChannelCount,
         fileSize: file.fileSize
       };
