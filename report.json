@@ -1,13 +1,330 @@
 {
-  "timestamp": "2025-12-07T07:06:53.852Z",
-  "duration": 0.24,
+  "timestamp": "2025-12-07T07:13:00.684Z",
+  "duration": 0.28,
   "statistics": {
-    "totalProvinces": 0,
-    "totalCategories": 0,
+    "totalProvinces": 31,
+    "totalCategories": 6,
     "totalChannels": 1210,
     "totalProgrammes": 0,
-    "otherChannels": 0
+    "otherChannels": 96
   },
-  "provinces": [],
-  "categories": []
+  "provinces": [
+    {
+      "province": "河北",
+      "file": "heb.xml",
+      "local": 25,
+      "universal": 238,
+      "other": 96,
+      "total": 359,
+      "size": "32.93KB"
+    },
+    {
+      "province": "湖北",
+      "file": "hub.xml",
+      "local": 44,
+      "universal": 238,
+      "other": 96,
+      "total": 378,
+      "size": "34.77KB"
+    },
+    {
+      "province": "吉林",
+      "file": "jl.xml",
+      "local": 28,
+      "universal": 238,
+      "other": 96,
+      "total": 362,
+      "size": "33.17KB"
+    },
+    {
+      "province": "内蒙古",
+      "file": "nmg.xml",
+      "local": 17,
+      "universal": 238,
+      "other": 96,
+      "total": 351,
+      "size": "32.24KB"
+    },
+    {
+      "province": "山西",
+      "file": "sx.xml",
+      "local": 24,
+      "universal": 238,
+      "other": 96,
+      "total": 358,
+      "size": "32.82KB"
+    },
+    {
+      "province": "陕西",
+      "file": "snx.xml",
+      "local": 31,
+      "universal": 238,
+      "other": 96,
+      "total": 365,
+      "size": "33.48KB"
+    },
+    {
+      "province": "云南",
+      "file": "yn.xml",
+      "local": 14,
+      "universal": 238,
+      "other": 96,
+      "total": 348,
+      "size": "31.89KB"
+    },
+    {
+      "province": "湖南",
+      "file": "hun.xml",
+      "local": 26,
+      "universal": 238,
+      "other": 96,
+      "total": 360,
+      "size": "33.00KB"
+    },
+    {
+      "province": "浙江",
+      "file": "zj.xml",
+      "local": 59,
+      "universal": 238,
+      "other": 96,
+      "total": 393,
+      "size": "36.05KB"
+    },
+    {
+      "province": "江苏",
+      "file": "js.xml",
+      "local": 54,
+      "universal": 238,
+      "other": 96,
+      "total": 388,
+      "size": "35.72KB"
+    },
+    {
+      "province": "北京",
+      "file": "bj.xml",
+      "local": 27,
+      "universal": 238,
+      "other": 96,
+      "total": 361,
+      "size": "33.04KB"
+    },
+    {
+      "province": "上海",
+      "file": "sh.xml",
+      "local": 18,
+      "universal": 238,
+      "other": 96,
+      "total": 352,
+      "size": "32.26KB"
+    },
+    {
+      "province": "安徽",
+      "file": "ah.xml",
+      "local": 29,
+      "universal": 238,
+      "other": 96,
+      "total": 363,
+      "size": "33.31KB"
+    },
+    {
+      "province": "广东",
+      "file": "gd.xml",
+      "local": 93,
+      "universal": 238,
+      "other": 96,
+      "total": 427,
+      "size": "39.15KB"
+    },
+    {
+      "province": "辽宁",
+      "file": "ln.xml",
+      "local": 31,
+      "universal": 238,
+      "other": 96,
+      "total": 365,
+      "size": "33.47KB"
+    },
+    {
+      "province": "山东",
+      "file": "sd.xml",
+      "local": 47,
+      "universal": 238,
+      "other": 96,
+      "total": 381,
+      "size": "34.96KB"
+    },
+    {
+      "province": "天津",
+      "file": "tj.xml",
+      "local": 9,
+      "universal": 238,
+      "other": 96,
+      "total": 343,
+      "size": "31.42KB"
+    },
+    {
+      "province": "重庆",
+      "file": "cq.xml",
+      "local": 17,
+      "universal": 238,
+      "other": 96,
+      "total": 351,
+      "size": "32.17KB"
+    },
+    {
+      "province": "甘肃",
+      "file": "gs.xml",
+      "local": 16,
+      "universal": 238,
+      "other": 96,
+      "total": 350,
+      "size": "32.08KB"
+    },
+    {
+      "province": "广西",
+      "file": "gx.xml",
+      "local": 33,
+      "universal": 238,
+      "other": 96,
+      "total": 367,
+      "size": "33.67KB"
+    },
+    {
+      "province": "贵州",
+      "file": "gz.xml",
+      "local": 14,
+      "universal": 238,
+      "other": 96,
+      "total": 348,
+      "size": "31.90KB"
+    },
+    {
+      "province": "黑龙江",
+      "file": "hlj.xml",
+      "local": 18,
+      "universal": 238,
+      "other": 96,
+      "total": 352,
+      "size": "32.32KB"
+    },
+    {
+      "province": "河南",
+      "file": "hen.xml",
+      "local": 51,
+      "universal": 238,
+      "other": 96,
+      "total": 385,
+      "size": "35.36KB"
+    },
+    {
+      "province": "江西",
+      "file": "jx.xml",
+      "local": 29,
+      "universal": 238,
+      "other": 96,
+      "total": 363,
+      "size": "33.30KB"
+    },
+    {
+      "province": "四川",
+      "file": "sc.xml",
+      "local": 47,
+      "universal": 238,
+      "other": 96,
+      "total": 381,
+      "size": "34.98KB"
+    },
+    {
+      "province": "新疆",
+      "file": "xj.xml",
+      "local": 11,
+      "universal": 238,
+      "other": 96,
+      "total": 345,
+      "size": "31.66KB"
+    },
+    {
+      "province": "青海",
+      "file": "qh.xml",
+      "local": 7,
+      "universal": 238,
+      "other": 96,
+      "total": 341,
+      "size": "31.22KB"
+    },
+    {
+      "province": "西藏",
+      "file": "xz.xml",
+      "local": 4,
+      "universal": 238,
+      "other": 96,
+      "total": 338,
+      "size": "30.96KB"
+    },
+    {
+      "province": "福建",
+      "file": "fj.xml",
+      "local": 36,
+      "universal": 238,
+      "other": 96,
+      "total": 370,
+      "size": "33.90KB"
+    },
+    {
+      "province": "宁夏",
+      "file": "nx.xml",
+      "local": 10,
+      "universal": 238,
+      "other": 96,
+      "total": 344,
+      "size": "31.50KB"
+    },
+    {
+      "province": "海南",
+      "file": "han.xml",
+      "local": 7,
+      "universal": 238,
+      "other": 96,
+      "total": 341,
+      "size": "31.22KB"
+    }
+  ],
+  "categories": [
+    {
+      "category": "付费",
+      "file": "ff.xml",
+      "channels": 73,
+      "size": "6.75KB"
+    },
+    {
+      "category": "央视",
+      "file": "cctv.xml",
+      "channels": 45,
+      "size": "4.10KB"
+    },
+    {
+      "category": "卫视",
+      "file": "ws.xml",
+      "channels": 21,
+      "size": "2.07KB"
+    },
+    {
+      "category": "通用",
+      "file": "ty.xml",
+      "channels": 30,
+      "size": "2.89KB"
+    },
+    {
+      "category": "NewTV",
+      "file": "ntv.xml",
+      "channels": 21,
+      "size": "2.07KB"
+    },
+    {
+      "category": "港澳台",
+      "file": "gat.xml",
+      "channels": 48,
+      "size": "4.54KB"
+    }
+  ]
 }
