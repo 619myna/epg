@@ -69,10 +69,6 @@ const categoryRules = [
   { name: '青海', regex: /青海|西宁|海东/gi, isUniversal: false, priority: 129 },
   { name: '宁夏', regex: /宁夏|银川|石嘴山|吴忠|固原|中卫/gi, isUniversal: false, priority: 130 },
   { name: '新疆', regex: /新疆|乌鲁木齐|维吾尔|哈萨克|塔城|昌吉/gi, isUniversal: false, priority: 131 },
-  
-  // 默认分类
-  { name: '其他', regex: /.*/, isUniversal: true, priority: 999 }
-];
 
 // 省份拼音简写映射（主要使用拼音首字母或常见简写）
 const provincePinyinMap = {
