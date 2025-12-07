@@ -1,254 +1,285 @@
 {
-  "updateTime": "2025-12-07T08:36:01.472Z",
+  "updateTime": "2025-12-07T08:51:31.560Z",
   "files": {
     "provinces": {
       "hub": {
         "name": "湖北",
         "file": "hub.xml",
         "localChannelCount": 40,
-        "universalChannelCount": 752,
+        "universalChannelCount": 384,
+        "otherChannelCount": 368,
         "totalChannelCount": 792,
-        "fileSize": "88.03KB"
+        "fileSize": "88.45KB"
       },
       "nmg": {
         "name": "内蒙古",
         "file": "nmg.xml",
         "localChannelCount": 14,
-        "universalChannelCount": 752,
+        "universalChannelCount": 384,
+        "otherChannelCount": 368,
         "totalChannelCount": 766,
-        "fileSize": "85.13KB"
+        "fileSize": "85.55KB"
       },
       "snx": {
         "name": "陕西",
         "file": "snx.xml",
         "localChannelCount": 22,
-        "universalChannelCount": 752,
+        "universalChannelCount": 384,
+        "otherChannelCount": 368,
         "totalChannelCount": 774,
-        "fileSize": "85.99KB"
+        "fileSize": "86.40KB"
       },
       "js": {
         "name": "江苏",
         "file": "js.xml",
         "localChannelCount": 53,
-        "universalChannelCount": 752,
+        "universalChannelCount": 384,
+        "otherChannelCount": 368,
         "totalChannelCount": 805,
-        "fileSize": "89.47KB"
+        "fileSize": "89.89KB"
       },
       "zj": {
         "name": "浙江",
         "file": "zj.xml",
         "localChannelCount": 45,
-        "universalChannelCount": 752,
+        "universalChannelCount": 384,
+        "otherChannelCount": 368,
         "totalChannelCount": 797,
-        "fileSize": "88.54KB"
+        "fileSize": "88.95KB"
       },
       "bj": {
         "name": "北京",
         "file": "bj.xml",
         "localChannelCount": 27,
-        "universalChannelCount": 752,
+        "universalChannelCount": 384,
+        "otherChannelCount": 368,
         "totalChannelCount": 779,
-        "fileSize": "86.47KB"
+        "fileSize": "86.89KB"
       },
       "ah": {
         "name": "安徽",
         "file": "ah.xml",
         "localChannelCount": 24,
-        "universalChannelCount": 752,
+        "universalChannelCount": 384,
+        "otherChannelCount": 368,
         "totalChannelCount": 776,
-        "fileSize": "86.24KB"
+        "fileSize": "86.65KB"
       },
       "gd": {
         "name": "广东",
         "file": "gd.xml",
         "localChannelCount": 65,
-        "universalChannelCount": 752,
+        "universalChannelCount": 384,
+        "otherChannelCount": 368,
         "totalChannelCount": 817,
-        "fileSize": "90.75KB"
+        "fileSize": "91.16KB"
       },
       "tj": {
         "name": "天津",
         "file": "tj.xml",
         "localChannelCount": 10,
-        "universalChannelCount": 752,
+        "universalChannelCount": 384,
+        "otherChannelCount": 368,
         "totalChannelCount": 762,
-        "fileSize": "84.64KB"
+        "fileSize": "85.06KB"
       },
       "gx": {
         "name": "广西",
         "file": "gx.xml",
         "localChannelCount": 20,
-        "universalChannelCount": 752,
+        "universalChannelCount": 384,
+        "otherChannelCount": 368,
         "totalChannelCount": 772,
-        "fileSize": "85.75KB"
+        "fileSize": "86.17KB"
       },
       "hlj": {
         "name": "黑龙江",
         "file": "hlj.xml",
         "localChannelCount": 13,
-        "universalChannelCount": 752,
+        "universalChannelCount": 384,
+        "otherChannelCount": 368,
         "totalChannelCount": 765,
-        "fileSize": "85.01KB"
+        "fileSize": "85.43KB"
       },
       "sc": {
         "name": "四川",
         "file": "sc.xml",
         "localChannelCount": 34,
-        "universalChannelCount": 752,
+        "universalChannelCount": 384,
+        "otherChannelCount": 368,
         "totalChannelCount": 786,
-        "fileSize": "87.35KB"
+        "fileSize": "87.76KB"
       },
       "qh": {
         "name": "青海",
         "file": "qh.xml",
         "localChannelCount": 9,
-        "universalChannelCount": 752,
+        "universalChannelCount": 384,
+        "otherChannelCount": 368,
         "totalChannelCount": 761,
-        "fileSize": "84.51KB"
+        "fileSize": "84.92KB"
       },
       "xz": {
         "name": "西藏",
         "file": "xz.xml",
         "localChannelCount": 5,
-        "universalChannelCount": 752,
+        "universalChannelCount": 384,
+        "otherChannelCount": 368,
         "totalChannelCount": 757,
-        "fileSize": "84.07KB"
+        "fileSize": "84.49KB"
       },
       "sd": {
         "name": "山东",
         "file": "sd.xml",
         "localChannelCount": 39,
-        "universalChannelCount": 752,
+        "universalChannelCount": 384,
+        "otherChannelCount": 368,
         "totalChannelCount": 791,
-        "fileSize": "87.87KB"
+        "fileSize": "88.29KB"
       },
       "sx": {
         "name": "山西",
         "file": "sx.xml",
         "localChannelCount": 21,
-        "universalChannelCount": 752,
+        "universalChannelCount": 384,
+        "otherChannelCount": 368,
         "totalChannelCount": 773,
-        "fileSize": "85.88KB"
+        "fileSize": "86.30KB"
       },
       "sh": {
         "name": "上海",
         "file": "sh.xml",
         "localChannelCount": 63,
-        "universalChannelCount": 752,
+        "universalChannelCount": 384,
+        "otherChannelCount": 368,
         "totalChannelCount": 815,
-        "fileSize": "90.87KB"
+        "fileSize": "91.28KB"
       },
       "ln": {
         "name": "辽宁",
         "file": "ln.xml",
         "localChannelCount": 31,
-        "universalChannelCount": 752,
+        "universalChannelCount": 384,
+        "otherChannelCount": 368,
         "totalChannelCount": 783,
-        "fileSize": "87.00KB"
+        "fileSize": "87.41KB"
       },
       "hun": {
         "name": "湖南",
         "file": "hun.xml",
         "localChannelCount": 20,
-        "universalChannelCount": 752,
+        "universalChannelCount": 384,
+        "otherChannelCount": 368,
         "totalChannelCount": 772,
-        "fileSize": "85.75KB"
+        "fileSize": "86.17KB"
       },
       "hen": {
         "name": "河南",
         "file": "hen.xml",
         "localChannelCount": 32,
-        "universalChannelCount": 752,
+        "universalChannelCount": 384,
+        "otherChannelCount": 368,
         "totalChannelCount": 784,
-        "fileSize": "87.11KB"
+        "fileSize": "87.52KB"
       },
       "jx": {
         "name": "江西",
         "file": "jx.xml",
         "localChannelCount": 20,
-        "universalChannelCount": 752,
+        "universalChannelCount": 384,
+        "otherChannelCount": 368,
         "totalChannelCount": 772,
-        "fileSize": "85.76KB"
+        "fileSize": "86.17KB"
       },
       "gz": {
         "name": "贵州",
         "file": "gz.xml",
         "localChannelCount": 11,
-        "universalChannelCount": 752,
+        "universalChannelCount": 384,
+        "otherChannelCount": 368,
         "totalChannelCount": 763,
-        "fileSize": "84.76KB"
+        "fileSize": "85.17KB"
       },
       "nx": {
         "name": "宁夏",
         "file": "nx.xml",
         "localChannelCount": 9,
-        "universalChannelCount": 752,
+        "universalChannelCount": 384,
+        "otherChannelCount": 368,
         "totalChannelCount": 761,
-        "fileSize": "84.51KB"
+        "fileSize": "84.92KB"
       },
       "jl": {
         "name": "吉林",
         "file": "jl.xml",
         "localChannelCount": 26,
-        "universalChannelCount": 752,
+        "universalChannelCount": 384,
+        "otherChannelCount": 368,
         "totalChannelCount": 778,
-        "fileSize": "86.41KB"
+        "fileSize": "86.83KB"
       },
       "gs": {
         "name": "甘肃",
         "file": "gs.xml",
         "localChannelCount": 11,
-        "universalChannelCount": 752,
+        "universalChannelCount": 384,
+        "otherChannelCount": 368,
         "totalChannelCount": 763,
-        "fileSize": "84.75KB"
+        "fileSize": "85.17KB"
       },
       "yn": {
         "name": "云南",
         "file": "yn.xml",
         "localChannelCount": 10,
-        "universalChannelCount": 752,
+        "universalChannelCount": 384,
+        "otherChannelCount": 368,
         "totalChannelCount": 762,
-        "fileSize": "84.64KB"
+        "fileSize": "85.05KB"
       },
       "fj": {
         "name": "福建",
         "file": "fj.xml",
         "localChannelCount": 30,
-        "universalChannelCount": 752,
+        "universalChannelCount": 384,
+        "otherChannelCount": 368,
         "totalChannelCount": 782,
-        "fileSize": "86.86KB"
+        "fileSize": "87.27KB"
       },
       "cq": {
         "name": "重庆",
         "file": "cq.xml",
         "localChannelCount": 17,
-        "universalChannelCount": 752,
+        "universalChannelCount": 384,
+        "otherChannelCount": 368,
         "totalChannelCount": 769,
-        "fileSize": "85.43KB"
+        "fileSize": "85.84KB"
       },
       "heb": {
         "name": "河北",
         "file": "heb.xml",
         "localChannelCount": 21,
-        "universalChannelCount": 752,
+        "universalChannelCount": 384,
+        "otherChannelCount": 368,
         "totalChannelCount": 773,
-        "fileSize": "85.89KB"
+        "fileSize": "86.30KB"
       },
       "han": {
         "name": "海南",
         "file": "han.xml",
         "localChannelCount": 5,
-        "universalChannelCount": 752,
+        "universalChannelCount": 384,
+        "otherChannelCount": 368,
         "totalChannelCount": 757,
-        "fileSize": "84.07KB"
+        "fileSize": "84.48KB"
       },
       "xj": {
         "name": "新疆",
         "file": "xj.xml",
         "localChannelCount": 9,
-        "universalChannelCount": 752,
+        "universalChannelCount": 384,
+        "otherChannelCount": 368,
         "totalChannelCount": 761,
-        "fileSize": "84.55KB"
+        "fileSize": "84.97KB"
       }
     },
     "universal": {
