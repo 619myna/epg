@@ -6,6 +6,27 @@ class EPGSplitter {
   constructor(outputDir = 'output') {
     this.outputDir = outputDir;
     this.ensureOutputDir();
+    
+    // ========== 移植的频道清洗代码 ==========
+    // 频道名称缓存
+    this.nameCache = new Map();
+    
+    // 移植的频道正则表达式
+    this.channelRegex = /<channel\b[^>]*?\bid="([^"]+)"[^>]*>[\s\S]*?<display-name[^>]*>([^<]+)<\/display-name>[\s\S]*?<\/channel>/gi;
+    
+    // 移植的频道名称清洗函数
+    this.cleanChannelName = function(name) {
+      if (this.nameCache.has(name)) return this.nameCache.get(name);
+      
+      const cleaned = name  
+        .replace(/\s+|[()（）－_—·•-]|频道|超清|HD|高清(?![^()（）]*[电影])/gi, '')
+        .replace(/(CCTV)(\d+)(\+?)[\u4e00-\u9fa5]+(?!欧洲|美洲)/gi, '$1$2$3')
+        .trim();
+        
+      const result = { original: name, cleaned: cleaned, upper: cleaned.toUpperCase() };
+      this.nameCache.set(name, result);
+      return result;
+    }.bind(this);
   }
   
   ensureOutputDir() {
@@ -50,12 +71,83 @@ class EPGSplitter {
     }).filter(line => line !== '').join('\n');
   }
   
+  // 新增：提取频道片段的方法（使用移植的清洗逻辑）
+  extractChannelFragments(data) {
+    console.log('  🔧 提取并清洗频道数据...');
+    
+    const channelFragments = [];
+    const channelMap = new Map(); // 用于去重
+    let match;
+    
+    // 重置正则表达式的lastIndex
+    this.channelRegex.lastIndex = 0;
+    
+    while ((match = this.channelRegex.exec(data)) !== null) {
+      const channelId = match[1];
+      const channelName = match[2].trim();
+      const fullMatch = match[0];
+      
+      // 清洗频道名称
+      const nameResult = this.cleanChannelName(channelName);
+      const cleanedName = nameResult.cleaned;
+      
+      // 去重：检查是否已经处理过相同的清洗后名称
+      if (!channelMap.has(cleanedName)) {
+        // 创建清洗后的频道XML片段
+        const cleanedXml = fullMatch.replace(
+          /<display-name[^>]*>([^<]+)<\/display-name>/i,
+          `<display-name lang="CN">${cleanedName}</display-name>`
+        );
+        
+        channelFragments.push(cleanedXml);
+        channelMap.set(cleanedName, {
+          id: channelId,
+          name: cleanedName,
+          originalName: channelName,
+          xml: cleanedXml
+        });
+      }
+    }
+    
+    console.log(`    原始提取: ${channelMap.size} 个唯一频道`);
+    
+    return {
+      fragments: channelFragments,
+      map: channelMap
+    };
+  }
+  
+  // 新增：提取节目片段的方法
+  extractProgrammeFragments(data) {
+    console.log('  📺 提取节目数据...');
+    
+    const programmeFragments = [];
+    const programmeRegex = /<programme[^>]*>[\s\S]*?<\/programme>/gi;
+    let match;
+    
+    programmeRegex.lastIndex = 0;
+    
+    while ((match = programmeRegex.exec(data)) !== null) {
+      programmeFragments.push(match[0]);
+    }
+    
+    console.log(`    提取到: ${programmeFragments.length} 个节目片段`);
+    return programmeFragments;
+  }
+  
+  // 修改：主拆分方法，添加数据处理步骤
   split(data) {
-    const { channelFragments, programmeFragments } = data;
+    console.log('🗂️ 开始处理EPG数据...');
     
-    console.log('🗂️ 拆分EPG数据...');
+    // 第一步：提取并清洗频道数据
+    const { fragments: channelFragments, map: channelMap } = this.extractChannelFragments(data);
     
-    // 提取频道信息
+    // 第二步：提取节目数据
+    const programmeFragments = this.extractProgrammeFragments(data);
+    
+    console.log('  📊 拆分EPG数据...');
+    
+    // 提取频道信息（现在使用清洗后的数据）
     const channels = this.extractChannelInfo(channelFragments);
     
     // 分离频道：通过计算确定其他频道
@@ -92,13 +184,18 @@ class EPGSplitter {
       completeFile
     );
     
-    console.log('🎉 拆分完成！');
+    console.log('🎉 处理完成！');
     
     return {
       provinceFiles,
       universalFiles,
       completeFile,
-      indexData
+      indexData,
+      channelStats: {
+        originalCount: channelMap.size,
+        cleanedCount: channelFragments.length,
+        duplicateRemoved: channelMap.size - channelFragments.length
+      }
     };
   }
   
