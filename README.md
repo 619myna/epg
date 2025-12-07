@@ -13,12 +13,10 @@
 
 ## XML文件直链下载
 
-### 完整数据
-- **all.xml** - [https://raw.githubusercontent.com/619myna/epg/refs/heads/gh-pages/all.xml](https://raw.githubusercontent.com/619myna/epg/refs/heads/gh-pages/all.xml)
-
 ### 通用频道分类
 | 分类 | 文件名 | 直链地址 |
 |------|--------|----------|
+| 全部 | all.xml | [https://raw.githubusercontent.com/619myna/epg/refs/heads/gh-pages/all.xml](https://raw.githubusercontent.com/619myna/epg/refs/heads/gh-pages/all.xml)
 | 央视 | cctv.xml | [https://raw.githubusercontent.com/619myna/epg/refs/heads/gh-pages/cctv.xml](https://raw.githubusercontent.com/619myna/epg/refs/heads/gh-pages/cctv.xml) |
 | 卫视 | ws.xml | [https://raw.githubusercontent.com/619myna/epg/refs/heads/gh-pages/ws.xml](https://raw.githubusercontent.com/619myna/epg/refs/heads/gh-pages/ws.xml) |
 | 付费 | ff.xml | [https://raw.githubusercontent.com/619myna/epg/refs/heads/gh-pages/ff.xml](https://raw.githubusercontent.com/619myna/epg/refs/heads/gh-pages/ff.xml) |
