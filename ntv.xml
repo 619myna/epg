@@ -1,261 +1,318 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
   <!-- NewTV频道 (ntv.xml) -->
-  <!-- 共 1 个频道 -->
+  <!-- 共 20 个频道 -->
   <!-- 共 62 个节目 -->
-  <!-- 生成时间：2026-01-02 00:35:09 -->
+  <!-- 生成时间：2026-01-03 00:34:22 -->
 
   <channel id="419979">
   <display-name lang="CN">精品剧场</display-name>
   </channel>
+  <channel id="490022">
+  <display-name lang="CN">超级电影</display-name>
+  </channel>
+  <channel id="490055">
+  <display-name lang="CN">明星大片</display-name>
+  </channel>
+  <channel id="489901">
+  <display-name lang="CN">精品萌宠</display-name>
+  </channel>
+  <channel id="489930">
+  <display-name lang="CN">欢乐剧场</display-name>
+  </channel>
+  <channel id="489931">
+  <display-name lang="CN">超级电视剧</display-name>
+  </channel>
+  <channel id="489932">
+  <display-name lang="CN">炫舞未来</display-name>
+  </channel>
+  <channel id="489936">
+  <display-name lang="CN">中国功夫</display-name>
+  </channel>
+  <channel id="489962">
+  <display-name lang="CN">超级综艺</display-name>
+  </channel>
+  <channel id="489964">
+  <display-name lang="CN">农业致富</display-name>
+  </channel>
+  <channel id="489967">
+  <display-name lang="CN">家庭剧场</display-name>
+  </channel>
+  <channel id="489982">
+  <display-name lang="CN">怡伴健康</display-name>
+  </channel>
+  <channel id="489987">
+  <display-name lang="CN">精品大剧</display-name>
+  </channel>
+  <channel id="489991">
+  <display-name lang="CN">精品体育</display-name>
+  </channel>
+  <channel id="489996">
+  <display-name lang="CN">军事评论</display-name>
+  </channel>
+  <channel id="490015">
+  <display-name lang="CN">东北热剧</display-name>
+  </channel>
+  <channel id="490018">
+  <display-name lang="CN">古装剧场</display-name>
+  </channel>
+  <channel id="490036">
+  <display-name lang="CN">军旅剧场</display-name>
+  </channel>
+  <channel id="490046">
+  <display-name lang="CN">潮妈辣婆</display-name>
+  </channel>
+  <channel id="490049">
+  <display-name lang="CN">超级体育</display-name>
+  </channel>
 
   <!-- 节目列表 -->
-  <programme channel="419979" start="20251230003900 +0800" stop="20251230012400 +0800">
-  <title lang="zh">远方的家15</title>
+  <programme channel="419979" start="20260102003700 +0800" stop="20260102012300 +0800">
+  <title lang="zh">远方的家7</title>
   <desc />
   </programme>
-  <programme channel="419979" start="20251230012400 +0800" stop="20251230020900 +0800">
-  <title lang="zh">远方的家16</title>
+  <programme channel="419979" start="20260102012300 +0800" stop="20260102020800 +0800">
+  <title lang="zh">远方的家8</title>
   <desc />
   </programme>
-  <programme channel="419979" start="20251230020900 +0800" stop="20251230025500 +0800">
-  <title lang="zh">远方的家17</title>
+  <programme channel="419979" start="20260102020800 +0800" stop="20260102025400 +0800">
+  <title lang="zh">远方的家9</title>
   <desc />
   </programme>
-  <programme channel="419979" start="20251230025500 +0800" stop="20251230034000 +0800">
-  <title lang="zh">远方的家18</title>
+  <programme channel="419979" start="20260102025400 +0800" stop="20260102033900 +0800">
+  <title lang="zh">远方的家10</title>
   <desc />
   </programme>
-  <programme channel="419979" start="20251230034000 +0800" stop="20251230050000 +0800">
+  <programme channel="419979" start="20260102033900 +0800" stop="20260102050000 +0800">
   <title lang="zh">实境之旅:桂林</title>
   <desc />
   </programme>
-  <programme channel="419979" start="20251230050000 +0800" stop="20251230054500 +0800">
-  <title lang="zh">温暖的村庄25</title>
+  <programme channel="419979" start="20260102050000 +0800" stop="20260102054500 +0800">
+  <title lang="zh">温暖的村庄13</title>
   <desc />
   </programme>
-  <programme channel="419979" start="20251230054500 +0800" stop="20251230063000 +0800">
-  <title lang="zh">温暖的村庄26</title>
+  <programme channel="419979" start="20260102054500 +0800" stop="20260102063000 +0800">
+  <title lang="zh">温暖的村庄14</title>
   <desc />
   </programme>
-  <programme channel="419979" start="20251230063000 +0800" stop="20251230071500 +0800">
-  <title lang="zh">温暖的村庄27</title>
+  <programme channel="419979" start="20260102063000 +0800" stop="20260102071500 +0800">
+  <title lang="zh">温暖的村庄15</title>
   <desc />
   </programme>
-  <programme channel="419979" start="20251230071500 +0800" stop="20251230080000 +0800">
-  <title lang="zh">温暖的村庄28</title>
+  <programme channel="419979" start="20260102071500 +0800" stop="20260102080100 +0800">
+  <title lang="zh">温暖的村庄16</title>
   <desc />
   </programme>
-  <programme channel="419979" start="20251230080000 +0800" stop="20251230084500 +0800">
-  <title lang="zh">再造之恩17</title>
+  <programme channel="419979" start="20260102080100 +0800" stop="20260102084600 +0800">
+  <title lang="zh">再造之恩9</title>
   <desc />
   </programme>
-  <programme channel="419979" start="20251230084500 +0800" stop="20251230093000 +0800">
-  <title lang="zh">再造之恩18</title>
+  <programme channel="419979" start="20260102084600 +0800" stop="20260102093100 +0800">
+  <title lang="zh">再造之恩10</title>
   <desc />
   </programme>
-  <programme channel="419979" start="20251230093000 +0800" stop="20251230101500 +0800">
-  <title lang="zh">再造之恩19</title>
+  <programme channel="419979" start="20260102093100 +0800" stop="20260102101600 +0800">
+  <title lang="zh">再造之恩11</title>
   <desc />
   </programme>
-  <programme channel="419979" start="20251230101500 +0800" stop="20251230110100 +0800">
-  <title lang="zh">再造之恩20</title>
+  <programme channel="419979" start="20260102101600 +0800" stop="20260102110100 +0800">
+  <title lang="zh">再造之恩12</title>
   <desc />
   </programme>
-  <programme channel="419979" start="20251230110100 +0800" stop="20251230114600 +0800">
-  <title lang="zh">远方的家17</title>
+  <programme channel="419979" start="20260102110100 +0800" stop="20260102114700 +0800">
+  <title lang="zh">远方的家9</title>
   <desc />
   </programme>
-  <programme channel="419979" start="20251230114600 +0800" stop="20251230123100 +0800">
-  <title lang="zh">远方的家18</title>
+  <programme channel="419979" start="20260102114700 +0800" stop="20260102123200 +0800">
+  <title lang="zh">远方的家10</title>
   <desc />
   </programme>
-  <programme channel="419979" start="20251230123100 +0800" stop="20251230131700 +0800">
-  <title lang="zh">远方的家19</title>
+  <programme channel="419979" start="20260102123200 +0800" stop="20260102131800 +0800">
+  <title lang="zh">远方的家11</title>
   <desc />
   </programme>
-  <programme channel="419979" start="20251230131700 +0800" stop="20251230140200 +0800">
-  <title lang="zh">远方的家20</title>
+  <programme channel="419979" start="20260102131800 +0800" stop="20260102140300 +0800">
+  <title lang="zh">远方的家12</title>
   <desc />
   </programme>
-  <programme channel="419979" start="20251230140200 +0800" stop="20251230144900 +0800">
-  <title lang="zh">御前四宝25</title>
+  <programme channel="419979" start="20260102140300 +0800" stop="20260102145100 +0800">
+  <title lang="zh">御前四宝13</title>
   <desc />
   </programme>
-  <programme channel="419979" start="20251230144900 +0800" stop="20251230153600 +0800">
-  <title lang="zh">御前四宝26</title>
+  <programme channel="419979" start="20260102145100 +0800" stop="20260102153800 +0800">
+  <title lang="zh">御前四宝14</title>
   <desc />
   </programme>
-  <programme channel="419979" start="20251230153600 +0800" stop="20251230162400 +0800">
-  <title lang="zh">御前四宝27</title>
+  <programme channel="419979" start="20260102153800 +0800" stop="20260102162500 +0800">
+  <title lang="zh">御前四宝15</title>
   <desc />
   </programme>
-  <programme channel="419979" start="20251230162400 +0800" stop="20251230170800 +0800">
-  <title lang="zh">山里娘们山里汉24</title>
+  <programme channel="419979" start="20260102162500 +0800" stop="20260102170900 +0800">
+  <title lang="zh">山里娘们山里汉13</title>
   <desc />
   </programme>
-  <programme channel="419979" start="20251230170800 +0800" stop="20251230175100 +0800">
-  <title lang="zh">山里娘们山里汉25</title>
+  <programme channel="419979" start="20260102170900 +0800" stop="20260102175300 +0800">
+  <title lang="zh">山里娘们山里汉14</title>
   <desc />
   </programme>
-  <programme channel="419979" start="20251230175100 +0800" stop="20251230183500 +0800">
-  <title lang="zh">山里娘们山里汉26</title>
+  <programme channel="419979" start="20260102175300 +0800" stop="20260102183600 +0800">
+  <title lang="zh">山里娘们山里汉15</title>
   <desc />
   </programme>
-  <programme channel="419979" start="20251230183500 +0800" stop="20251230192000 +0800">
-  <title lang="zh">温暖的村庄25</title>
+  <programme channel="419979" start="20260102183600 +0800" stop="20260102192100 +0800">
+  <title lang="zh">温暖的村庄13</title>
   <desc />
   </programme>
-  <programme channel="419979" start="20251230192000 +0800" stop="20251230200500 +0800">
-  <title lang="zh">温暖的村庄26</title>
+  <programme channel="419979" start="20260102192100 +0800" stop="20260102200700 +0800">
+  <title lang="zh">温暖的村庄14</title>
   <desc />
   </programme>
-  <programme channel="419979" start="20251230200500 +0800" stop="20251230205000 +0800">
-  <title lang="zh">温暖的村庄27</title>
+  <programme channel="419979" start="20260102200700 +0800" stop="20260102205200 +0800">
+  <title lang="zh">温暖的村庄15</title>
   <desc />
   </programme>
-  <programme channel="419979" start="20251230205000 +0800" stop="20251230213500 +0800">
-  <title lang="zh">温暖的村庄28</title>
+  <programme channel="419979" start="20260102205200 +0800" stop="20260102213700 +0800">
+  <title lang="zh">温暖的村庄16</title>
   <desc />
   </programme>
-  <programme channel="419979" start="20251230213500 +0800" stop="20251230222000 +0800">
-  <title lang="zh">再造之恩17</title>
+  <programme channel="419979" start="20260102213700 +0800" stop="20260102222200 +0800">
+  <title lang="zh">再造之恩9</title>
   <desc />
   </programme>
-  <programme channel="419979" start="20251230222000 +0800" stop="20251230230600 +0800">
-  <title lang="zh">再造之恩18</title>
+  <programme channel="419979" start="20260102222200 +0800" stop="20260102230800 +0800">
+  <title lang="zh">再造之恩10</title>
   <desc />
   </programme>
-  <programme channel="419979" start="20251230230600 +0800" stop="20251230235100 +0800">
-  <title lang="zh">再造之恩19</title>
+  <programme channel="419979" start="20260102230800 +0800" stop="20260102235300 +0800">
+  <title lang="zh">再造之恩11</title>
   <desc />
   </programme>
-  <programme channel="419979" start="20251230235100 +0800" stop="20251231003600 +0800">
-  <title lang="zh">再造之恩20</title>
+  <programme channel="419979" start="20260102235300 +0800" stop="20260103003800 +0800">
+  <title lang="zh">再造之恩12</title>
   <desc />
   </programme>
-  <programme channel="419979" start="20251231003600 +0800" stop="20251231012100 +0800">
-  <title lang="zh">远方的家17</title>
+  <programme channel="419979" start="20260103003800 +0800" stop="20260103012300 +0800">
+  <title lang="zh">远方的家9</title>
   <desc />
   </programme>
-  <programme channel="419979" start="20251231012100 +0800" stop="20251231020700 +0800">
-  <title lang="zh">远方的家18</title>
+  <programme channel="419979" start="20260103012300 +0800" stop="20260103020900 +0800">
+  <title lang="zh">远方的家10</title>
   <desc />
   </programme>
-  <programme channel="419979" start="20251231020700 +0800" stop="20251231025200 +0800">
-  <title lang="zh">远方的家19</title>
+  <programme channel="419979" start="20260103020900 +0800" stop="20260103025400 +0800">
+  <title lang="zh">远方的家11</title>
   <desc />
   </programme>
-  <programme channel="419979" start="20251231025200 +0800" stop="20251231033800 +0800">
-  <title lang="zh">远方的家20</title>
+  <programme channel="419979" start="20260103025400 +0800" stop="20260103034000 +0800">
+  <title lang="zh">远方的家12</title>
   <desc />
   </programme>
-  <programme channel="419979" start="20251231033800 +0800" stop="20251231050000 +0800">
+  <programme channel="419979" start="20260103034000 +0800" stop="20260103050000 +0800">
   <title lang="zh">实境之旅:桂林</title>
   <desc />
   </programme>
-  <programme channel="419979" start="20251231050000 +0800" stop="20251231054400 +0800">
-  <title lang="zh">温暖的村庄28</title>
+  <programme channel="419979" start="20260103050000 +0800" stop="20260103054500 +0800">
+  <title lang="zh">温暖的村庄16</title>
   <desc />
   </programme>
-  <programme channel="419979" start="20251231054400 +0800" stop="20251231062900 +0800">
-  <title lang="zh">温暖的村庄29</title>
+  <programme channel="419979" start="20260103054500 +0800" stop="20260103063000 +0800">
+  <title lang="zh">温暖的村庄17</title>
   <desc />
   </programme>
-  <programme channel="419979" start="20251231062900 +0800" stop="20251231071500 +0800">
-  <title lang="zh">温暖的村庄30</title>
+  <programme channel="419979" start="20260103063000 +0800" stop="20260103071500 +0800">
+  <title lang="zh">温暖的村庄18</title>
   <desc />
   </programme>
-  <programme channel="419979" start="20251231071500 +0800" stop="20251231080000 +0800">
-  <title lang="zh">温暖的村庄31</title>
+  <programme channel="419979" start="20260103071500 +0800" stop="20260103080000 +0800">
+  <title lang="zh">温暖的村庄19</title>
   <desc />
   </programme>
-  <programme channel="419979" start="20251231080000 +0800" stop="20251231084500 +0800">
-  <title lang="zh">再造之恩19</title>
+  <programme channel="419979" start="20260103080000 +0800" stop="20260103084600 +0800">
+  <title lang="zh">再造之恩11</title>
   <desc />
   </programme>
-  <programme channel="419979" start="20251231084500 +0800" stop="20251231093100 +0800">
-  <title lang="zh">再造之恩20</title>
+  <programme channel="419979" start="20260103084600 +0800" stop="20260103093100 +0800">
+  <title lang="zh">再造之恩12</title>
   <desc />
   </programme>
-  <programme channel="419979" start="20251231093100 +0800" stop="20251231101600 +0800">
-  <title lang="zh">再造之恩21</title>
+  <programme channel="419979" start="20260103093100 +0800" stop="20260103101600 +0800">
+  <title lang="zh">再造之恩13</title>
   <desc />
   </programme>
-  <programme channel="419979" start="20251231101600 +0800" stop="20251231110100 +0800">
-  <title lang="zh">再造之恩22</title>
+  <programme channel="419979" start="20260103101600 +0800" stop="20260103110100 +0800">
+  <title lang="zh">再造之恩14</title>
   <desc />
   </programme>
-  <programme channel="419979" start="20251231110100 +0800" stop="20251231114600 +0800">
-  <title lang="zh">远方的家19</title>
+  <programme channel="419979" start="20260103110100 +0800" stop="20260103114600 +0800">
+  <title lang="zh">远方的家11</title>
   <desc />
   </programme>
-  <programme channel="419979" start="20251231114600 +0800" stop="20251231123200 +0800">
-  <title lang="zh">远方的家20</title>
+  <programme channel="419979" start="20260103114600 +0800" stop="20260103123200 +0800">
+  <title lang="zh">远方的家12</title>
   <desc />
   </programme>
-  <programme channel="419979" start="20251231123200 +0800" stop="20251231131700 +0800">
-  <title lang="zh">远方的家21</title>
+  <programme channel="419979" start="20260103123200 +0800" stop="20260103131700 +0800">
+  <title lang="zh">远方的家13</title>
   <desc />
   </programme>
-  <programme channel="419979" start="20251231131700 +0800" stop="20251231140300 +0800">
-  <title lang="zh">远方的家22</title>
+  <programme channel="419979" start="20260103131700 +0800" stop="20260103140300 +0800">
+  <title lang="zh">远方的家14</title>
   <desc />
   </programme>
-  <programme channel="419979" start="20251231140300 +0800" stop="20251231145000 +0800">
-  <title lang="zh">御前四宝28</title>
+  <programme channel="419979" start="20260103140300 +0800" stop="20260103145000 +0800">
+  <title lang="zh">御前四宝16</title>
   <desc />
   </programme>
-  <programme channel="419979" start="20251231145000 +0800" stop="20251231153700 +0800">
-  <title lang="zh">御前四宝29</title>
+  <programme channel="419979" start="20260103145000 +0800" stop="20260103153800 +0800">
+  <title lang="zh">御前四宝17</title>
   <desc />
   </programme>
-  <programme channel="419979" start="20251231153700 +0800" stop="20251231162500 +0800">
-  <title lang="zh">御前四宝30</title>
+  <programme channel="419979" start="20260103153800 +0800" stop="20260103162500 +0800">
+  <title lang="zh">御前四宝18</title>
   <desc />
   </programme>
-  <programme channel="419979" start="20251231162500 +0800" stop="20251231170800 +0800">
-  <title lang="zh">山里娘们山里汉26</title>
+  <programme channel="419979" start="20260103162500 +0800" stop="20260103170900 +0800">
+  <title lang="zh">山里娘们山里汉16</title>
   <desc />
   </programme>
-  <programme channel="419979" start="20251231170800 +0800" stop="20251231175200 +0800">
-  <title lang="zh">山里娘们山里汉27</title>
+  <programme channel="419979" start="20260103170900 +0800" stop="20260103175300 +0800">
+  <title lang="zh">山里娘们山里汉17</title>
   <desc />
   </programme>
-  <programme channel="419979" start="20251231175200 +0800" stop="20251231183600 +0800">
-  <title lang="zh">山里娘们山里汉28</title>
+  <programme channel="419979" start="20260103175300 +0800" stop="20260103183600 +0800">
+  <title lang="zh">山里娘们山里汉18</title>
   <desc />
   </programme>
-  <programme channel="419979" start="20251231183600 +0800" stop="20251231192100 +0800">
-  <title lang="zh">温暖的村庄28</title>
+  <programme channel="419979" start="20260103183600 +0800" stop="20260103192100 +0800">
+  <title lang="zh">温暖的村庄16</title>
   <desc />
   </programme>
-  <programme channel="419979" start="20251231192100 +0800" stop="20251231200500 +0800">
-  <title lang="zh">温暖的村庄29</title>
+  <programme channel="419979" start="20260103192100 +0800" stop="20260103200700 +0800">
+  <title lang="zh">温暖的村庄17</title>
   <desc />
   </programme>
-  <programme channel="419979" start="20251231200500 +0800" stop="20251231205100 +0800">
-  <title lang="zh">温暖的村庄30</title>
+  <programme channel="419979" start="20260103200700 +0800" stop="20260103205200 +0800">
+  <title lang="zh">温暖的村庄18</title>
   <desc />
   </programme>
-  <programme channel="419979" start="20251231205100 +0800" stop="20251231213600 +0800">
-  <title lang="zh">温暖的村庄31</title>
+  <programme channel="419979" start="20260103205200 +0800" stop="20260103213700 +0800">
+  <title lang="zh">温暖的村庄19</title>
   <desc />
   </programme>
-  <programme channel="419979" start="20251231213600 +0800" stop="20251231222100 +0800">
-  <title lang="zh">再造之恩19</title>
+  <programme channel="419979" start="20260103213700 +0800" stop="20260103222200 +0800">
+  <title lang="zh">再造之恩11</title>
   <desc />
   </programme>
-  <programme channel="419979" start="20251231222100 +0800" stop="20251231230700 +0800">
-  <title lang="zh">再造之恩20</title>
+  <programme channel="419979" start="20260103222200 +0800" stop="20260103230800 +0800">
+  <title lang="zh">再造之恩12</title>
   <desc />
   </programme>
-  <programme channel="419979" start="20251231230700 +0800" stop="20251231235200 +0800">
-  <title lang="zh">再造之恩21</title>
+  <programme channel="419979" start="20260103230800 +0800" stop="20260103235300 +0800">
+  <title lang="zh">再造之恩13</title>
   <desc />
   </programme>
-  <programme channel="419979" start="20251231235200 +0800" stop="20260101000000 +0800">
-  <title lang="zh">再造之恩22</title>
+  <programme channel="419979" start="20260103235300 +0800" stop="20260104000000 +0800">
+  <title lang="zh">再造之恩14</title>
   <desc />
   </programme>
 </tv>
