@@ -1,13 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
-  <!-- 西藏电视频道 (xz.xml) -->
-  <!-- 生成时间：2026-02-11 01:11:20 -->
-  <!-- 包含：西藏本地频道 + 全国通用频道（含未分类频道） -->
-  <!-- 共 238 个频道 -->
+  <!-- 重庆电视频道 (cq.xml) -->
+  <!-- 生成时间：2026-02-11 01:11:19 -->
+  <!-- 包含：重庆本地频道 + 全国通用频道（含未分类频道） -->
+  <!-- 共 247 个频道 -->
 
-  <!-- 西藏本地频道 (1个) -->
-  <channel id="502235">
-  <display-name lang="CN">拉萨电视台</display-name>
+  <!-- 重庆本地频道 (10个) -->
+  <channel id="505217">
+  <display-name lang="CN">重庆影视</display-name>
+  </channel>
+  <channel id="505238">
+  <display-name lang="CN">重庆少儿</display-name>
+  </channel>
+  <channel id="505239">
+  <display-name lang="CN">重庆文体娱乐</display-name>
+  </channel>
+  <channel id="505282">
+  <display-name lang="CN">重庆社会与法</display-name>
+  </channel>
+  <channel id="505330">
+  <display-name lang="CN">重庆时尚生活</display-name>
+  </channel>
+  <channel id="505377">
+  <display-name lang="CN">重庆国际</display-name>
+  </channel>
+  <channel id="505389">
+  <display-name lang="CN">重庆新闻</display-name>
+  </channel>
+  <channel id="505468">
+  <display-name lang="CN">重庆生活资讯</display-name>
+  </channel>
+  <channel id="505515">
+  <display-name lang="CN">重庆娱乐</display-name>
+  </channel>
+  <channel id="505559">
+  <display-name lang="CN">重庆农村</display-name>
   </channel>
 
   <!-- 全国通用频道 (201个) -->
