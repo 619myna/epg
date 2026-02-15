@@ -1,16 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
-  <!-- 西藏电视频道 (xz.xml) -->
-  <!-- 生成时间：2026-02-16 00:39:27 -->
-  <!-- 包含：西藏本地频道 + 全国通用频道（含未分类频道） -->
-  <!-- 共 271 个频道 -->
+  <!-- 重庆电视频道 (cq.xml) -->
+  <!-- 生成时间：2026-02-16 00:39:28 -->
+  <!-- 包含：重庆本地频道 + 全国通用频道（含未分类频道） -->
+  <!-- 共 279 个频道 -->
 
-  <!-- 西藏本地频道 (2个) -->
-  <channel id="507259">
-  <display-name lang="CN">拉萨电视台</display-name>
+  <!-- 重庆本地频道 (10个) -->
+  <channel id="508787">
+  <display-name lang="CN">重庆影视</display-name>
   </channel>
-  <channel id="508759">
-  <display-name lang="CN">西藏影视文化</display-name>
+  <channel id="508808">
+  <display-name lang="CN">重庆少儿</display-name>
+  </channel>
+  <channel id="508810">
+  <display-name lang="CN">重庆文体娱乐</display-name>
+  </channel>
+  <channel id="508864">
+  <display-name lang="CN">重庆社会与法</display-name>
+  </channel>
+  <channel id="508920">
+  <display-name lang="CN">重庆时尚生活</display-name>
+  </channel>
+  <channel id="508970">
+  <display-name lang="CN">重庆国际</display-name>
+  </channel>
+  <channel id="508981">
+  <display-name lang="CN">重庆新闻</display-name>
+  </channel>
+  <channel id="509069">
+  <display-name lang="CN">重庆生活资讯</display-name>
+  </channel>
+  <channel id="509117">
+  <display-name lang="CN">重庆娱乐</display-name>
+  </channel>
+  <channel id="509161">
+  <display-name lang="CN">重庆农村</display-name>
   </channel>
 
   <!-- 全国通用频道 (204个) -->
@@ -835,7 +859,7 @@
   </channel>
 
   <!-- 节目列表 -->
-  <!-- 共 18373 个节目 -->
+  <!-- 共 18361 个节目 -->
   <programme channel="458265" start="20260215000000 +0800" stop="20260215033000 +0800">
   <title lang="zh">同上一堂课</title>
   <desc />
@@ -74229,54 +74253,6 @@
   </programme>
   <programme channel="495065" start="20260215234500 +0800" stop="20260216000000 +0800">
   <title lang="zh">技术派</title>
-  <desc />
-  </programme>
-  <programme channel="507259" start="20260215083000 +0800" stop="20260215091500 +0800">
-  <title lang="zh"> 拉萨新闻</title>
-  <desc />
-  </programme>
-  <programme channel="507259" start="20260215091500 +0800" stop="20260215102500 +0800">
-  <title lang="zh"> 早间剧场</title>
-  <desc />
-  </programme>
-  <programme channel="507259" start="20260215102500 +0800" stop="20260215111500 +0800">
-  <title lang="zh"> 早间剧场</title>
-  <desc />
-  </programme>
-  <programme channel="507259" start="20260215111500 +0800" stop="20260215130000 +0800">
-  <title lang="zh"> 早间剧场</title>
-  <desc />
-  </programme>
-  <programme channel="507259" start="20260215130000 +0800" stop="20260215143000 +0800">
-  <title lang="zh"> 新闻现场</title>
-  <desc />
-  </programme>
-  <programme channel="507259" start="20260215143000 +0800" stop="20260215154700 +0800">
-  <title lang="zh"> 拉萨新闻(藏)</title>
-  <desc />
-  </programme>
-  <programme channel="507259" start="20260215154700 +0800" stop="20260215190000 +0800">
-  <title lang="zh"> 强档影院</title>
-  <desc />
-  </programme>
-  <programme channel="507259" start="20260215190000 +0800" stop="20260215200000 +0800">
-  <title lang="zh"> 转播中央台新闻联播</title>
-  <desc />
-  </programme>
-  <programme channel="507259" start="20260215200000 +0800" stop="20260215210000 +0800">
-  <title lang="zh"> 拉萨新闻</title>
-  <desc />
-  </programme>
-  <programme channel="507259" start="20260215210000 +0800" stop="20260215220000 +0800">
-  <title lang="zh"> 新闻现场</title>
-  <desc />
-  </programme>
-  <programme channel="507259" start="20260215220000 +0800" stop="20260215225000 +0800">
-  <title lang="zh"> 晚间剧场</title>
-  <desc />
-  </programme>
-  <programme channel="507259" start="20260215225000 +0800" stop="20260216000000 +0800">
-  <title lang="zh"> 晚间影院</title>
   <desc />
   </programme>
   <programme channel="507296" start="20260215160400 +0800" stop="20260215161800 +0800">
