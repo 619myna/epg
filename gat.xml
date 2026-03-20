@@ -1,10 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
   <!-- 港澳台频道 (gat.xml) -->
-  <!-- 共 3 个频道 -->
+  <!-- 共 11 个频道 -->
   <!-- 共 0 个节目 -->
-  <!-- 生成时间：2026-03-20 01:03:54 -->
+  <!-- 生成时间：2026-03-21 00:54:27 -->
 
+  <channel id="529955">
+  <display-name lang="CN">澳视资讯</display-name>
+  </channel>
+  <channel id="529994">
+  <display-name lang="CN">澳视综艺</display-name>
+  </channel>
+  <channel id="530062">
+  <display-name lang="CN">澳视葡文</display-name>
+  </channel>
+  <channel id="530188">
+  <display-name lang="CN">澳视体育</display-name>
+  </channel>
+  <channel id="530251">
+  <display-name lang="CN">澳视卫星</display-name>
+  </channel>
+  <channel id="530263">
+  <display-name lang="CN">翡翠台</display-name>
+  </channel>
+  <channel id="530327">
+  <display-name lang="CN">澳视澳门</display-name>
+  </channel>
+  <channel id="530339">
+  <display-name lang="CN">杭州西湖明珠</display-name>
+  </channel>
   <channel id="495069">
   <display-name lang="CN">凤凰中文</display-name>
   </channel>

@@ -1,90 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
   <!-- 通用频道 (ty.xml) -->
-  <!-- 共 2 个频道 -->
-  <!-- 共 77 个节目 -->
-  <!-- 生成时间：2026-03-20 01:03:54 -->
+  <!-- 共 13 个频道 -->
+  <!-- 共 126 个节目 -->
+  <!-- 生成时间：2026-03-21 00:54:27 -->
 
   <channel id="464644">
   <display-name lang="CN">BRTV卡酷少儿</display-name>
+  </channel>
+  <channel id="530016">
+  <display-name lang="CN">卡酷少儿</display-name>
+  </channel>
+  <channel id="530038">
+  <display-name lang="CN">现代教育</display-name>
+  </channel>
+  <channel id="530073">
+  <display-name lang="CN">上海纪实人文</display-name>
+  </channel>
+  <channel id="530097">
+  <display-name lang="CN">冬奥纪实</display-name>
+  </channel>
+  <channel id="530267">
+  <display-name lang="CN">黑莓电影</display-name>
+  </channel>
+  <channel id="530269">
+  <display-name lang="CN">纪实科教</display-name>
+  </channel>
+  <channel id="530270">
+  <display-name lang="CN">江苏优漫卡通</display-name>
+  </channel>
+  <channel id="530273">
+  <display-name lang="CN">北京纪实</display-name>
+  </channel>
+  <channel id="530347">
+  <display-name lang="CN">咪咕综合体育</display-name>
+  </channel>
+  <channel id="530382">
+  <display-name lang="CN">浙江数码时代</display-name>
+  </channel>
+  <channel id="530385">
+  <display-name lang="CN">黑莓动画</display-name>
   </channel>
   <channel id="495041">
   <display-name lang="CN">金鹰卡通</display-name>
   </channel>
 
   <!-- 节目列表 -->
-  <programme channel="464644" start="20260319000900 +0800" stop="20260319003900 +0800">
-  <title lang="zh">电视先锋榜</title>
-  <desc />
-  </programme>
-  <programme channel="464644" start="20260319003900 +0800" stop="20260319010900 +0800">
-  <title lang="zh">动画片</title>
-  <desc />
-  </programme>
-  <programme channel="464644" start="20260319010900 +0800" stop="20260319020000 +0800">
-  <title lang="zh">动画片</title>
-  <desc />
-  </programme>
-  <programme channel="464644" start="20260319020000 +0800" stop="20260319030000 +0800">
-  <title lang="zh">动画片</title>
-  <desc />
-  </programme>
-  <programme channel="464644" start="20260319030000 +0800" stop="20260319040000 +0800">
-  <title lang="zh">动画片</title>
-  <desc />
-  </programme>
-  <programme channel="464644" start="20260319040000 +0800" stop="20260319060000 +0800">
-  <title lang="zh">动画片</title>
-  <desc />
-  </programme>
-  <programme channel="464644" start="20260319060000 +0800" stop="20260319070000 +0800">
-  <title lang="zh">可可剧场</title>
-  <desc />
-  </programme>
-  <programme channel="464644" start="20260319070000 +0800" stop="20260319071600 +0800">
-  <title lang="zh">KAKU幼儿园</title>
-  <desc />
-  </programme>
-  <programme channel="464644" start="20260319071600 +0800" stop="20260319081600 +0800">
-  <title lang="zh">派派牛剧场</title>
-  <desc />
-  </programme>
-  <programme channel="464644" start="20260319081600 +0800" stop="20260319083700 +0800">
-  <title lang="zh">猪猪侠之南海日记</title>
-  <desc />
-  </programme>
-  <programme channel="464644" start="20260319083700 +0800" stop="20260319085800 +0800">
-  <title lang="zh">猪猪侠之南海日记</title>
-  <desc />
-  </programme>
-  <programme channel="464644" start="20260319085800 +0800" stop="20260319100000 +0800">
-  <title lang="zh">卡酷幼儿园</title>
-  <desc />
-  </programme>
-  <programme channel="464644" start="20260319100000 +0800" stop="20260319110000 +0800">
-  <title lang="zh">动画片</title>
-  <desc />
-  </programme>
-  <programme channel="464644" start="20260319110000 +0800" stop="20260319120000 +0800">
-  <title lang="zh">动画片</title>
-  <desc />
-  </programme>
-  <programme channel="464644" start="20260319120000 +0800" stop="20260319130000 +0800">
-  <title lang="zh">动画片</title>
-  <desc />
-  </programme>
-  <programme channel="464644" start="20260319130000 +0800" stop="20260319140000 +0800">
-  <title lang="zh">动画片</title>
-  <desc />
-  </programme>
-  <programme channel="464644" start="20260319140000 +0800" stop="20260319200000 +0800">
-  <title lang="zh">动画片</title>
-  <desc />
-  </programme>
-  <programme channel="464644" start="20260319200000 +0800" stop="20260320000900 +0800">
-  <title lang="zh">动画片</title>
-  <desc />
-  </programme>
   <programme channel="464644" start="20260320000900 +0800" stop="20260320003900 +0800">
   <title lang="zh">电视先锋榜</title>
   <desc />
@@ -317,7 +278,275 @@
   <title lang="zh">动画片</title>
   <desc />
   </programme>
-  <programme channel="464644" start="20260323030000 +0800" stop="20260324000000 +0800">
+  <programme channel="464644" start="20260323030000 +0800" stop="20260323040000 +0800">
+  <title lang="zh">动画片</title>
+  <desc />
+  </programme>
+  <programme channel="464644" start="20260323040000 +0800" stop="20260323060000 +0800">
+  <title lang="zh">动画片</title>
+  <desc />
+  </programme>
+  <programme channel="464644" start="20260323060000 +0800" stop="20260323070000 +0800">
+  <title lang="zh">可可剧场</title>
+  <desc />
+  </programme>
+  <programme channel="464644" start="20260323070000 +0800" stop="20260323071600 +0800">
+  <title lang="zh">KAKU幼儿园</title>
+  <desc />
+  </programme>
+  <programme channel="464644" start="20260323071600 +0800" stop="20260323081600 +0800">
+  <title lang="zh">派派牛剧场</title>
+  <desc />
+  </programme>
+  <programme channel="464644" start="20260323081600 +0800" stop="20260323083700 +0800">
+  <title lang="zh">猪猪侠之南海日记</title>
+  <desc />
+  </programme>
+  <programme channel="464644" start="20260323083700 +0800" stop="20260323085800 +0800">
+  <title lang="zh">猪猪侠之南海日记</title>
+  <desc />
+  </programme>
+  <programme channel="464644" start="20260323085800 +0800" stop="20260323100000 +0800">
+  <title lang="zh">卡酷幼儿园</title>
+  <desc />
+  </programme>
+  <programme channel="464644" start="20260323100000 +0800" stop="20260323110000 +0800">
+  <title lang="zh">动画片</title>
+  <desc />
+  </programme>
+  <programme channel="464644" start="20260323110000 +0800" stop="20260323120000 +0800">
+  <title lang="zh">动画片</title>
+  <desc />
+  </programme>
+  <programme channel="464644" start="20260323120000 +0800" stop="20260323130000 +0800">
+  <title lang="zh">动画片</title>
+  <desc />
+  </programme>
+  <programme channel="464644" start="20260323130000 +0800" stop="20260323140000 +0800">
+  <title lang="zh">动画片</title>
+  <desc />
+  </programme>
+  <programme channel="464644" start="20260323140000 +0800" stop="20260323200000 +0800">
+  <title lang="zh">动画片</title>
+  <desc />
+  </programme>
+  <programme channel="464644" start="20260323200000 +0800" stop="20260324000900 +0800">
+  <title lang="zh">动画片</title>
+  <desc />
+  </programme>
+  <programme channel="464644" start="20260324000900 +0800" stop="20260324003900 +0800">
+  <title lang="zh">电视先锋榜</title>
+  <desc />
+  </programme>
+  <programme channel="464644" start="20260324003900 +0800" stop="20260324010900 +0800">
+  <title lang="zh">动画片</title>
+  <desc />
+  </programme>
+  <programme channel="464644" start="20260324010900 +0800" stop="20260324020000 +0800">
+  <title lang="zh">动画片</title>
+  <desc />
+  </programme>
+  <programme channel="464644" start="20260324020000 +0800" stop="20260324030000 +0800">
+  <title lang="zh">动画片</title>
+  <desc />
+  </programme>
+  <programme channel="464644" start="20260324030000 +0800" stop="20260324040000 +0800">
+  <title lang="zh">动画片</title>
+  <desc />
+  </programme>
+  <programme channel="464644" start="20260324040000 +0800" stop="20260324060000 +0800">
+  <title lang="zh">动画片</title>
+  <desc />
+  </programme>
+  <programme channel="464644" start="20260324060000 +0800" stop="20260324070000 +0800">
+  <title lang="zh">可可剧场</title>
+  <desc />
+  </programme>
+  <programme channel="464644" start="20260324070000 +0800" stop="20260324071600 +0800">
+  <title lang="zh">KAKU幼儿园</title>
+  <desc />
+  </programme>
+  <programme channel="464644" start="20260324071600 +0800" stop="20260324081600 +0800">
+  <title lang="zh">派派牛剧场</title>
+  <desc />
+  </programme>
+  <programme channel="464644" start="20260324081600 +0800" stop="20260324083700 +0800">
+  <title lang="zh">猪猪侠之南海日记</title>
+  <desc />
+  </programme>
+  <programme channel="464644" start="20260324083700 +0800" stop="20260324085800 +0800">
+  <title lang="zh">猪猪侠之南海日记</title>
+  <desc />
+  </programme>
+  <programme channel="464644" start="20260324085800 +0800" stop="20260324100000 +0800">
+  <title lang="zh">卡酷幼儿园</title>
+  <desc />
+  </programme>
+  <programme channel="464644" start="20260324100000 +0800" stop="20260324110000 +0800">
+  <title lang="zh">动画片</title>
+  <desc />
+  </programme>
+  <programme channel="464644" start="20260324110000 +0800" stop="20260324120000 +0800">
+  <title lang="zh">动画片</title>
+  <desc />
+  </programme>
+  <programme channel="464644" start="20260324120000 +0800" stop="20260324130000 +0800">
+  <title lang="zh">动画片</title>
+  <desc />
+  </programme>
+  <programme channel="464644" start="20260324130000 +0800" stop="20260324140000 +0800">
+  <title lang="zh">动画片</title>
+  <desc />
+  </programme>
+  <programme channel="464644" start="20260324140000 +0800" stop="20260324200000 +0800">
+  <title lang="zh">动画片</title>
+  <desc />
+  </programme>
+  <programme channel="464644" start="20260324200000 +0800" stop="20260325000900 +0800">
+  <title lang="zh">动画片</title>
+  <desc />
+  </programme>
+  <programme channel="464644" start="20260325000900 +0800" stop="20260325003900 +0800">
+  <title lang="zh">电视先锋榜</title>
+  <desc />
+  </programme>
+  <programme channel="464644" start="20260325003900 +0800" stop="20260325010900 +0800">
+  <title lang="zh">动画片</title>
+  <desc />
+  </programme>
+  <programme channel="464644" start="20260325010900 +0800" stop="20260325020000 +0800">
+  <title lang="zh">动画片</title>
+  <desc />
+  </programme>
+  <programme channel="464644" start="20260325020000 +0800" stop="20260325030000 +0800">
+  <title lang="zh">动画片</title>
+  <desc />
+  </programme>
+  <programme channel="464644" start="20260325030000 +0800" stop="20260325040000 +0800">
+  <title lang="zh">动画片</title>
+  <desc />
+  </programme>
+  <programme channel="464644" start="20260325040000 +0800" stop="20260325060000 +0800">
+  <title lang="zh">动画片</title>
+  <desc />
+  </programme>
+  <programme channel="464644" start="20260325060000 +0800" stop="20260325070000 +0800">
+  <title lang="zh">可可剧场</title>
+  <desc />
+  </programme>
+  <programme channel="464644" start="20260325070000 +0800" stop="20260325071600 +0800">
+  <title lang="zh">KAKU幼儿园</title>
+  <desc />
+  </programme>
+  <programme channel="464644" start="20260325071600 +0800" stop="20260325081600 +0800">
+  <title lang="zh">派派牛剧场</title>
+  <desc />
+  </programme>
+  <programme channel="464644" start="20260325081600 +0800" stop="20260325083700 +0800">
+  <title lang="zh">猪猪侠之南海日记</title>
+  <desc />
+  </programme>
+  <programme channel="464644" start="20260325083700 +0800" stop="20260325085800 +0800">
+  <title lang="zh">猪猪侠之南海日记</title>
+  <desc />
+  </programme>
+  <programme channel="464644" start="20260325085800 +0800" stop="20260325100000 +0800">
+  <title lang="zh">卡酷幼儿园</title>
+  <desc />
+  </programme>
+  <programme channel="464644" start="20260325100000 +0800" stop="20260325110000 +0800">
+  <title lang="zh">动画片</title>
+  <desc />
+  </programme>
+  <programme channel="464644" start="20260325110000 +0800" stop="20260325120000 +0800">
+  <title lang="zh">动画片</title>
+  <desc />
+  </programme>
+  <programme channel="464644" start="20260325120000 +0800" stop="20260325130000 +0800">
+  <title lang="zh">动画片</title>
+  <desc />
+  </programme>
+  <programme channel="464644" start="20260325130000 +0800" stop="20260325140000 +0800">
+  <title lang="zh">动画片</title>
+  <desc />
+  </programme>
+  <programme channel="464644" start="20260325140000 +0800" stop="20260325200000 +0800">
+  <title lang="zh">动画片</title>
+  <desc />
+  </programme>
+  <programme channel="464644" start="20260325200000 +0800" stop="20260326000900 +0800">
+  <title lang="zh">动画片</title>
+  <desc />
+  </programme>
+  <programme channel="464644" start="20260326000900 +0800" stop="20260326003900 +0800">
+  <title lang="zh">电视先锋榜</title>
+  <desc />
+  </programme>
+  <programme channel="464644" start="20260326003900 +0800" stop="20260326010900 +0800">
+  <title lang="zh">动画片</title>
+  <desc />
+  </programme>
+  <programme channel="464644" start="20260326010900 +0800" stop="20260326020000 +0800">
+  <title lang="zh">动画片</title>
+  <desc />
+  </programme>
+  <programme channel="464644" start="20260326020000 +0800" stop="20260326030000 +0800">
+  <title lang="zh">动画片</title>
+  <desc />
+  </programme>
+  <programme channel="464644" start="20260326030000 +0800" stop="20260326040000 +0800">
+  <title lang="zh">动画片</title>
+  <desc />
+  </programme>
+  <programme channel="464644" start="20260326040000 +0800" stop="20260326060000 +0800">
+  <title lang="zh">动画片</title>
+  <desc />
+  </programme>
+  <programme channel="464644" start="20260326060000 +0800" stop="20260326070000 +0800">
+  <title lang="zh">可可剧场</title>
+  <desc />
+  </programme>
+  <programme channel="464644" start="20260326070000 +0800" stop="20260326071600 +0800">
+  <title lang="zh">KAKU幼儿园</title>
+  <desc />
+  </programme>
+  <programme channel="464644" start="20260326071600 +0800" stop="20260326081600 +0800">
+  <title lang="zh">派派牛剧场</title>
+  <desc />
+  </programme>
+  <programme channel="464644" start="20260326081600 +0800" stop="20260326083700 +0800">
+  <title lang="zh">猪猪侠之南海日记</title>
+  <desc />
+  </programme>
+  <programme channel="464644" start="20260326083700 +0800" stop="20260326085800 +0800">
+  <title lang="zh">猪猪侠之南海日记</title>
+  <desc />
+  </programme>
+  <programme channel="464644" start="20260326085800 +0800" stop="20260326100000 +0800">
+  <title lang="zh">卡酷幼儿园</title>
+  <desc />
+  </programme>
+  <programme channel="464644" start="20260326100000 +0800" stop="20260326110000 +0800">
+  <title lang="zh">动画片</title>
+  <desc />
+  </programme>
+  <programme channel="464644" start="20260326110000 +0800" stop="20260326120000 +0800">
+  <title lang="zh">动画片</title>
+  <desc />
+  </programme>
+  <programme channel="464644" start="20260326120000 +0800" stop="20260326130000 +0800">
+  <title lang="zh">动画片</title>
+  <desc />
+  </programme>
+  <programme channel="464644" start="20260326130000 +0800" stop="20260326140000 +0800">
+  <title lang="zh">动画片</title>
+  <desc />
+  </programme>
+  <programme channel="464644" start="20260326140000 +0800" stop="20260326200000 +0800">
+  <title lang="zh">动画片</title>
+  <desc />
+  </programme>
+  <programme channel="464644" start="20260326200000 +0800" stop="20260327000000 +0800">
   <title lang="zh">动画片</title>
   <desc />
   </programme>

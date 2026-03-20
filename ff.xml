@@ -1,21 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
   <!-- 付费频道 (ff.xml) -->
-  <!-- 共 31 个频道 -->
+  <!-- 共 56 个频道 -->
   <!-- 共 0 个节目 -->
-  <!-- 生成时间：2026-03-20 01:03:54 -->
+  <!-- 生成时间：2026-03-21 00:54:27 -->
 
-  <channel id="495047">
+  <channel id="529958">
+  <display-name lang="CN">魅力足球</display-name>
+  </channel>
+  <channel id="529976">
+  <display-name lang="CN">文物宝库</display-name>
+  </channel>
+  <channel id="529980">
+  <display-name lang="CN">乐游</display-name>
+  </channel>
+  <channel id="529981">
+  <display-name lang="CN">卫生健康</display-name>
+  </channel>
+  <channel id="529984">
+  <display-name lang="CN">劲爆体育</display-name>
+  </channel>
+  <channel id="529992">
+  <display-name lang="CN">梨园</display-name>
+  </channel>
+  <channel id="530023">
+  <display-name lang="CN">游戏风云</display-name>
+  </channel>
+  <channel id="530043">
+  <display-name lang="CN">咪咕足球</display-name>
+  </channel>
+  <channel id="530044">
+  <display-name lang="CN">法治天地</display-name>
+  </channel>
+  <channel id="530052">
+  <display-name lang="CN">茶</display-name>
+  </channel>
+  <channel id="530077">
   <display-name lang="CN">CHC高清电影</display-name>
   </channel>
-  <channel id="495049">
+  <channel id="530082">
+  <display-name lang="CN">国学</display-name>
+  </channel>
+  <channel id="530089">
+  <display-name lang="CN">睛彩羽毛球</display-name>
+  </channel>
+  <channel id="530096">
   <display-name lang="CN">CHC动作电影</display-name>
+  </channel>
+  <channel id="530120">
+  <display-name lang="CN">睛彩竞技</display-name>
+  </channel>
+  <channel id="530124">
+  <display-name lang="CN">电视指南</display-name>
+  </channel>
+  <channel id="530135">
+  <display-name lang="CN">都市剧场</display-name>
+  </channel>
+  <channel id="530145">
+  <display-name lang="CN">高尔夫网球</display-name>
+  </channel>
+  <channel id="530146">
+  <display-name lang="CN">快乐垂钓</display-name>
+  </channel>
+  <channel id="530182">
+  <display-name lang="CN">中国天气</display-name>
+  </channel>
+  <channel id="530185">
+  <display-name lang="CN">睛彩中原</display-name>
+  </channel>
+  <channel id="530192">
+  <display-name lang="CN">求索生活</display-name>
+  </channel>
+  <channel id="530196">
+  <display-name lang="CN">中国交通</display-name>
+  </channel>
+  <channel id="530225">
+  <display-name lang="CN">武术世界</display-name>
+  </channel>
+  <channel id="530238">
+  <display-name lang="CN">求索纪录</display-name>
+  </channel>
+  <channel id="530244">
+  <display-name lang="CN">汽摩</display-name>
+  </channel>
+  <channel id="530280">
+  <display-name lang="CN">动漫秀场</display-name>
+  </channel>
+  <channel id="530297">
+  <display-name lang="CN">睛彩篮球</display-name>
+  </channel>
+  <channel id="530312">
+  <display-name lang="CN">优优宝贝</display-name>
+  </channel>
+  <channel id="530329">
+  <display-name lang="CN">欢笑剧场</display-name>
+  </channel>
+  <channel id="530353">
+  <display-name lang="CN">金色学堂</display-name>
+  </channel>
+  <channel id="530355">
+  <display-name lang="CN">河南梨园</display-name>
+  </channel>
+  <channel id="530360">
+  <display-name lang="CN">CHC家庭影院</display-name>
+  </channel>
+  <channel id="530365">
+  <display-name lang="CN">生活时尚</display-name>
+  </channel>
+  <channel id="530372">
+  <display-name lang="CN">生态环境</display-name>
   </channel>
   <channel id="495050">
   <display-name lang="CN">CHC家庭电影</display-name>
-  </channel>
-  <channel id="495051">
-  <display-name lang="CN">梨园</display-name>
   </channel>
   <channel id="495052">
   <display-name lang="CN">风云音乐</display-name>
@@ -38,17 +134,11 @@
   <channel id="495058">
   <display-name lang="CN">女性时尚</display-name>
   </channel>
-  <channel id="495059">
-  <display-name lang="CN">高尔夫网球</display-name>
-  </channel>
   <channel id="495060">
   <display-name lang="CN">央视精品</display-name>
   </channel>
   <channel id="495061">
   <display-name lang="CN">求索记录</display-name>
-  </channel>
-  <channel id="495062">
-  <display-name lang="CN">汽摩</display-name>
   </channel>
   <channel id="495063">
   <display-name lang="CN">天元围棋</display-name>
@@ -59,20 +149,8 @@
   <channel id="495066">
   <display-name lang="CN">央视台球</display-name>
   </channel>
-  <channel id="495067">
-  <display-name lang="CN">茶</display-name>
-  </channel>
-  <channel id="495068">
-  <display-name lang="CN">武术世界</display-name>
-  </channel>
-  <channel id="495072">
-  <display-name lang="CN">文物宝库</display-name>
-  </channel>
   <channel id="495073">
   <display-name lang="CN">老故事</display-name>
-  </channel>
-  <channel id="495074">
-  <display-name lang="CN">快乐垂钓</display-name>
   </channel>
   <channel id="495075">
   <display-name lang="CN">书画</display-name>
@@ -88,9 +166,6 @@
   </channel>
   <channel id="495085">
   <display-name lang="CN">环球奇观</display-name>
-  </channel>
-  <channel id="495086">
-  <display-name lang="CN">国学</display-name>
   </channel>
   <channel id="495087">
   <display-name lang="CN">风云足球</display-name>
