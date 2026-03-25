@@ -1,100 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
-  <!-- 上海电视频道 (sh.xml) -->
-  <!-- 生成时间：2026-03-26 01:11:57 -->
-  <!-- 包含：上海本地频道 + 全国通用频道（含未分类频道） -->
-  <!-- 共 224 个频道 -->
+  <!-- 河南电视频道 (hen.xml) -->
+  <!-- 生成时间：2026-03-26 01:11:58 -->
+  <!-- 包含：河南本地频道 + 全国通用频道（含未分类频道） -->
+  <!-- 共 208 个频道 -->
 
-  <!-- 上海本地频道 (30个) -->
-  <channel id="495037">
-  <display-name lang="CN">哈哈炫动</display-name>
+  <!-- 河南本地频道 (14个) -->
+  <channel id="533019">
+  <display-name lang="CN">郑州新闻</display-name>
   </channel>
-  <channel id="532989">
-  <display-name lang="CN">太原新闻综合</display-name>
+  <channel id="533023">
+  <display-name lang="CN">河南公共</display-name>
   </channel>
-  <channel id="533000">
-  <display-name lang="CN">第一财经</display-name>
+  <channel id="533061">
+  <display-name lang="CN">河南乡村</display-name>
   </channel>
-  <channel id="533011">
-  <display-name lang="CN">上视东方影视</display-name>
+  <channel id="533066">
+  <display-name lang="CN">河南民生</display-name>
   </channel>
-  <channel id="533040">
-  <display-name lang="CN">南京新闻综合</display-name>
+  <channel id="533085">
+  <display-name lang="CN">郑州戏曲</display-name>
   </channel>
-  <channel id="533051">
-  <display-name lang="CN">徐州新闻综合</display-name>
+  <channel id="533153">
+  <display-name lang="CN">河南新农村</display-name>
   </channel>
-  <channel id="533055">
-  <display-name lang="CN">东方电影</display-name>
+  <channel id="533165">
+  <display-name lang="CN">郑州生活</display-name>
   </channel>
-  <channel id="533154">
-  <display-name lang="CN">宜宾新闻综合</display-name>
+  <channel id="533192">
+  <display-name lang="CN">河南电视剧</display-name>
   </channel>
-  <channel id="533179">
-  <display-name lang="CN">上海教育台</display-name>
+  <channel id="533211">
+  <display-name lang="CN">郑州商都</display-name>
   </channel>
-  <channel id="533180">
-  <display-name lang="CN">柳州新闻综合</display-name>
+  <channel id="533246">
+  <display-name lang="CN">河南法治</display-name>
   </channel>
-  <channel id="533182">
-  <display-name lang="CN">孝感新闻综合</display-name>
+  <channel id="533270">
+  <display-name lang="CN">郑州妇女</display-name>
   </channel>
-  <channel id="533187">
-  <display-name lang="CN">兰州新闻综合</display-name>
+  <channel id="533282">
+  <display-name lang="CN">河南新闻</display-name>
   </channel>
-  <channel id="533191">
-  <display-name lang="CN">上海星尚</display-name>
+  <channel id="533370">
+  <display-name lang="CN">郑州文体</display-name>
   </channel>
-  <channel id="533202">
-  <display-name lang="CN">上海新闻综合</display-name>
-  </channel>
-  <channel id="533206">
-  <display-name lang="CN">攀枝花新闻综合</display-name>
-  </channel>
-  <channel id="533210">
-  <display-name lang="CN">南昌新闻综合</display-name>
-  </channel>
-  <channel id="533229">
-  <display-name lang="CN">苏州新闻综合</display-name>
-  </channel>
-  <channel id="533243">
-  <display-name lang="CN">上海艺术人文</display-name>
-  </channel>
-  <channel id="533268">
-  <display-name lang="CN">上海</display-name>
-  </channel>
-  <channel id="533271">
-  <display-name lang="CN">北海新闻综合</display-name>
-  </channel>
-  <channel id="533273">
-  <display-name lang="CN">汕尾新闻综合</display-name>
-  </channel>
-  <channel id="533303">
-  <display-name lang="CN">上海都市</display-name>
-  </channel>
-  <channel id="533344">
-  <display-name lang="CN">吴江新闻综合</display-name>
-  </channel>
-  <channel id="533384">
-  <display-name lang="CN">上海第一财经</display-name>
-  </channel>
-  <channel id="533385">
-  <display-name lang="CN">宜春新闻综合</display-name>
-  </channel>
-  <channel id="533386">
-  <display-name lang="CN">苏州文化生活苏州新闻综合苏州生活资讯苏州社会经济</display-name>
-  </channel>
-  <channel id="533389">
-  <display-name lang="CN">清远新闻综合</display-name>
-  </channel>
-  <channel id="533405">
-  <display-name lang="CN">鞍山新闻综合</display-name>
-  </channel>
-  <channel id="533411">
-  <display-name lang="CN">西安新闻综合</display-name>
-  </channel>
-  <channel id="533435">
-  <display-name lang="CN">石家庄新闻综合</display-name>
+  <channel id="533424">
+  <display-name lang="CN">河南都市</display-name>
   </channel>
 
   <!-- 全国通用频道 (164个) -->
@@ -694,7 +646,7 @@
   </channel>
 
   <!-- 节目列表 -->
-  <!-- 共 10839 个节目 -->
+  <!-- 共 10799 个节目 -->
   <programme channel="464593" start="20260325000000 +0800" stop="20260325001035 +0800">
   <title lang="zh">中国体育彩票阳光开奖2026-03-24</title>
   <desc />
@@ -19229,166 +19181,6 @@
   </programme>
   <programme channel="495014" start="20260326230800 +0800" stop="20260327000000 +0800">
   <title lang="zh">卫视高尔夫</title>
-  <desc />
-  </programme>
-  <programme channel="495037" start="20260325001500 +0800" stop="20260325024200 +0800">
-  <title lang="zh">动画片剧场</title>
-  <desc />
-  </programme>
-  <programme channel="495037" start="20260325024200 +0800" stop="20260325060000 +0800">
-  <title lang="zh">动画片剧场</title>
-  <desc />
-  </programme>
-  <programme channel="495037" start="20260325060000 +0800" stop="20260325071500 +0800">
-  <title lang="zh">动画片剧场</title>
-  <desc />
-  </programme>
-  <programme channel="495037" start="20260325071500 +0800" stop="20260325073000 +0800">
-  <title lang="zh">炫动酷地带</title>
-  <desc />
-  </programme>
-  <programme channel="495037" start="20260325073000 +0800" stop="20260325080000 +0800">
-  <title lang="zh">欢乐蹦蹦跳</title>
-  <desc />
-  </programme>
-  <programme channel="495037" start="20260325080000 +0800" stop="20260325120000 +0800">
-  <title lang="zh">动画片剧场</title>
-  <desc />
-  </programme>
-  <programme channel="495037" start="20260325120000 +0800" stop="20260325121500 +0800">
-  <title lang="zh">炫动酷地带</title>
-  <desc />
-  </programme>
-  <programme channel="495037" start="20260325121500 +0800" stop="20260325123000 +0800">
-  <title lang="zh">新闻同学</title>
-  <desc />
-  </programme>
-  <programme channel="495037" start="20260325123000 +0800" stop="20260325133000 +0800">
-  <title lang="zh">动画片剧场</title>
-  <desc />
-  </programme>
-  <programme channel="495037" start="20260325133000 +0800" stop="20260325163000 +0800">
-  <title lang="zh">动画片剧场</title>
-  <desc />
-  </programme>
-  <programme channel="495037" start="20260325163000 +0800" stop="20260325170000 +0800">
-  <title lang="zh">动画片剧场</title>
-  <desc />
-  </programme>
-  <programme channel="495037" start="20260325170000 +0800" stop="20260325180000 +0800">
-  <title lang="zh">动画片剧场</title>
-  <desc />
-  </programme>
-  <programme channel="495037" start="20260325180000 +0800" stop="20260325190000 +0800">
-  <title lang="zh">动画片剧场</title>
-  <desc />
-  </programme>
-  <programme channel="495037" start="20260325190000 +0800" stop="20260325191500 +0800">
-  <title lang="zh">新闻同学</title>
-  <desc />
-  </programme>
-  <programme channel="495037" start="20260325191500 +0800" stop="20260325193000 +0800">
-  <title lang="zh">荧星梦工厂</title>
-  <desc />
-  </programme>
-  <programme channel="495037" start="20260325193000 +0800" stop="20260325203000 +0800">
-  <title lang="zh">动画片剧场</title>
-  <desc />
-  </programme>
-  <programme channel="495037" start="20260325203000 +0800" stop="20260325220000 +0800">
-  <title lang="zh">动画片剧场</title>
-  <desc />
-  </programme>
-  <programme channel="495037" start="20260325220000 +0800" stop="20260325230000 +0800">
-  <title lang="zh">动画片剧场</title>
-  <desc />
-  </programme>
-  <programme channel="495037" start="20260325230000 +0800" stop="20260325231500 +0800">
-  <title lang="zh">新闻同学</title>
-  <desc />
-  </programme>
-  <programme channel="495037" start="20260325231500 +0800" stop="20260326001500 +0800">
-  <title lang="zh">动画片剧场</title>
-  <desc />
-  </programme>
-  <programme channel="495037" start="20260326001500 +0800" stop="20260326024200 +0800">
-  <title lang="zh">动画片剧场</title>
-  <desc />
-  </programme>
-  <programme channel="495037" start="20260326024200 +0800" stop="20260326060000 +0800">
-  <title lang="zh">动画片剧场</title>
-  <desc />
-  </programme>
-  <programme channel="495037" start="20260326060000 +0800" stop="20260326071500 +0800">
-  <title lang="zh">动画片剧场</title>
-  <desc />
-  </programme>
-  <programme channel="495037" start="20260326071500 +0800" stop="20260326073000 +0800">
-  <title lang="zh">炫动酷地带</title>
-  <desc />
-  </programme>
-  <programme channel="495037" start="20260326073000 +0800" stop="20260326080000 +0800">
-  <title lang="zh">欢乐蹦蹦跳</title>
-  <desc />
-  </programme>
-  <programme channel="495037" start="20260326080000 +0800" stop="20260326120000 +0800">
-  <title lang="zh">动画片剧场</title>
-  <desc />
-  </programme>
-  <programme channel="495037" start="20260326120000 +0800" stop="20260326121500 +0800">
-  <title lang="zh">炫动酷地带</title>
-  <desc />
-  </programme>
-  <programme channel="495037" start="20260326121500 +0800" stop="20260326123000 +0800">
-  <title lang="zh">新闻同学</title>
-  <desc />
-  </programme>
-  <programme channel="495037" start="20260326123000 +0800" stop="20260326133000 +0800">
-  <title lang="zh">动画片剧场</title>
-  <desc />
-  </programme>
-  <programme channel="495037" start="20260326133000 +0800" stop="20260326163000 +0800">
-  <title lang="zh">动画片剧场</title>
-  <desc />
-  </programme>
-  <programme channel="495037" start="20260326163000 +0800" stop="20260326170000 +0800">
-  <title lang="zh">动画片剧场</title>
-  <desc />
-  </programme>
-  <programme channel="495037" start="20260326170000 +0800" stop="20260326180000 +0800">
-  <title lang="zh">动画片剧场</title>
-  <desc />
-  </programme>
-  <programme channel="495037" start="20260326180000 +0800" stop="20260326190000 +0800">
-  <title lang="zh">动画片剧场</title>
-  <desc />
-  </programme>
-  <programme channel="495037" start="20260326190000 +0800" stop="20260326191500 +0800">
-  <title lang="zh">新闻同学</title>
-  <desc />
-  </programme>
-  <programme channel="495037" start="20260326191500 +0800" stop="20260326193000 +0800">
-  <title lang="zh">荧星梦工厂</title>
-  <desc />
-  </programme>
-  <programme channel="495037" start="20260326193000 +0800" stop="20260326203000 +0800">
-  <title lang="zh">动画片剧场</title>
-  <desc />
-  </programme>
-  <programme channel="495037" start="20260326203000 +0800" stop="20260326220000 +0800">
-  <title lang="zh">动画片剧场</title>
-  <desc />
-  </programme>
-  <programme channel="495037" start="20260326220000 +0800" stop="20260326230000 +0800">
-  <title lang="zh">动画片剧场</title>
-  <desc />
-  </programme>
-  <programme channel="495037" start="20260326230000 +0800" stop="20260326231500 +0800">
-  <title lang="zh">新闻同学</title>
-  <desc />
-  </programme>
-  <programme channel="495037" start="20260326231500 +0800" stop="20260327000000 +0800">
-  <title lang="zh">动画片剧场</title>
   <desc />
   </programme>
   <programme channel="494999" start="20260325001800 +0800" stop="20260325055500 +0800">
