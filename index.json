@@ -1,5 +1,5 @@
 {
-  "updateTime": "2026-03-31T17:07:24.184Z",
+  "updateTime": "2026-04-01T17:04:37.902Z",
   "files": {
     "provinces": {
       "sh": {
@@ -8,9 +8,9 @@
         "localChannelCount": 1,
         "universalChannelCount": 105,
         "otherChannelCount": 4,
-        "programmeCount": 7703,
+        "programmeCount": 3878,
         "totalChannelCount": 110,
-        "fileSize": "1.20MB"
+        "fileSize": "0.61MB"
       },
       "sd": {
         "name": "山东",
@@ -18,9 +18,9 @@
         "localChannelCount": 1,
         "universalChannelCount": 105,
         "otherChannelCount": 4,
-        "programmeCount": 7748,
+        "programmeCount": 3914,
         "totalChannelCount": 110,
-        "fileSize": "1.21MB"
+        "fileSize": "0.61MB"
       },
       "bj": {
         "name": "北京",
@@ -28,9 +28,9 @@
         "localChannelCount": 1,
         "universalChannelCount": 105,
         "otherChannelCount": 4,
-        "programmeCount": 7663,
+        "programmeCount": 3858,
         "totalChannelCount": 110,
-        "fileSize": "1.19MB"
+        "fileSize": "0.60MB"
       }
     },
     "universal": {
@@ -38,51 +38,51 @@
         "name": "央视",
         "file": "cctv.xml",
         "channelCount": 29,
-        "programmeCount": 1976,
-        "fileSize": "0.31MB"
+        "programmeCount": 1039,
+        "fileSize": "0.16MB"
       },
       "ws": {
         "name": "卫视",
         "file": "ws.xml",
         "channelCount": 40,
-        "programmeCount": 2651,
-        "fileSize": "0.41MB"
+        "programmeCount": 1314,
+        "fileSize": "0.20MB"
       },
       "ty": {
         "name": "通用",
         "file": "ty.xml",
         "channelCount": 2,
-        "programmeCount": 247,
-        "fileSize": "0.04MB"
+        "programmeCount": 132,
+        "fileSize": "0.02MB"
       },
       "ff": {
         "name": "付费",
         "file": "ff.xml",
         "channelCount": 31,
-        "programmeCount": 2266,
-        "fileSize": "0.36MB"
+        "programmeCount": 1143,
+        "fileSize": "0.18MB"
       },
       "gat": {
         "name": "港澳台",
         "file": "gat.xml",
         "channelCount": 3,
-        "programmeCount": 263,
-        "fileSize": "0.04MB"
+        "programmeCount": 132,
+        "fileSize": "0.02MB"
       },
       "other": {
         "name": "其他",
         "file": "other.xml",
         "channelCount": 4,
-        "programmeCount": 260,
-        "fileSize": "0.04MB"
+        "programmeCount": 98,
+        "fileSize": "0.02MB"
       }
     },
     "complete": {
       "all": {
         "file": "all.xml",
         "channelCount": 112,
-        "programmeCount": 10316,
-        "fileSize": "1.58MB"
+        "programmeCount": 5615,
+        "fileSize": "0.86MB"
       }
     }
   },
@@ -93,7 +93,7 @@
     "universalChannelCount": 109,
     "otherChannelCount": 4,
     "totalChannels": 112,
-    "totalProgrammes": 10316,
+    "totalProgrammes": 5615,
     "generatedFiles": 11
   }
 }
