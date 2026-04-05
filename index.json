@@ -1,5 +1,5 @@
 {
-  "updateTime": "2026-04-04T16:44:52.110Z",
+  "updateTime": "2026-04-05T16:46:03.787Z",
   "files": {
     "provinces": {
       "sh": {
@@ -8,9 +8,9 @@
         "localChannelCount": 1,
         "universalChannelCount": 103,
         "otherChannelCount": 4,
-        "programmeCount": 7291,
+        "programmeCount": 3936,
         "totalChannelCount": 108,
-        "fileSize": "1.14MB"
+        "fileSize": "0.62MB"
       },
       "sd": {
         "name": "山东",
@@ -18,9 +18,9 @@
         "localChannelCount": 1,
         "universalChannelCount": 103,
         "otherChannelCount": 4,
-        "programmeCount": 7251,
+        "programmeCount": 3916,
         "totalChannelCount": 108,
-        "fileSize": "1.14MB"
+        "fileSize": "0.62MB"
       }
     },
     "universal": {
@@ -28,51 +28,51 @@
         "name": "央视",
         "file": "cctv.xml",
         "channelCount": 28,
-        "programmeCount": 1557,
-        "fileSize": "0.25MB"
+        "programmeCount": 865,
+        "fileSize": "0.14MB"
       },
       "ws": {
         "name": "卫视",
         "file": "ws.xml",
         "channelCount": 39,
-        "programmeCount": 2636,
-        "fileSize": "0.40MB"
+        "programmeCount": 1310,
+        "fileSize": "0.20MB"
       },
       "ty": {
         "name": "通用",
         "file": "ty.xml",
         "channelCount": 2,
-        "programmeCount": 193,
-        "fileSize": "0.03MB"
+        "programmeCount": 93,
+        "fileSize": "0.02MB"
       },
       "ff": {
         "name": "付费",
         "file": "ff.xml",
         "channelCount": 31,
-        "programmeCount": 2301,
-        "fileSize": "0.36MB"
+        "programmeCount": 1162,
+        "fileSize": "0.18MB"
       },
       "gat": {
         "name": "港澳台",
         "file": "gat.xml",
         "channelCount": 3,
-        "programmeCount": 255,
+        "programmeCount": 251,
         "fileSize": "0.04MB"
       },
       "other": {
         "name": "其他",
         "file": "other.xml",
         "channelCount": 4,
-        "programmeCount": 309,
-        "fileSize": "0.05MB"
+        "programmeCount": 235,
+        "fileSize": "0.04MB"
       }
     },
     "complete": {
       "all": {
         "file": "all.xml",
         "channelCount": 109,
-        "programmeCount": 7291,
-        "fileSize": "1.14MB"
+        "programmeCount": 3936,
+        "fileSize": "0.62MB"
       }
     }
   },
@@ -83,7 +83,7 @@
     "universalChannelCount": 107,
     "otherChannelCount": 4,
     "totalChannels": 109,
-    "totalProgrammes": 7291,
+    "totalProgrammes": 3936,
     "generatedFiles": 10
   }
 }
