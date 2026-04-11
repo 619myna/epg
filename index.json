@@ -1,5 +1,5 @@
 {
-  "updateTime": "2026-04-10T16:57:04.887Z",
+  "updateTime": "2026-04-11T16:47:17.837Z",
   "files": {
     "provinces": {
       "sh": {
@@ -8,9 +8,9 @@
         "localChannelCount": 1,
         "universalChannelCount": 98,
         "otherChannelCount": 4,
-        "programmeCount": 7190,
+        "programmeCount": 6923,
         "totalChannelCount": 103,
-        "fileSize": "1.12MB"
+        "fileSize": "1.09MB"
       }
     },
     "universal": {
@@ -18,42 +18,42 @@
         "name": "央视",
         "file": "cctv.xml",
         "channelCount": 24,
-        "programmeCount": 1590,
+        "programmeCount": 1542,
         "fileSize": "0.25MB"
       },
       "ws": {
         "name": "卫视",
         "file": "ws.xml",
         "channelCount": 39,
-        "programmeCount": 2650,
-        "fileSize": "0.41MB"
+        "programmeCount": 2627,
+        "fileSize": "0.40MB"
       },
       "ty": {
         "name": "通用",
         "file": "ty.xml",
         "channelCount": 1,
-        "programmeCount": 179,
+        "programmeCount": 184,
         "fileSize": "0.03MB"
       },
       "ff": {
         "name": "付费",
         "file": "ff.xml",
         "channelCount": 31,
-        "programmeCount": 2152,
-        "fileSize": "0.34MB"
+        "programmeCount": 1966,
+        "fileSize": "0.31MB"
       },
       "gat": {
         "name": "港澳台",
         "file": "gat.xml",
         "channelCount": 3,
-        "programmeCount": 263,
+        "programmeCount": 255,
         "fileSize": "0.04MB"
       },
       "other": {
         "name": "其他",
         "file": "other.xml",
         "channelCount": 4,
-        "programmeCount": 316,
+        "programmeCount": 309,
         "fileSize": "0.05MB"
       }
     },
@@ -61,8 +61,8 @@
       "all": {
         "file": "all.xml",
         "channelCount": 103,
-        "programmeCount": 7190,
-        "fileSize": "1.12MB"
+        "programmeCount": 6923,
+        "fileSize": "1.09MB"
       }
     }
   },
@@ -73,7 +73,7 @@
     "universalChannelCount": 102,
     "otherChannelCount": 4,
     "totalChannels": 103,
-    "totalProgrammes": 7190,
+    "totalProgrammes": 6923,
     "generatedFiles": 9
   }
 }
