@@ -1,15 +1,15 @@
 {
-  "updateTime": "2026-04-17T17:00:05.208Z",
+  "updateTime": "2026-04-18T16:51:47.687Z",
   "files": {
     "provinces": {
       "sh": {
         "name": "上海",
         "file": "sh.xml",
         "localChannelCount": 1,
-        "universalChannelCount": 98,
+        "universalChannelCount": 97,
         "otherChannelCount": 4,
-        "programmeCount": 6992,
-        "totalChannelCount": 103,
+        "programmeCount": 7027,
+        "totalChannelCount": 102,
         "fileSize": "1.10MB"
       }
     },
@@ -18,50 +18,50 @@
         "name": "央视",
         "file": "cctv.xml",
         "channelCount": 24,
-        "programmeCount": 1551,
-        "fileSize": "0.25MB"
+        "programmeCount": 1481,
+        "fileSize": "0.24MB"
       },
       "ws": {
         "name": "卫视",
         "file": "ws.xml",
         "channelCount": 39,
-        "programmeCount": 2565,
+        "programmeCount": 2538,
         "fileSize": "0.39MB"
       },
       "ty": {
         "name": "通用",
         "file": "ty.xml",
         "channelCount": 1,
-        "programmeCount": 149,
-        "fileSize": "0.02MB"
+        "programmeCount": 165,
+        "fileSize": "0.03MB"
       },
       "ff": {
         "name": "付费",
         "file": "ff.xml",
-        "channelCount": 31,
-        "programmeCount": 2110,
-        "fileSize": "0.33MB"
+        "channelCount": 30,
+        "programmeCount": 2241,
+        "fileSize": "0.35MB"
       },
       "gat": {
         "name": "港澳台",
         "file": "gat.xml",
         "channelCount": 3,
-        "programmeCount": 263,
+        "programmeCount": 255,
         "fileSize": "0.04MB"
       },
       "other": {
         "name": "其他",
         "file": "other.xml",
         "channelCount": 4,
-        "programmeCount": 314,
+        "programmeCount": 307,
         "fileSize": "0.05MB"
       }
     },
     "complete": {
       "all": {
         "file": "all.xml",
-        "channelCount": 103,
-        "programmeCount": 6992,
+        "channelCount": 102,
+        "programmeCount": 7027,
         "fileSize": "1.10MB"
       }
     }
@@ -70,10 +70,10 @@
     "totalProvinces": 1,
     "totalUniversalCategories": 6,
     "provinceChannelCount": 1,
-    "universalChannelCount": 102,
+    "universalChannelCount": 101,
     "otherChannelCount": 4,
-    "totalChannels": 103,
-    "totalProgrammes": 6992,
+    "totalChannels": 102,
+    "totalProgrammes": 7027,
     "generatedFiles": 9
   }
 }
