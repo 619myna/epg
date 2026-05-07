@@ -1,5 +1,5 @@
 {
-  "updateTime": "2026-05-06T17:46:56.135Z",
+  "updateTime": "2026-05-07T17:53:59.560Z",
   "files": {
     "provinces": {
       "sh": {
@@ -8,7 +8,7 @@
         "localChannelCount": 17,
         "universalChannelCount": 143,
         "otherChannelCount": 15,
-        "programmeCount": 9240,
+        "programmeCount": 9246,
         "totalChannelCount": 175,
         "fileSize": "1.45MB"
       },
@@ -18,7 +18,7 @@
         "localChannelCount": 6,
         "universalChannelCount": 143,
         "otherChannelCount": 15,
-        "programmeCount": 9078,
+        "programmeCount": 9080,
         "totalChannelCount": 164,
         "fileSize": "1.43MB"
       },
@@ -28,7 +28,7 @@
         "localChannelCount": 12,
         "universalChannelCount": 143,
         "otherChannelCount": 15,
-        "programmeCount": 9140,
+        "programmeCount": 9130,
         "totalChannelCount": 170,
         "fileSize": "1.44MB"
       },
@@ -38,7 +38,7 @@
         "localChannelCount": 16,
         "universalChannelCount": 143,
         "otherChannelCount": 15,
-        "programmeCount": 9315,
+        "programmeCount": 9317,
         "totalChannelCount": 174,
         "fileSize": "1.46MB"
       },
@@ -48,9 +48,9 @@
         "localChannelCount": 6,
         "universalChannelCount": 143,
         "otherChannelCount": 15,
-        "programmeCount": 9130,
+        "programmeCount": 9134,
         "totalChannelCount": 164,
-        "fileSize": "1.43MB"
+        "fileSize": "1.44MB"
       },
       "snx": {
         "name": "陕西",
@@ -68,7 +68,7 @@
         "localChannelCount": 7,
         "universalChannelCount": 143,
         "otherChannelCount": 15,
-        "programmeCount": 9150,
+        "programmeCount": 9153,
         "totalChannelCount": 165,
         "fileSize": "1.44MB"
       },
@@ -78,9 +78,9 @@
         "localChannelCount": 4,
         "universalChannelCount": 143,
         "otherChannelCount": 15,
-        "programmeCount": 9076,
+        "programmeCount": 9049,
         "totalChannelCount": 162,
-        "fileSize": "1.43MB"
+        "fileSize": "1.42MB"
       },
       "hlj": {
         "name": "黑龙江",
@@ -98,7 +98,7 @@
         "localChannelCount": 5,
         "universalChannelCount": 143,
         "otherChannelCount": 15,
-        "programmeCount": 9086,
+        "programmeCount": 9090,
         "totalChannelCount": 163,
         "fileSize": "1.43MB"
       },
@@ -138,7 +138,7 @@
         "localChannelCount": 19,
         "universalChannelCount": 143,
         "otherChannelCount": 15,
-        "programmeCount": 9233,
+        "programmeCount": 9198,
         "totalChannelCount": 177,
         "fileSize": "1.45MB"
       },
@@ -148,9 +148,9 @@
         "localChannelCount": 18,
         "universalChannelCount": 143,
         "otherChannelCount": 15,
-        "programmeCount": 9422,
+        "programmeCount": 9375,
         "totalChannelCount": 176,
-        "fileSize": "1.48MB"
+        "fileSize": "1.47MB"
       },
       "sd": {
         "name": "山东",
@@ -158,7 +158,7 @@
         "localChannelCount": 4,
         "universalChannelCount": 143,
         "otherChannelCount": 15,
-        "programmeCount": 9100,
+        "programmeCount": 9094,
         "totalChannelCount": 162,
         "fileSize": "1.43MB"
       },
@@ -178,7 +178,7 @@
         "localChannelCount": 7,
         "universalChannelCount": 143,
         "otherChannelCount": 15,
-        "programmeCount": 9081,
+        "programmeCount": 9070,
         "totalChannelCount": 165,
         "fileSize": "1.43MB"
       },
@@ -198,7 +198,7 @@
         "localChannelCount": 3,
         "universalChannelCount": 143,
         "otherChannelCount": 15,
-        "programmeCount": 9003,
+        "programmeCount": 9002,
         "totalChannelCount": 161,
         "fileSize": "1.42MB"
       },
@@ -208,9 +208,9 @@
         "localChannelCount": 5,
         "universalChannelCount": 143,
         "otherChannelCount": 15,
-        "programmeCount": 9056,
+        "programmeCount": 9061,
         "totalChannelCount": 163,
-        "fileSize": "1.42MB"
+        "fileSize": "1.43MB"
       },
       "jx": {
         "name": "江西",
@@ -228,7 +228,7 @@
         "localChannelCount": 1,
         "universalChannelCount": 143,
         "otherChannelCount": 15,
-        "programmeCount": 9022,
+        "programmeCount": 9026,
         "totalChannelCount": 159,
         "fileSize": "1.42MB"
       },
@@ -238,7 +238,7 @@
         "localChannelCount": 2,
         "universalChannelCount": 143,
         "otherChannelCount": 15,
-        "programmeCount": 8996,
+        "programmeCount": 8998,
         "totalChannelCount": 160,
         "fileSize": "1.41MB"
       },
@@ -258,51 +258,51 @@
         "name": "央视",
         "file": "cctv.xml",
         "channelCount": 28,
-        "programmeCount": 1807,
-        "fileSize": "0.29MB"
+        "programmeCount": 1778,
+        "fileSize": "0.28MB"
       },
       "ws": {
         "name": "卫视",
         "file": "ws.xml",
         "channelCount": 44,
-        "programmeCount": 2804,
-        "fileSize": "0.43MB"
+        "programmeCount": 2743,
+        "fileSize": "0.42MB"
       },
       "ty": {
         "name": "通用",
         "file": "ty.xml",
         "channelCount": 9,
-        "programmeCount": 313,
+        "programmeCount": 309,
         "fileSize": "0.05MB"
       },
       "ff": {
         "name": "付费",
         "file": "ff.xml",
         "channelCount": 51,
-        "programmeCount": 2908,
-        "fileSize": "0.46MB"
+        "programmeCount": 2959,
+        "fileSize": "0.47MB"
       },
       "gat": {
         "name": "港澳台",
         "file": "gat.xml",
         "channelCount": 11,
-        "programmeCount": 511,
+        "programmeCount": 513,
         "fileSize": "0.08MB"
       },
       "other": {
         "name": "其他",
         "file": "other.xml",
         "channelCount": 15,
-        "programmeCount": 624,
-        "fileSize": "0.10MB"
+        "programmeCount": 665,
+        "fileSize": "0.11MB"
       }
     },
     "complete": {
       "all": {
         "file": "all.xml",
         "channelCount": 332,
-        "programmeCount": 14038,
-        "fileSize": "2.19MB"
+        "programmeCount": 13916,
+        "fileSize": "2.17MB"
       }
     }
   },
@@ -313,7 +313,7 @@
     "universalChannelCount": 158,
     "otherChannelCount": 15,
     "totalChannels": 332,
-    "totalProgrammes": 14038,
+    "totalProgrammes": 13916,
     "generatedFiles": 33
   }
 }
