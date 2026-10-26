@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
   <!-- 港澳台频道 (gat.xml) -->
-  <!-- 共 4 个频道 -->
-  <!-- 共 64 个节目 -->
-  <!-- 生成时间：2026-10-26 02:50:53 -->
+  <!-- 共 2 个频道 -->
+  <!-- 共 67 个节目 -->
+  <!-- 生成时间：2026-10-27 04:57:35 -->
 
   <channel id="539774">
   <display-name lang="CN">杭州西湖明珠</display-name>
@@ -11,268 +11,274 @@
   <channel id="539871">
   <display-name lang="CN">翡翠台</display-name>
   </channel>
-  <channel id="561392">
-  <display-name lang="CN">凤凰中文</display-name>
-  </channel>
-  <channel id="561393">
-  <display-name lang="CN">凤凰资讯</display-name>
-  </channel>
 
   <!-- 节目列表 -->
-  <programme channel="539871" start="20261025000000 +0800" stop="20261025010500 +0800">
-  <title lang="zh">飛虎3壯志英雄#15[粵][PG]</title>
-  <desc />
-  </programme>
-  <programme channel="539871" start="20261025010500 +0800" stop="20261025013500 +0800">
+  <programme channel="539871" start="20261026000000 +0800" stop="20261026011000 +0800">
   <title lang="zh">東張西望[粵]</title>
   <desc />
   </programme>
-  <programme channel="539871" start="20261025013500 +0800" stop="20261025020500 +0800">
-  <title lang="zh">兩個小生去Camping[粵]</title>
+  <programme channel="539871" start="20261026011000 +0800" stop="20261026014000 +0800">
+  <title lang="zh">Mayanne小喇叭[粵][PG]</title>
   <desc />
   </programme>
-  <programme channel="539871" start="20261025020500 +0800" stop="20261025023000 +0800">
-  <title lang="zh">周六聊Teen谷[粵]</title>
+  <programme channel="539871" start="20261026014000 +0800" stop="20261026021000 +0800">
+  <title lang="zh">Mayanne小喇叭[粵][PG]</title>
   <desc />
   </programme>
-  <programme channel="539871" start="20261025023000 +0800" stop="20261025030000 +0800">
-  <title lang="zh">胡說八道真情假期[粵]</title>
+  <programme channel="539871" start="20261026021000 +0800" stop="20261026024000 +0800">
+  <title lang="zh">魔法伽利略[粵][PG]</title>
   <desc />
   </programme>
-  <programme channel="539871" start="20261025030000 +0800" stop="20261025033500 +0800">
-  <title lang="zh">世界養生組織[粵]</title>
+  <programme channel="539871" start="20261026024000 +0800" stop="20261026031000 +0800">
+  <title lang="zh">魔法伽利略[粵][PG]</title>
   <desc />
   </programme>
-  <programme channel="539871" start="20261025033500 +0800" stop="20261025040500 +0800">
-  <title lang="zh">手匠傳承[粵/韓]</title>
+  <programme channel="539871" start="20261026031000 +0800" stop="20261026034000 +0800">
+  <title lang="zh">甜心先生[粵]</title>
   <desc />
   </programme>
-  <programme channel="539871" start="20261025040500 +0800" stop="20261025050000 +0800">
-  <title lang="zh">排檔尋情味[粵/英]</title>
+  <programme channel="539871" start="20261026034000 +0800" stop="20261026040500 +0800">
+  <title lang="zh">盲盒鐵路遊[粵]</title>
   <desc />
   </programme>
-  <programme channel="539871" start="20261025050000 +0800" stop="20261025060000 +0800">
-  <title lang="zh">細味文明[粵/英]</title>
-  <desc />
-  </programme>
-  <programme channel="539871" start="20261025060000 +0800" stop="20261025063000 +0800">
-  <title lang="zh">社企打工王II[粵]</title>
-  <desc />
-  </programme>
-  <programme channel="539871" start="20261025063000 +0800" stop="20261025070000 +0800">
-  <title lang="zh">社企打工王II[粵]</title>
-  <desc />
-  </programme>
-  <programme channel="539871" start="20261025070000 +0800" stop="20261025080000 +0800">
-  <title lang="zh">Do姐有問題[粵][PG]</title>
-  <desc />
-  </programme>
-  <programme channel="539871" start="20261025080000 +0800" stop="20261025083000 +0800">
-  <title lang="zh">藝遊巷弄[粵/普]</title>
-  <desc />
-  </programme>
-  <programme channel="539871" start="20261025083000 +0800" stop="20261025090000 +0800">
-  <title lang="zh">藝遊巷弄[粵/普]</title>
-  <desc />
-  </programme>
-  <programme channel="539871" start="20261025090000 +0800" stop="20261025093000 +0800">
-  <title lang="zh">星夢頻道[粵/日]</title>
-  <desc />
-  </programme>
-  <programme channel="539871" start="20261025093000 +0800" stop="20261025094500 +0800">
-  <title lang="zh">喜羊羊與灰太狼之羊羊趣冒險2[粵/普]</title>
-  <desc />
-  </programme>
-  <programme channel="539871" start="20261025094500 +0800" stop="20261025100000 +0800">
-  <title lang="zh">喜羊羊與灰太狼之羊羊趣冒險2[粵/普]</title>
-  <desc />
-  </programme>
-  <programme channel="539871" start="20261025100000 +0800" stop="20261025103000 +0800">
-  <title lang="zh">多啦A夢[粵]</title>
-  <desc />
-  </programme>
-  <programme channel="539871" start="20261025103000 +0800" stop="20261025110000 +0800">
-  <title lang="zh">古典樂之星[粵/日]</title>
-  <desc />
-  </programme>
-  <programme channel="539871" start="20261025110000 +0800" stop="20261025113000 +0800">
-  <title lang="zh">講清講楚[粵]</title>
-  <desc />
-  </programme>
-  <programme channel="539871" start="20261025113000 +0800" stop="20261025120000 +0800">
-  <title lang="zh">盲盒鐵路遊[粵] 及 無煙新進程[粵]</title>
-  <desc />
-  </programme>
-  <programme channel="539871" start="20261025120000 +0800" stop="20261025123000 +0800">
+  <programme channel="539871" start="20261026040500 +0800" stop="20261026043500 +0800">
   <title lang="zh">香港美食匠人[粵]</title>
   <desc />
   </programme>
-  <programme channel="539871" start="20261025123000 +0800" stop="20261025130000 +0800">
+  <programme channel="539871" start="20261026043500 +0800" stop="20261026050000 +0800">
   <title lang="zh">香港美食匠人[粵]</title>
   <desc />
   </programme>
-  <programme channel="539871" start="20261025130000 +0800" stop="20261025131500 +0800">
+  <programme channel="539871" start="20261026050000 +0800" stop="20261026053000 +0800">
+  <title lang="zh">藝遊巷弄[粵/普]</title>
+  <desc />
+  </programme>
+  <programme channel="539871" start="20261026053000 +0800" stop="20261026060000 +0800">
+  <title lang="zh">藝遊巷弄[粵/普]</title>
+  <desc />
+  </programme>
+  <programme channel="539871" start="20261026060000 +0800" stop="20261026074000 +0800">
+  <title lang="zh">香港早晨[粵] 及 交通消息[粵]</title>
+  <desc />
+  </programme>
+  <programme channel="539871" start="20261026074000 +0800" stop="20261026081000 +0800">
+  <title lang="zh">香港早晨[粵] 及 交通消息[粵]</title>
+  <desc />
+  </programme>
+  <programme channel="539871" start="20261026081000 +0800" stop="20261026084000 +0800">
+  <title lang="zh">香港早晨[粵] 及 交通消息[粵]</title>
+  <desc />
+  </programme>
+  <programme channel="539871" start="20261026084000 +0800" stop="20261026085500 +0800">
+  <title lang="zh">香港早晨[粵]</title>
+  <desc />
+  </programme>
+  <programme channel="539871" start="20261026085500 +0800" stop="20261026090000 +0800">
+  <title lang="zh">方德證券獨家呈現:交易先機[粵]</title>
+  <desc />
+  </programme>
+  <programme channel="539871" start="20261026090000 +0800" stop="20261026100000 +0800">
+  <title lang="zh">方德證券獨家呈現:交易現場[粵]</title>
+  <desc />
+  </programme>
+  <programme channel="539871" start="20261026100000 +0800" stop="20261026100500 +0800">
+  <title lang="zh">勁歌推介[粵]</title>
+  <desc />
+  </programme>
+  <programme channel="539871" start="20261026100500 +0800" stop="20261026104000 +0800">
+  <title lang="zh">高朋滿座#214[粵]</title>
+  <desc />
+  </programme>
+  <programme channel="539871" start="20261026104000 +0800" stop="20261026114000 +0800">
+  <title lang="zh">玉樓春#28[粵/普][PG]</title>
+  <desc />
+  </programme>
+  <programme channel="539871" start="20261026114000 +0800" stop="20261026121500 +0800">
+  <title lang="zh">方德證券獨家呈現:交易現場[粵] 及 潮流生活誌[粵]</title>
+  <desc />
+  </programme>
+  <programme channel="539871" start="20261026121500 +0800" stop="20261026125500 +0800">
+  <title lang="zh">今個夏天食平D[粵]</title>
+  <desc />
+  </programme>
+  <programme channel="539871" start="20261026125500 +0800" stop="20261026130000 +0800">
+  <title lang="zh">語你同行三十載[粵]</title>
+  <desc />
+  </programme>
+  <programme channel="539871" start="20261026130000 +0800" stop="20261026132000 +0800">
   <title lang="zh">午間新聞[粵]</title>
   <desc />
   </programme>
-  <programme channel="539871" start="20261025131500 +0800" stop="20261025133000 +0800">
-  <title lang="zh">Gi味俱全[粵]</title>
+  <programme channel="539871" start="20261026132000 +0800" stop="20261026141000 +0800">
+  <title lang="zh">流行都市[粵]</title>
   <desc />
   </programme>
-  <programme channel="539871" start="20261025133000 +0800" stop="20261025163000 +0800">
-  <title lang="zh">PPA亞洲職業匹克球巡迴賽1500 •恒生銀行香港大滿貫2026[直播][粵]</title>
+  <programme channel="539871" start="20261026141000 +0800" stop="20261026145000 +0800">
+  <title lang="zh">BB要健康[粵]</title>
   <desc />
   </programme>
-  <programme channel="539871" start="20261025163000 +0800" stop="20261025170000 +0800">
-  <title lang="zh">Hands Up[粵]</title>
+  <programme channel="539871" start="20261026145000 +0800" stop="20261026155000 +0800">
+  <title lang="zh">老表，你好hea！#18[粵]</title>
   <desc />
   </programme>
-  <programme channel="539871" start="20261025170000 +0800" stop="20261025173000 +0800">
-  <title lang="zh">屁屁偵探[粵/日]</title>
+  <programme channel="539871" start="20261026155000 +0800" stop="20261026162000 +0800">
+  <title lang="zh">方德證券獨家呈現:交易現場[粵] 及 方德證券獨家呈現:交易先機[粵]</title>
   <desc />
   </programme>
-  <programme channel="539871" start="20261025173000 +0800" stop="20261025180000 +0800">
+  <programme channel="539871" start="20261026162000 +0800" stop="20261026165000 +0800">
   <title lang="zh">櫻桃小丸子[粵/日]</title>
   <desc />
   </programme>
-  <programme channel="539871" start="20261025180000 +0800" stop="20261025183000 +0800">
-  <title lang="zh">財經透視[粵]</title>
+  <programme channel="539871" start="20261026165000 +0800" stop="20261026172000 +0800">
+  <title lang="zh">Hands Up[粵]</title>
   <desc />
   </programme>
-  <programme channel="539871" start="20261025183000 +0800" stop="20261025185500 +0800">
+  <programme channel="539871" start="20261026172000 +0800" stop="20261026175000 +0800">
+  <title lang="zh">多啦A夢[粵]</title>
+  <desc />
+  </programme>
+  <programme channel="539871" start="20261026175000 +0800" stop="20261026180000 +0800">
+  <title lang="zh">財經新聞[粵]</title>
+  <desc />
+  </programme>
+  <programme channel="539871" start="20261026180000 +0800" stop="20261026182500 +0800">
+  <title lang="zh">利嘉閣地產45 周年真盤源特約：今日有樓睇[粵] 及 潮流生活誌[粵]</title>
+  <desc />
+  </programme>
+  <programme channel="539871" start="20261026182500 +0800" stop="20261026183000 +0800">
+  <title lang="zh">新聞檔案[粵]</title>
+  <desc />
+  </programme>
+  <programme channel="539871" start="20261026183000 +0800" stop="20261026191500 +0800">
   <title lang="zh">六點半新聞報道[粵]</title>
   <desc />
   </programme>
-  <programme channel="539871" start="20261025185500 +0800" stop="20261025190000 +0800">
-  <title lang="zh">農本方參苓白朮散呈獻:天氣報告[粵]</title>
+  <programme channel="539871" start="20261026191500 +0800" stop="20261026192000 +0800">
+  <title lang="zh">世界觀[粵] 及 農本方參苓白朮散呈獻:天氣報告[粵]</title>
   <desc />
   </programme>
-  <programme channel="539871" start="20261025190000 +0800" stop="20261025193000 +0800">
-  <title lang="zh">星期日檔案[粵] 及 無煙新進程[粵]</title>
+  <programme channel="539871" start="20261026192000 +0800" stop="20261026193000 +0800">
+  <title lang="zh">有理說得清[粵] 及 富途證券特約:富途講美股[粵]</title>
   <desc />
   </programme>
-  <programme channel="539871" start="20261025193000 +0800" stop="20261025193500 +0800">
-  <title lang="zh">警聲百二秒 IV[粵]</title>
-  <desc />
-  </programme>
-  <programme channel="539871" start="20261025193500 +0800" stop="20261025200000 +0800">
+  <programme channel="539871" start="20261026193000 +0800" stop="20261026200000 +0800">
   <title lang="zh">東張西望[粵]</title>
   <desc />
   </programme>
-  <programme channel="539871" start="20261025200000 +0800" stop="20261025203000 +0800">
-  <title lang="zh">中信銀行(國際)Motion$呈獻：試真D唷[粵]</title>
+  <programme channel="539871" start="20261026200000 +0800" stop="20261026203000 +0800">
+  <title lang="zh">黃道益活絡油呈獻：愛．回家之三代同糖#55[粵]</title>
   <desc />
   </programme>
-  <programme channel="539871" start="20261025203000 +0800" stop="20261025214000 +0800">
-  <title lang="zh">Funki Finance 呈獻：女神配對計劃2[粵]</title>
+  <programme channel="539871" start="20261026203000 +0800" stop="20261026213000 +0800">
+  <title lang="zh">澳門上葡京綜合度假村呈獻：璀璨之城#11[粵][PG] 及 才駿HASHTAG 高股息率增強收益 ETF[粵]</title>
   <desc />
   </programme>
-  <programme channel="539871" start="20261025214000 +0800" stop="20261025223000 +0800">
-  <title lang="zh">及時雨信貸呈獻：一周星星[粵][PG]</title>
+  <programme channel="539871" start="20261026213000 +0800" stop="20261026220000 +0800">
+  <title lang="zh">與廚同行 家樂牌專業餐飲呈獻：美食強人[粵]</title>
   <desc />
   </programme>
-  <programme channel="539871" start="20261025223000 +0800" stop="20261025231500 +0800">
-  <title lang="zh">伯樂音樂學院20週年呈獻：J Music[粵]</title>
+  <programme channel="539871" start="20261026220000 +0800" stop="20261026230000 +0800">
+  <title lang="zh">天喜堂天喜丸120 週年呈獻：逐玉#11[粵/普][PG]</title>
   <desc />
   </programme>
-  <programme channel="539871" start="20261025231500 +0800" stop="20261025233000 +0800">
+  <programme channel="539871" start="20261026230000 +0800" stop="20261026231500 +0800">
+  <title lang="zh">娛樂頭條[粵] 及 環球新聞檔案[粵]</title>
+  <desc />
+  </programme>
+  <programme channel="539871" start="20261026231500 +0800" stop="20261026234500 +0800">
   <title lang="zh">晚間新聞[粵]</title>
   <desc />
   </programme>
-  <programme channel="539871" start="20261025233000 +0800" stop="20261025233500 +0800">
-  <title lang="zh">農本方參苓白朮散呈獻:天氣報告[粵]</title>
+  <programme channel="539871" start="20261026234500 +0800" stop="20261026235000 +0800">
+  <title lang="zh">新聞檔案[粵]</title>
   <desc />
   </programme>
-  <programme channel="539871" start="20261025233500 +0800" stop="20261026000000 +0800">
-  <title lang="zh">飛虎3壯志英雄#16[粵][PG]</title>
+  <programme channel="539871" start="20261026235000 +0800" stop="20261026235500 +0800">
+  <title lang="zh">農本方參苓白朮散呈獻:天氣報告[粵] 及 潮流生活誌[粵]</title>
   <desc />
   </programme>
-  <programme channel="539774" start="20261025003100 +0800" stop="20261025073100 +0800">
-  <title lang="zh">剧场</title>
+  <programme channel="539871" start="20261026235500 +0800" stop="20261027000000 +0800">
+  <title lang="zh">老婆大人#16[粵]</title>
   <desc />
   </programme>
-  <programme channel="539774" start="20261025073100 +0800" stop="20261025080800 +0800">
+  <programme channel="539774" start="20261026074200 +0800" stop="20261026081800 +0800">
   <title lang="zh">全城热恋之老妈来了</title>
   <desc />
   </programme>
-  <programme channel="539774" start="20261025080800 +0800" stop="20261025085300 +0800">
+  <programme channel="539774" start="20261026081800 +0800" stop="20261026090200 +0800">
   <title lang="zh">全城热恋之老妈来了</title>
   <desc />
   </programme>
-  <programme channel="539774" start="20261025085300 +0800" stop="20261025094600 +0800">
-  <title lang="zh">明珠手语新闻</title>
-  <desc />
-  </programme>
-  <programme channel="539774" start="20261025094600 +0800" stop="20261025101300 +0800">
-  <title lang="zh">和事佬</title>
-  <desc />
-  </programme>
-  <programme channel="539774" start="20261025101300 +0800" stop="20261025103000 +0800">
-  <title lang="zh">和事佬</title>
-  <desc />
-  </programme>
-  <programme channel="539774" start="20261025103000 +0800" stop="20261025110800 +0800">
-  <title lang="zh">金刚说装修</title>
-  <desc />
-  </programme>
-  <programme channel="539774" start="20261025110800 +0800" stop="20261025153500 +0800">
-  <title lang="zh">剧场</title>
-  <desc />
-  </programme>
-  <programme channel="539774" start="20261025153500 +0800" stop="20261025174200 +0800">
-  <title lang="zh">剧场</title>
-  <desc />
-  </programme>
-  <programme channel="539774" start="20261025174200 +0800" stop="20261025180800 +0800">
-  <title lang="zh">乐檬少年功</title>
-  <desc />
-  </programme>
-  <programme channel="539774" start="20261025180800 +0800" stop="20261025182300 +0800">
-  <title lang="zh">运动荟</title>
-  <desc />
-  </programme>
-  <programme channel="539774" start="20261025182300 +0800" stop="20261025182600 +0800">
-  <title lang="zh">气象</title>
-  <desc />
-  </programme>
-  <programme channel="539774" start="20261025182600 +0800" stop="20261025185000 +0800">
-  <title lang="zh">警界41</title>
-  <desc />
-  </programme>
-  <programme channel="539774" start="20261025185000 +0800" stop="20261025193200 +0800">
-  <title lang="zh">明珠新闻</title>
-  <desc />
-  </programme>
-  <programme channel="539774" start="20261025193200 +0800" stop="20261025213000 +0800">
-  <title lang="zh">直播:我是星主播决赛</title>
-  <desc />
-  </programme>
-  <programme channel="539774" start="20261025213000 +0800" stop="20261025220200 +0800">
+  <programme channel="539774" start="20261026090200 +0800" stop="20261026100800 +0800">
   <title lang="zh">阿六头说新闻</title>
   <desc />
   </programme>
-  <programme channel="539774" start="20261025220200 +0800" stop="20261025221200 +0800">
-  <title lang="zh">气象</title>
+  <programme channel="539774" start="20261026100800 +0800" stop="20261026105400 +0800">
+  <title lang="zh">和事佬</title>
   <desc />
   </programme>
-  <programme channel="539774" start="20261025221200 +0800" stop="20261025223000 +0800">
-  <title lang="zh">运动荟</title>
-  <desc />
-  </programme>
-  <programme channel="539774" start="20261025223000 +0800" stop="20261025225400 +0800">
+  <programme channel="539774" start="20261026105400 +0800" stop="20261026113300 +0800">
   <title lang="zh">金刚说装修</title>
   <desc />
   </programme>
-  <programme channel="539774" start="20261025225400 +0800" stop="20261025231000 +0800">
-  <title lang="zh">警界41</title>
+  <programme channel="539774" start="20261026113300 +0800" stop="20261026160000 +0800">
+  <title lang="zh">剧场</title>
   <desc />
   </programme>
-  <programme channel="539774" start="20261025231000 +0800" stop="20261025231500 +0800">
-  <title lang="zh">警界41</title>
+  <programme channel="539774" start="20261026160000 +0800" stop="20261026181800 +0800">
+  <title lang="zh">剧场</title>
   <desc />
   </programme>
-  <programme channel="539774" start="20261025231500 +0800" stop="20261026000000 +0800">
-  <title lang="zh">重播:我是星主播决赛</title>
+  <programme channel="539774" start="20261026181800 +0800" stop="20261026182500 +0800">
+  <title lang="zh">气象</title>
+  <desc />
+  </programme>
+  <programme channel="539774" start="20261026182500 +0800" stop="20261026193300 +0800">
+  <title lang="zh">明珠新闻</title>
+  <desc />
+  </programme>
+  <programme channel="539774" start="20261026193300 +0800" stop="20261026200000 +0800">
+  <title lang="zh">和事佬</title>
+  <desc />
+  </programme>
+  <programme channel="539774" start="20261026200000 +0800" stop="20261026200600 +0800">
+  <title lang="zh">和事佬</title>
+  <desc />
+  </programme>
+  <programme channel="539774" start="20261026200600 +0800" stop="20261026205000 +0800">
+  <title lang="zh">开心茶馆</title>
+  <desc />
+  </programme>
+  <programme channel="539774" start="20261026205000 +0800" stop="20261026213000 +0800">
+  <title lang="zh">今日最大牌</title>
+  <desc />
+  </programme>
+  <programme channel="539774" start="20261026213000 +0800" stop="20261026220100 +0800">
+  <title lang="zh">阿六头说新闻</title>
+  <desc />
+  </programme>
+  <programme channel="539774" start="20261026220100 +0800" stop="20261026221000 +0800">
+  <title lang="zh">气象</title>
+  <desc />
+  </programme>
+  <programme channel="539774" start="20261026221000 +0800" stop="20261026222800 +0800">
+  <title lang="zh">夜游神</title>
+  <desc />
+  </programme>
+  <programme channel="539774" start="20261026222800 +0800" stop="20261026224800 +0800">
+  <title lang="zh">装修这点事</title>
+  <desc />
+  </programme>
+  <programme channel="539774" start="20261026224800 +0800" stop="20261026230300 +0800">
+  <title lang="zh">房产零距离</title>
+  <desc />
+  </programme>
+  <programme channel="539774" start="20261026230300 +0800" stop="20261026231900 +0800">
+  <title lang="zh">今日汽车</title>
+  <desc />
+  </programme>
+  <programme channel="539774" start="20261026231900 +0800" stop="20261027000000 +0800">
+  <title lang="zh">剧场</title>
   <desc />
   </programme>
 </tv>
